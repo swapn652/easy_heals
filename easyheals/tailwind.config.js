@@ -8,4 +8,24 @@ export default {
     extend: {},
   },
   plugins: [],
+  theme: {
+    colors: {
+      'buttonColor': '#EA4E24',
+      'white': 'white',
+      'underlineColor': '#EA4E24',
+      'indigo-600': 'indigo',
+      'green': 'green',
+      'lineColor': '#757575',
+      'green2': '#4DAE45',
+      'purple': '#9881FF',
+      'cyan': '#CEEEEA'
+    },
+    screens: {
+      'sm': '320px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1200px',
+      '2xl': '1920px',
+    },
+  }
 }
