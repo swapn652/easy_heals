@@ -6,6 +6,7 @@ import { Navbar } from './components/Navbar'
 import { BookConsultation } from './components/BookConsultation'
 import { CommonSymptoms } from './components/CommonSymptoms'
 import { ServiceCard } from './components/ServiceCard'
+import { ServicesProvided } from './components/ServicesProvided'
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
      <Navbar/>
      <BookConsultation/>
      <CommonSymptoms/>
-     <ServiceCard/>
+     <ServicesProvided/>
     </>
   )
 }
