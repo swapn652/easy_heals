@@ -5,6 +5,7 @@ import './App.css'
 import { Navbar } from './components/Navbar'
 import { BookConsultation } from './components/BookConsultation'
 import { CommonSymptoms } from './components/CommonSymptoms'
+import { ServiceCard } from './components/ServiceCard'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
      <Navbar/>
      <BookConsultation/>
      <CommonSymptoms/>
+     <ServiceCard/>
     </>
   )
 }
