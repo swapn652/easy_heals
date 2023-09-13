@@ -19,7 +19,8 @@ export default {
       'green2': '#4DAE45',
       'purple': '#9881FF',
       'cyan': '#CEEEEA',
-      'buttonColor2': '#EBFFEA'
+      'buttonColor2': '#EBFFEA',
+      'navbar': '#C3C3C3'
     },
     screens: {
       'sm': '320px',
