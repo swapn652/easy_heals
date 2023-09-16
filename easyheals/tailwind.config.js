@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        '20': 'repeat(20, minmax(0, 1fr))',
+      },
+      gridTemplateRows: {
+        '10': 'repeat(10, minmax(0, 1fr))',
+      },
+    },
   },
   plugins: [],
   theme: {
@@ -20,7 +27,9 @@ export default {
       'purple': '#9881FF',
       'cyan': '#CEEEEA',
       'buttonColor2': '#EBFFEA',
-      'navbar': '#C3C3C3'
+      'navbar': '#C3C3C3',
+      'black': 'black',
+      'text-light': '#757575'
     },
     screens: {
       'sm': '320px',

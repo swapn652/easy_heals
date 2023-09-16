@@ -3,33 +3,33 @@ import { ServiceCard } from './ServiceCard';
 
 export const ServicesProvided = () => {
   return (
-    <div className="flex flex-row w-screen gap-x-10 overflow-x-auto">
+    <div className="flex flex-row gap-x-6">
       <div>
         <ServiceCard
           imageUrl="./doctor.png"
           heading="Top Rated Doctors"
-          description="Find and book an appointment with the best medical professional in town"
+          description="Find and book an appointment with best medical professional in town"
         />
       </div>
-      <div className="flex-shrink-0 md:flex-shrink w-[calc(50% - 20px)] md:w-auto">
+      <div>
         <ServiceCard
-          imageUrl="./doctor.png"
-          heading="Top Rated Doctors"
-          description="Find and book an appointment with the best medical professional in town"
+          imageUrl="./hospital.png"
+          heading="Best Hospitals"
+          description="Explore top rated hospitals and book your visit in a few seconds"
         />
       </div>
-      <div className="flex-shrink-0 md:flex-shrink w-[calc(50% - 20px)] md:w-auto">
+      <div>
         <ServiceCard
-          imageUrl="./doctor.png"
-          heading="Top Rated Doctors"
-          description="Find and book an appointment with the best medical professional in town"
+          imageUrl="./lab-test.png"
+          heading="Lab Tests"
+          description="Get your lab test samples collected and reports delivered at home"
         />
       </div>
-      <div className="flex-shrink-0 md:flex-shrink w-[calc(50% - 20px)] md:w-auto">
+      <div>
         <ServiceCard
-          imageUrl="./doctor.png"
-          heading="Top Rated Doctors"
-          description="Find and book an appointment with the best medical professional in town"
+          imageUrl="./treatment.png"
+          heading="Treatment"
+          description="Compare prices of surgeries and book the best treatment in town"
         />
       </div>
       {/* Repeat the above two ServiceCard components for a total of 4 cards */}

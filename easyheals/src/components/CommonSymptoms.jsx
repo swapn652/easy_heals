@@ -2,7 +2,7 @@ import React from 'react'
 
 export const CommonSymptoms = () => {
   return (
-    <div className="flex flex-row items-center mt-96 mx-auto 2xl:gap-x-4 gap-x-2">
+    <div className="flex flex-row items-center mx-auto 2xl:gap-x-4 gap-x-2">
         <div className="2xl:text-base text-sm lg:text-[12px] md:text-[12px] sm:text-[10px]">
             Common Symptoms:
         </div>

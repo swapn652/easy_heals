@@ -24,7 +24,8 @@ export const Navbar = () => {
         flex-row 
         justify-between 
         items-center 
-        lg:px-10
+        xl:px-[4.5em]
+        lg:px-[3em]
         md:px-6
         sm:px-4
         shadow-md"
@@ -46,7 +47,8 @@ export const Navbar = () => {
           xl:gap-x-10
           items-center 
           self-center
-          md:text-[14px]
+          xl:text-[14px]
+          lg:text-[11px]
           absolute 
           md:static 
           bg-white 
@@ -73,7 +75,7 @@ export const Navbar = () => {
             </div>
           </li>
         ))}
-        <button className="w-28 h-8 bg-buttonColor text-white text-[14px] rounded-md font-semibold px-2 md:-mt-4">
+        <button className="xl:w-28 lg:w-24 xl:h-8 lg:h-[2.5em] bg-buttonColor text-white xl:text-[14px] lg:text-[11px] rounded-md font-semibold px-2 md:-mt-4">
           Contact Us
         </button>
         <div className="w-screen md:hidden h-[1px] mt-4 bg-buttonColor"></div>
