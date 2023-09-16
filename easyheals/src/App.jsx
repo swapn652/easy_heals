@@ -13,6 +13,7 @@ import { MainSection } from './components/MainSection'
 import { MainSectionMobile } from './components/MainSectionMobile'
 import { SearchBarTest } from './components/SearchBarTest'
 import { Partners } from './components/Partners'
+import { Issues } from './components/Issues'
 
 function App() {
 
@@ -34,6 +35,9 @@ function App() {
      </div>
      <div className="mt-[42em]">
       <Partners/>
+     </div>
+     <div className="mt-28">
+      <Issues/>
      </div>
     </>
   )
