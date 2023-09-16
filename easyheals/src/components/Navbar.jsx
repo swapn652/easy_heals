@@ -26,7 +26,7 @@ export const Navbar = () => {
         items-center 
         xl:px-[4.5em]
         lg:px-[3em]
-        md:px-6
+        md:px-10
         sm:px-4
         shadow-md"
     >
@@ -42,13 +42,14 @@ export const Navbar = () => {
           mt-4 
           md:flex 
           md:items-center 
-          md:gap-x-4 
+          md:gap-x-6
           lg:gap-x-6
           xl:gap-x-10
           items-center 
           self-center
           xl:text-[14px]
           lg:text-[11px]
+          md:text-[12px]
           absolute 
           md:static 
           bg-white 
@@ -75,7 +76,7 @@ export const Navbar = () => {
             </div>
           </li>
         ))}
-        <button className="xl:w-28 lg:w-24 xl:h-8 lg:h-[2.5em] bg-buttonColor text-white xl:text-[14px] lg:text-[11px] rounded-md font-semibold px-2 md:-mt-4">
+        <button className="xl:w-28 lg:w-24 xl:h-8 lg:h-[2.5em] md:h-[3em] bg-buttonColor text-white xl:text-[14px] lg:text-[11px] md:text-[12px] rounded-md font-semibold px-2 md:-mt-4">
           Contact Us
         </button>
         <div className="w-screen md:hidden h-[1px] mt-4 bg-buttonColor"></div>

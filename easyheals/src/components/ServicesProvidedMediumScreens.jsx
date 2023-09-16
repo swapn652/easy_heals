@@ -1,9 +1,9 @@
 import React from 'react';
 import { ServiceCard } from './ServiceCard';
 
-export const ServicesProvided = () => {
+export const ServicesProvidedMediumScreens = () => {
   return (
-    <div className="flex flex-row relative xl:left-16 lg:left-12 gap-x-6 md:flex-wrap lg:flex-nowrap md:justify-center lg:justify-start gap-y-6">
+    <div className="flex flex-row w-screen lg:left-12 gap-x-6 sm:flex-wrap lg:flex-nowrap sm:justify-center lg:justify-start gap-y-6">
       <div>
         <ServiceCard
           imageUrl="./doctor.png"
