@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Navbar } from './components/Navbar'
-import { BookConsultation } from './components/BookConsultation'
+import { BookConsultation } from './components/BookConsultation/BookConsultation'
 import { CommonSymptoms } from './components/CommonSymptoms'
 import { ServiceCard } from './components/ServiceCard'
 import { ServicesProvided } from './components/ServicesProvided'
@@ -12,6 +12,7 @@ import { Doctor } from './components/Doctor'
 import { MainSection } from './components/MainSection'
 import { MainSectionMobile } from './components/MainSectionMobile'
 import { SearchBarTest } from './components/SearchBarTest'
+import { Partners } from './components/Partners'
 
 function App() {
 
@@ -30,6 +31,9 @@ function App() {
      </div>
      <div className="block md:hidden">
         <MainSectionMobile/>
+     </div>
+     <div className="mt-[42em]">
+      <Partners/>
      </div>
     </>
   )

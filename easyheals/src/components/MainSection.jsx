@@ -1,10 +1,10 @@
 import React from 'react'
-import { BookConsultation } from './BookConsultation'
+import { BookConsultation } from './BookConsultation/BookConsultation'
 import { ServicesProvided } from './ServicesProvided'
 import { Doctor } from './Doctor'
 import { SearchBar } from './SearchBar'
 import { CommonSymptoms } from './CommonSymptoms'
-import { BookConsultationMediumScreen } from './BookConsultationMediumScreen'
+import { BookConsultationMediumScreen } from './BookConsultation/BookConsultationMediumScreen'
 import { ServicesProvidedMediumScreens } from './ServicesProvidedMediumScreens'
 
 export const MainSection = () => {

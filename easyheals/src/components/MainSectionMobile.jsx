@@ -1,6 +1,6 @@
 import React from 'react'
-import { BookConsultation } from './BookConsultation'
-import { BookConsultationMobile } from './BookConsultationMobile'
+import { BookConsultation } from './BookConsultation/BookConsultation'
+import { BookConsultationMobile } from './BookConsultation/BookConsultationMobile'
 import { SearchBar } from './SearchBar'
 import { CommonSymptoms } from './CommonSymptoms'
 import { Doctor } from './Doctor'
