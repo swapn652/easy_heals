@@ -63,7 +63,7 @@ export const SearchBar = () => {
       
       {/* Treatment Section*/}
       <div className="flex flex-col relative">
-        <div className="absolute text-green2 2xl:text-[12px] xl:text-[11px] lg:text-[9px] font-bold 2xl:top-[1.8em] xl:top-[1.9em] lg:top-[1.3em] md:top-[1em] 2xl:left-52 xl:left-44 lg:left-36 md:left-52">
+        <div className="absolute w-60 text-green2 2xl:text-[12px] xl:text-[11px] lg:text-[9px] font-bold 2xl:top-[1.8em] xl:top-[1.9em] lg:top-[1.3em] md:top-[1em] 2xl:left-52 xl:left-44 lg:left-36 md:left-52">
           Treatment/Doctor/Hospital/Lab Tests
         </div>
         <input
