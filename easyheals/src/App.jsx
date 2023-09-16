@@ -14,7 +14,7 @@ import { MainSectionMobile } from './components/MainSectionMobile'
 import { SearchBarTest } from './components/SearchBarTest'
 import { Partners } from './components/Partners'
 import { Issues } from './components/Issues'
-
+import {Carousel} from './components/Carousel'
 function App() {
 
   const slides = [
@@ -33,10 +33,10 @@ function App() {
      <div className="block md:hidden">
         <MainSectionMobile/>
      </div>
-     <div className="mt-[42em]">
+     <div className="2xl:mt-[42em] xl:mt-[37em] lg:mt-[32em]">
       <Partners/>
      </div>
-     <div className="mt-28">
+     <div className="xl:mt-28 lg:mt-20">
       <Issues/>
      </div>
     </>
