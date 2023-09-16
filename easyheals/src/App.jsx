@@ -7,7 +7,6 @@ import { BookConsultation } from './components/BookConsultation'
 import { CommonSymptoms } from './components/CommonSymptoms'
 import { ServiceCard } from './components/ServiceCard'
 import { ServicesProvided } from './components/ServicesProvided'
-import Carousel from './components/Carousel'
 import { OfferCard } from './components/OfferCard'
 import { Doctor } from './components/Doctor'
 import { Check } from './components/Check'
@@ -33,45 +32,6 @@ function App() {
      <div className="block md:hidden">
         <MainSectionMobile/>
      </div>
-     {/* <div className="mt-[30em] ml-[10em]">
-      <SearchBarTest/>
-     </div> */}
-     {/* <div className='mt-20'>
-     <Carousel>
-     <div>
-        <ServiceCard
-          imageUrl="./doctor.png"
-          heading="Top Rated Doctors"
-          description="Find and book an appointment with best medical professional in town"
-        />
-      </div>
-      <div>
-        <ServiceCard
-          imageUrl="./doctor.png"
-          heading="Top Rated Doctors"
-          description="Find and book an appointment with best medical professional in town"
-        />
-      </div>
-      <div>
-        <ServiceCard
-          imageUrl="./doctor.png"
-          heading="Top Rated Doctors"
-          description="Find and book an appointment with best medical professional in town"
-        />
-      </div>
-      <div>
-        <ServiceCard
-          imageUrl="./doctor.png"
-          heading="Top Rated Doctors"
-          description="Find and book an appointment with best medical professional in town"
-        />
-      </div>
-     </Carousel>
-     </div> */}
-     {/* <Doctor/> */}
-     {/* <div className="mt-20">
-<Check/>
-</div> */}
     </>
   )
 }
