@@ -3,7 +3,7 @@ import React from 'react'
 export const MedicalProfessionals = () => {
   return (
     // Parent Container, made flex row to align text on left and doctors carousel on right
-    <div className="relative w-screen 2xl:h-[40em] xl:h-[36em] lg:h-[30em] flex flex-row font-[Raleway]">
+    <div className="relative w-screen 2xl:h-[32em] xl:h-[28em] lg:h-[21em] flex flex-row font-[Raleway]">
         {/* Left section */}
         <div className="absolute flex flex-col left-20 2xl:top-[11em] xl:top-[10em] lg:top-[8em]">
             <div className="2xl:text-[38px] xl:text-[35px] lg:text-[26px] font-[700]">

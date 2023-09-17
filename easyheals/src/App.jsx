@@ -20,6 +20,8 @@ import { FeaturedServices } from './components/FeaturedServices'
 import { TreatmentBySymptoms } from './components/TreatmentBySymptoms'
 import { TreatmentBySpeciality } from './components/TreatmentBySpeciality'
 import { MedicalProfessionals } from './components/MedicalProfessionals'
+import { TreatmentByDiseases } from './components/TreatmentByDiseases'
+import { LabTests } from './components/LabTests'
 function App() {
 
   const slides = [
@@ -56,11 +58,18 @@ function App() {
      <div>
       <MedicalProfessionals/>
      </div>
+     <div>
+      <TreatmentByDiseases/>
+     </div>
+     <div>
+      <LabTests/>
+     </div>
+     
 {/* <div className="mt-[50em]">
      <Caro/>
-     </div> */}
+     </div>
 
-     {/* <Carousel>
+     <Carousel>
      <div>
         <ServiceCard
           imageUrl="./doctor.png"

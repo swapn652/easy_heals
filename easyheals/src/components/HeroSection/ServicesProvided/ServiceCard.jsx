@@ -14,7 +14,7 @@ export const ServiceCard = ({ imageUrl, heading, description }) => {
         xl:w-[13em] 
         lg:w-[12em] 
         md:w-[20em] 
-        sm:w-screen 
+        sm:w-[20em]
         bg-white 
         border-[0.1px] 
         border-text-light 
