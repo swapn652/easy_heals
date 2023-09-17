@@ -1,11 +1,11 @@
 import React from 'react'
-import { BookConsultation } from './BookConsultation/BookConsultation'
-import { BookConsultationMobile } from './BookConsultation/BookConsultationMobile'
-import { SearchBar } from './SearchBar'
-import { CommonSymptoms } from './CommonSymptoms'
-import { Doctor } from './Doctor'
-import { SearchBarMobile } from './SearchBarMobile'
-import { ServicesProvidedMediumScreens } from './ServicesProvidedMediumScreens'
+import { BookConsultation } from '../BookConsultation/BookConsultation'
+import { BookConsultationMobile } from '../BookConsultation/BookConsultationMobile'
+import { SearchBar } from '../SearchBar/SearchBar'
+import { CommonSymptoms } from '../CommonSymptoms'
+import { Doctor } from '../Doctor'
+import { SearchBarMobile } from '../SearchBar/SearchBarMobile'
+import { ServicesProvidedMediumScreens } from '../ServicesProvided/ServicesProvidedMediumScreens'
 
 export const MainSectionMobile = () => {
   return (

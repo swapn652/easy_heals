@@ -32,7 +32,6 @@ export const ServicesProvidedMediumScreens = () => {
           description="Compare prices of surgeries and book the best treatment in town"
         />
       </div>
-      {/* Repeat the above two ServiceCard components for a total of 4 cards */}
     </div>
   );
 };

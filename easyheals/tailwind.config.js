@@ -29,7 +29,8 @@ export default {
       'buttonColor2': '#EBFFEA',
       'navbar': '#C3C3C3',
       'black': 'black',
-      'text-light': '#757575'
+      'text-light': '#757575',
+      'text-dark': '#353535'
     },
     screens: {
       'sm': '320px',

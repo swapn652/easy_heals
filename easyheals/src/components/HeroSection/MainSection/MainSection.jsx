@@ -1,21 +1,33 @@
 import React from 'react'
-import { BookConsultation } from './BookConsultation/BookConsultation'
-import { ServicesProvided } from './ServicesProvided'
-import { Doctor } from './Doctor'
-import { SearchBar } from './SearchBar'
-import { CommonSymptoms } from './CommonSymptoms'
-import { BookConsultationMediumScreen } from './BookConsultation/BookConsultationMediumScreen'
-import { ServicesProvidedMediumScreens } from './ServicesProvidedMediumScreens'
+import { BookConsultation } from '../BookConsultation/BookConsultation'
+import { ServicesProvided } from '../ServicesProvided/ServicesProvided'
+import { Doctor } from '../Doctor'
+import { SearchBar } from '../SearchBar/SearchBar'
+import { CommonSymptoms } from '../CommonSymptoms'
+import { BookConsultationMediumScreen } from '../BookConsultation/BookConsultationMediumScreen'
+import { ServicesProvidedMediumScreens } from '../ServicesProvided/ServicesProvidedMediumScreens'
 
 export const MainSection = () => {
     const backgroundStyles = {
         backgroundImage: 'url("./bg.png")', // Use the imported image
         backgroundSize: 'cover', // Adjust this based on your image requirements
-        backgroundRepeat: 'no-repeat'
+        backgroundRepeat: 'no-repeat',
       };
 
   return (
-    <div className="relative mt-[4.2em] flex flex-row w-screen" style={{ ...backgroundStyles, backgroundPosition: 'center' }}>
+    <div className="
+        relative 
+        mt-[4.2em] 
+        2xl:h-[33.8em] 
+        xl:h-[30em] 
+        lg:h-[25em] 
+        md:h-[40em] 
+        flex 
+        flex-row 
+        w-screen" 
+        
+        style={{ ...backgroundStyles, backgroundPosition: 'center' }}
+    >
         <div className="relative flex flex-col">
             <div className="absolute hidden lg:block lg:w-[60em] left-16">
                 <BookConsultation/>
