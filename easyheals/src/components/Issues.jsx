@@ -1,10 +1,7 @@
 import React from 'react'
-import { CarouselTest } from './CarouselTest'
-import CarouselTestt from './CarouselTestt'
 import Slider from "react-slick";
 
 export const Issues = () => {
-
   // Custom prev arrow component with custom styling
   const CustomPrevArrow = ({ onClick }) => (
     <div
