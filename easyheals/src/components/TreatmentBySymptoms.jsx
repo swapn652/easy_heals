@@ -5,7 +5,7 @@ export const TreatmentBySymptoms = () => {
    // Custom prev arrow component with custom styling
    const CustomPrevArrow = ({ onClick }) => (
     <div
-      className="cursor-pointer custom-arrow prev absolute xl:-left-10 lg:-left-8 2xl:top-16 xl:top-28 lg:top-24 lg:w-[1.7em] xl:w-[2em]"
+      className="cursor-pointer custom-arrow prev absolute xl:-left-10 lg:-left-8 xl:top-16 lg:top-12 lg:w-[1.7em] xl:w-[2em]"
       onClick={onClick}
     >
       <img src="./navigation_left.svg"/>
@@ -15,7 +15,7 @@ export const TreatmentBySymptoms = () => {
   // Custom next arrow component with custom styling
   const CustomNextArrow = ({ onClick }) => (
     <div
-      className="cursor-pointer custom-arrow next absolute xl:-right-8 lg:-right-4 2xl:top-16 xl:top-28 lg:top-24 lg:w-[1.7em] xl:w-[2em]"
+      className="cursor-pointer custom-arrow next absolute xl:-right-8 lg:-right-8 xl:top-16 lg:top-12 lg:w-[1.7em] xl:w-[2em]"
       onClick={onClick}
     >
        <img src="./navigation_right.svg"/>
@@ -45,31 +45,31 @@ const settings = {
         </div>
 
         {/* Carousel */}
-        <div className="2xl:h-[20em] xl:h-[18em] lg:h-[14em] w-[90vw] absolute xl:top-40 lg:top-28">
+        <div className="2xl:h-[20em] xl:h-[18em] lg:h-[14em] w-[90vw] absolute xl:top-40 lg:top-36">
           <Slider {...settings} className="">
             <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/headache.svg" className="2xl:w-[11em] xl:w-[15em] lg:w-[12em] cursor-pointer"/>
+              <img src="./symptoms/headache.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
             </div>
             <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/acne.svg" className="2xl:w-[11em] xl:w-[15em] lg:w-[12em] cursor-pointer"/>
+              <img src="./symptoms/acne.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
             </div>
             <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/fever.svg" className="2xl:w-[11em] xl:w-[15em] lg:w-[12em] cursor-pointer"/>
+              <img src="./symptoms/fever.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
             </div>
             <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/cough.svg" className="2xl:w-[11em] xl:w-[15em] lg:w-[12em] cursor-pointer"/>
+              <img src="./symptoms/cough.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
             </div>
             <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/gum_pain.svg" className="2xl:w-[11em] xl:w-[15em] lg:w-[12em] cursor-pointer"/>
+              <img src="./symptoms/gum_pain.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
             </div>
             <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/anxiety.svg" className="2xl:w-[11em] xl:w-[15em] lg:w-[12em] cursor-pointer"/>
+              <img src="./symptoms/anxiety.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
             </div>
             <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/back_pain.svg" className="2xl:w-[11em] xl:w-[15em] lg:w-[12em] cursor-pointer"/>
+              <img src="./symptoms/back_pain.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
             </div>
             <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/headache.svg" className="2xl:w-[11em] xl:w-[15em] lg:w-[12em] cursor-pointer"/>
+              <img src="./symptoms/headache.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
             </div>
           </Slider>
         </div>
@@ -82,8 +82,8 @@ const settings = {
             justify-center 
             gap-x-10 
             2xl:top-[26em] 
-            xl:top-[27em] 
-            lg:top-[25em]"
+            xl:top-[24.5em] 
+            lg:top-[21em]"
         >
             <button className="
                 lg:w-[14em] 
