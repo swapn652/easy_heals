@@ -1,6 +1,36 @@
-import React from 'react'
+import React from 'react';
+import Slider from "react-slick";
 
 export const TreatmentBySymptoms = () => {
+   // Custom prev arrow component with custom styling
+   const CustomPrevArrow = ({ onClick }) => (
+    <div
+      className="cursor-pointer custom-arrow prev absolute xl:-left-10 lg:-left-8 2xl:top-16 xl:top-28 lg:top-24 lg:w-[1.7em] xl:w-[2em]"
+      onClick={onClick}
+    >
+      <img src="./navigation_left.svg"/>
+    </div>
+  );
+
+  // Custom next arrow component with custom styling
+  const CustomNextArrow = ({ onClick }) => (
+    <div
+      className="cursor-pointer custom-arrow next absolute xl:-right-8 lg:-right-4 2xl:top-16 xl:top-28 lg:top-24 lg:w-[1.7em] xl:w-[2em]"
+      onClick={onClick}
+    >
+       <img src="./navigation_right.svg"/>
+    </div>
+  );
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 7,
+  slidesToScroll: 1,
+  prevArrow: <CustomPrevArrow />, // Custom previous arrow component
+  nextArrow: <CustomNextArrow />, // Custom next arrow component
+};
+
   return (
     <div className="relative w-screen 2xl:h-[40em] xl:h-[38em] lg:h-[37em] flex justify-center">
         {/* Heading */}
@@ -15,8 +45,33 @@ export const TreatmentBySymptoms = () => {
         </div>
 
         {/* Carousel */}
-        <div className="w-[90vw] xl:h-[13em] lg:h-[11em] bg-green2 absolute top-44">
-
+        <div className="2xl:h-[20em] xl:h-[18em] lg:h-[14em] w-[90vw] absolute xl:top-40 lg:top-28">
+          <Slider {...settings} className="">
+            <div className=""> {/* Add a gap between cards */}
+              <img src="./symptoms/headache.svg" className="2xl:w-[11em] xl:w-[15em] lg:w-[12em] cursor-pointer"/>
+            </div>
+            <div className=""> {/* Add a gap between cards */}
+              <img src="./symptoms/acne.svg" className="2xl:w-[11em] xl:w-[15em] lg:w-[12em] cursor-pointer"/>
+            </div>
+            <div className=""> {/* Add a gap between cards */}
+              <img src="./symptoms/fever.svg" className="2xl:w-[11em] xl:w-[15em] lg:w-[12em] cursor-pointer"/>
+            </div>
+            <div className=""> {/* Add a gap between cards */}
+              <img src="./symptoms/cough.svg" className="2xl:w-[11em] xl:w-[15em] lg:w-[12em] cursor-pointer"/>
+            </div>
+            <div className=""> {/* Add a gap between cards */}
+              <img src="./symptoms/gum_pain.svg" className="2xl:w-[11em] xl:w-[15em] lg:w-[12em] cursor-pointer"/>
+            </div>
+            <div className=""> {/* Add a gap between cards */}
+              <img src="./symptoms/anxiety.svg" className="2xl:w-[11em] xl:w-[15em] lg:w-[12em] cursor-pointer"/>
+            </div>
+            <div className=""> {/* Add a gap between cards */}
+              <img src="./symptoms/back_pain.svg" className="2xl:w-[11em] xl:w-[15em] lg:w-[12em] cursor-pointer"/>
+            </div>
+            <div className=""> {/* Add a gap between cards */}
+              <img src="./symptoms/headache.svg" className="2xl:w-[11em] xl:w-[15em] lg:w-[12em] cursor-pointer"/>
+            </div>
+          </Slider>
         </div>
 
         {/* Buttons */}
@@ -26,7 +81,7 @@ export const TreatmentBySymptoms = () => {
             flex-row 
             justify-center 
             gap-x-10 
-            2xl:top-[28em] 
+            2xl:top-[26em] 
             xl:top-[27em] 
             lg:top-[25em]"
         >
