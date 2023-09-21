@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Slider from "react-slick";
 
 export const TreatmentBySpeciality = () => {
     const divStyle = {
@@ -7,8 +8,36 @@ export const TreatmentBySpeciality = () => {
         backgroundRepeat: 'no-repeat'
       };
 
+      const CustomPrevArrow = ({ onClick }) => (
+        <div
+          className="cursor-pointer custom-arrow prev absolute xl:-left-10 lg:-left-8 xl:top-16 lg:top-12 lg:w-[1.7em] xl:w-[2em]"
+          onClick={onClick}
+        >
+          <img src="./navigation_left.svg"/>
+        </div>
+      );
+    
+      // Custom next arrow component with custom styling
+      const CustomNextArrow = ({ onClick }) => (
+        <div
+          className="cursor-pointer custom-arrow next absolute xl:-right-8 lg:-right-8 xl:top-16 lg:top-12 lg:w-[1.7em] xl:w-[2em]"
+          onClick={onClick}
+        >
+           <img src="./navigation_right.svg"/>
+        </div>
+      );
+    const settings = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      prevArrow: <CustomPrevArrow />, // Custom previous arrow component
+      nextArrow: <CustomNextArrow />, // Custom next arrow component
+    };
+
   return (
-    <div style={divStyle} className="relative w-screen xl:h-[27em] lg:h-[24em] flex justify-center">
+    <div style={divStyle} className="relative w-screen xl:h-[30em] lg:h-[24em] flex justify-center">
         <img 
             src="./plus_bg_1.svg" 
             className="
@@ -23,22 +52,47 @@ export const TreatmentBySpeciality = () => {
             />
         <div 
             style={{boxShadow: "0px 4px 40px 0px #60606040"}}  
-            className="absolute w-[90vw] xl:h-[25em] lg:h-[22em] bg-white -top-12"
+            className="absolute w-[90vw] xl:h-[28em] lg:h-[22em] bg-white -top-12"
         >
             <div className="absolute top-10 flex items-center justify-center">
-                <span className="2xl:w-[497.5px] xl:w-[441.8px] lg:w-[330.65px] h-[1px] bg-text-light"></span>
+                <span className="2xl:w-[455.6px] xl:w-[441.8px] lg:w-[330.65px] h-[1px] bg-text-light"></span>
                 <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
                 <span className="px-4 font-Poppins font-semibold 2xl:text-[27px] xl:text-[23px] lg:text-[22px] mx-2">
-                    Featured Services
+                    Treatment By Speciality
                 </span>
                 <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-                <span className="2xl:w-[497.5px] xl:w-[441.8px] lg:w-[330.65px] h-[1px] bg-text-light"></span>
+                <span className="2xl:w-[455.6px] xl:w-[441.8px] lg:w-[330.65px] h-[1px] bg-text-light"></span>
             </div>
         </div>
  
         {/* Carousel */}
-        <div className="xl:h-[9em] lg:h-[8em] w-[80vw] bg-green2 absolute flex self-center xl:top-20 lg:top-16">
-
+        <div className="xl:h-[9em] lg:h-[8em] w-[80vw] absolute xl:top-[4.5em] lg:top-16">
+        <Slider {...settings} className="">
+            <div className=""> {/* Add a gap between cards */}
+              <img src="./symptoms/headache.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
+            </div>
+            <div className=""> {/* Add a gap between cards */}
+              <img src="./symptoms/acne.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
+            </div>
+            <div className=""> {/* Add a gap between cards */}
+              <img src="./symptoms/fever.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
+            </div>
+            <div className=""> {/* Add a gap between cards */}
+              <img src="./symptoms/cough.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
+            </div>
+            <div className=""> {/* Add a gap between cards */}
+              <img src="./symptoms/gum_pain.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
+            </div>
+            <div className=""> {/* Add a gap between cards */}
+              <img src="./symptoms/anxiety.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
+            </div>
+            <div className=""> {/* Add a gap between cards */}
+              <img src="./symptoms/back_pain.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
+            </div>
+            <div className=""> {/* Add a gap between cards */}
+              <img src="./symptoms/headache.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
+            </div>
+          </Slider>
         </div>
 
         {/* Button */}
@@ -55,7 +109,7 @@ export const TreatmentBySpeciality = () => {
             text-green2 
             rounded-lg 
             absolute 
-            2xl:top-[16.5em] 
+            2xl:top-[19em] 
             xl:top-[19em] 
             lg:top-[19em] 
             flex 
