@@ -20,6 +20,10 @@ import { TreatmentBySpeciality } from './components/TreatmentBySpeciality'
 import { MedicalProfessionals } from './components/MedicalProfessionals'
 import { TreatmentByDiseases } from './components/TreatmentByDiseases'
 import { LabTests } from './components/LabTests'
+import { CarouselTest } from './components/CarouselTest'
+import CarouselTestt from './components/CarouselTestt'
+
+
 function App() {
 
   const slides = [
@@ -59,10 +63,9 @@ function App() {
      <div>
       <TreatmentByDiseases/>
      </div>
-     <div>
+     {/* <div>
       <LabTests/>
-     </div>
-     
+     </div> */}
     </>
   )
 }
