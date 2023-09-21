@@ -23,7 +23,7 @@ export const BookConsultation = () => {
         >
             <div>
                 <span className="text-green2 font-[700]">Compare and Book</span> 
-                <span className="font-[600]">any Hospital, Doctor</span>
+                <span className="font-[600]"> any Hospital, Doctor</span>
             </div>
             
             <div className="md:-mt-[5px] font-[600]">

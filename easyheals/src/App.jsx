@@ -22,6 +22,9 @@ import { TreatmentByDiseases } from './components/TreatmentByDiseases'
 import { LabTests } from './components/LabTests'
 import { CarouselTest } from './components/CarouselTest'
 import CarouselTestt from './components/CarouselTestt'
+import { YeahBoi } from './components/YeahBoi'
+import { TopHospitals } from './components/TopHospitals'
+import { DownloadApp } from './components/DownloadApp'
 
 
 function App() {
@@ -63,8 +66,17 @@ function App() {
      <div>
       <TreatmentByDiseases/>
      </div>
-     {/* <div>
+     <div>
       <LabTests/>
+     </div>
+     <div>
+      <TopHospitals/>
+     </div>
+     <div>
+      <DownloadApp/>
+     </div>
+     {/* <div className="mt-[500em] mb-[200em]">
+      <YeahBoi/>
      </div> */}
     </>
   )
