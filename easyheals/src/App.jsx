@@ -14,8 +14,6 @@ import { MainSectionMobile } from './components/HeroSection/MainSection/MainSect
 import { SearchBarTest } from './components/SearchBarTest'
 import { Partners } from './components/Partners'
 import { Issues } from './components/Issues'
-import {Carousel} from './components/Carousel'
-import { Caro } from './components/Caro'
 import { FeaturedServices } from './components/FeaturedServices'
 import { TreatmentBySymptoms } from './components/TreatmentBySymptoms'
 import { TreatmentBySpeciality } from './components/TreatmentBySpeciality'
@@ -65,33 +63,6 @@ function App() {
       <LabTests/>
      </div>
      
-{/* <div className="mt-[50em]">
-     <Caro/>
-     </div>
-
-     <Carousel>
-     <div>
-        <ServiceCard
-          imageUrl="./doctor.png"
-          heading="Top Rated Doctors"
-          description="Find and book an appointment with best medical professional in town"
-        />
-      </div>
-      <div>
-        <ServiceCard
-          imageUrl="./doctor.png"
-          heading="Top Rated Doctors"
-          description="Find and book an appointment with best medical professional in town"
-        />
-      </div>
-      <div>
-        <ServiceCard
-          imageUrl="./doctor.png"
-          heading="Top Rated Doctors"
-          description="Find and book an appointment with best medical professional in town"
-        />
-      </div>
-     </Carousel> */}
     </>
   )
 }
