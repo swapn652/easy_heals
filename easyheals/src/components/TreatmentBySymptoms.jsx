@@ -35,27 +35,40 @@ export const TreatmentBySymptoms = () => {
   };
 
   const [symptoms, setSymptoms] = useState([]);
+  const [bearerToken, setBearerToken] = useState('');
 
   useEffect(() => {
-    // Replace with your API endpoint and token
     const apiUrl = 'https://api.development.easyheals.com/lookups/symptoms';
-    const bearerToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJhcGk6Ly81NjNhMTgzNS1iMjRlLTQwYjUtOTdiNC1lMDhjYjViODk0MTMiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9iZTkxYjNiYy1mYWE3LTRjNTQtODU4Mi0wYzVmZjU5OTYyYTkvIiwiaWF0IjoxNjk1MzkwMjA1LCJuYmYiOjE2OTUzOTAyMDUsImV4cCI6MTY5NTM5NDEwNSwiYWlvIjoiRTJGZ1lNaEozTDh4UlpCdHd0MXZTcGV1Zk5OT0J3QT0iLCJhcHBpZCI6ImQxODdhZmQyLTc4NWEtNDk2YS1hMDk2LTc2NTg4ZmQ5MWM3OCIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0L2JlOTFiM2JjLWZhYTctNGM1NC04NTgyLTBjNWZmNTk5NjJhOS8iLCJvaWQiOiIyMzYwNDE2NS1lNzViLTQyYTktODNhYi0yNzgyMzUzZGVmNTQiLCJyaCI6IjAuQVZZQXZMT1J2cWY2VkV5RmdneGY5WmxpcVRVWU9sWk9zclZBbDdUZ2pMVzRsQk9mQUFBLiIsInN1YiI6IjIzNjA0MTY1LWU3NWItNDJhOS04M2FiLTI3ODIzNTNkZWY1NCIsInRpZCI6ImJlOTFiM2JjLWZhYTctNGM1NC04NTgyLTBjNWZmNTk5NjJhOSIsInV0aSI6Ik0xNWRNT1V5UTBtczRGN0JvX0ZZQUEiLCJ2ZXIiOiIxLjAifQ.PPhEfcpP3drTs4tItcryK7I82zGnILuw6oiVcDOXkHd2cUlJw9ct8ZOrFg2uImJcUsIIMYoKqgS9MRepMOcmVdZDd7yKaRuegbzoZJ9qGraImeyvL-J5-mC4BLgXzxSoFodMbmXHo8T1SUOD07Ea_x72KYr0w6jePzllOBJyoa-8rRMSMJtUyaYWegGrTclWplPdRWTlx47-jPPLyY1K2LJMwXzILDPDiDBk-Xu3L7Hk9sAogGCRfCC1sNBT3mNmpY1J4zPq-IYliD7_6IA6ofun98JJy1tAZQzLZxxou6i_qtMfopXMEqyIHdueWiNR5wq5424Y5Kbb0c-n_sK_Rw';
+    const tokenUrl = 'http://localhost:8080/auth-token';
 
     axios
-      .get(apiUrl, {
-        headers: {
-          Authorization: `Bearer ${bearerToken}`,
-        },
-      })
+      .get(tokenUrl)
       .then((response) => {
-        const data = response.data.data.filter((item) => item.image !== null);
-        console.log(data);
-        setSymptoms(data);
+        const newToken = response.data;
+        setBearerToken(newToken);
+        // console.log("Bearer token: ", newToken)
+
+        // Use the obtained token to fetch symptom data
+        const apiUrl = 'https://api.development.easyheals.com/lookups/symptoms';
+        axios
+          .get(apiUrl, {
+            headers: {
+              Authorization: `Bearer ${newToken}`,
+            },
+          })
+          .then((response) => {
+            const data = response.data.data.filter((item) => item.image !== null && item.title.length <= 10);
+            setSymptoms(data);
+          })
+          .catch((error) => {
+            console.error('Error fetching data:', error);
+          });
       })
       .catch((error) => {
-        console.error('Error fetching data:', error);
+        console.error('Error fetching bearer token:', error);
       });
   }, []);
+
 
   return (
     <div className="relative w-screen 2xl:h-[40em] xl:h-[38em] lg:h-[34em] flex justify-center">
@@ -73,30 +86,15 @@ export const TreatmentBySymptoms = () => {
         {/* Carousel */}
         <div className="2xl:h-[20em] xl:h-[18em] lg:h-[14em] w-[90vw] absolute xl:top-40 lg:top-36">
           <Slider {...settings} className="">
-            <div className="">
-            <TreatmentBySymptomsCard imageSrc="doctor.png" title="Headache" />
-            </div>
-            <div className="">
-            <TreatmentBySymptomsCard imageSrc="doctor.png" title="Headache" />
-            </div>
-            <div className="">
-            <TreatmentBySymptomsCard imageSrc="doctor.png" title="Headache" />
-            </div>
-            <div className="">
-            <TreatmentBySymptomsCard imageSrc="doctor.png" title="Headache" />
-            </div>
-            <div className="">
-            <TreatmentBySymptomsCard imageSrc="doctor.png" title="Headache" />
-            </div>
-            <div className="">
-            <TreatmentBySymptomsCard imageSrc="doctor.png" title="Headache" />
-            </div>
-            <div className="">
-            <TreatmentBySymptomsCard imageSrc="doctor.png" title="Headache" />
-            </div>
-            <div className="">
-            <TreatmentBySymptomsCard imageSrc="doctor.png" title="Headache" />
-            </div>
+            {symptoms.map((symptom) => (
+                    <div key={symptom.id} className="m-4">
+                      {/* Pass the symptom data to the TreatmentBySymptomsCard component */}
+                      <TreatmentBySymptomsCard
+                        imageSrc={symptom.image}
+                        title={symptom.title}
+                      />
+                  </div>
+                ))}
           </Slider>
         </div>
 

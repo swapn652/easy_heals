@@ -16,7 +16,6 @@ import { LabTests } from './components/LabTests'
 import { TopHospitals } from './components/TopHospitals'
 import { DownloadApp } from './components/DownloadApp'
 import { Footer } from './components/Footer'
-import { YeahBoi } from "./components/YeahBoi";
 
 
 function App() {
@@ -29,7 +28,7 @@ function App() {
      <div className="block md:hidden">
         <MainSectionMobile/>
      </div>
-     <div className="2xl:mt-[10em] xl:mt-[10em] lg:mt-[9em]">
+     <div className="2xl:mt-[10em] xl:mt-[10em] lg:mt-[9em] md:mt-[8em]">
       <Partners/>
      </div>
      <div className="xl:mt-28 lg:mt-16">
