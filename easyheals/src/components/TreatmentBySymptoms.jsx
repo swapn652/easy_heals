@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
+import { TreatmentBySymptomsCard } from './TreatmentBySymptomsCard';
 
 export const TreatmentBySymptoms = () => {
    // Custom prev arrow component with custom styling
@@ -47,29 +48,29 @@ const settings = {
         {/* Carousel */}
         <div className="2xl:h-[20em] xl:h-[18em] lg:h-[14em] w-[90vw] absolute xl:top-40 lg:top-36">
           <Slider {...settings} className="">
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/headache.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
+            <div className="">
+            <TreatmentBySymptomsCard imageSrc="doctor.png" title="Headache" />
             </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/acne.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
+            <div className="">
+            <TreatmentBySymptomsCard imageSrc="doctor.png" title="Headache" />
             </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/fever.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
+            <div className="">
+            <TreatmentBySymptomsCard imageSrc="doctor.png" title="Headache" />
             </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/cough.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
+            <div className="">
+            <TreatmentBySymptomsCard imageSrc="doctor.png" title="Headache" />
             </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/gum_pain.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
+            <div className="">
+            <TreatmentBySymptomsCard imageSrc="doctor.png" title="Headache" />
             </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/anxiety.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
+            <div className="">
+            <TreatmentBySymptomsCard imageSrc="doctor.png" title="Headache" />
             </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/back_pain.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
+            <div className="">
+            <TreatmentBySymptomsCard imageSrc="doctor.png" title="Headache" />
             </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/headache.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
+            <div className="">
+            <TreatmentBySymptomsCard imageSrc="doctor.png" title="Headache" />
             </div>
           </Slider>
         </div>

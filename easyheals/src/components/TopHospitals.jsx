@@ -87,8 +87,8 @@ export const TopHospitals = () => {
 
         <div className="w-[90vw] h-[0.5px] bg-text-light absolute xl:bottom-[8em] lg:bottom-[6em]"></div>
 
-        <div className="absolute xl:left-[5em] lg:left-[4em] 2xl:top-[10em] xl:top-[9em] lg:top-[7em] 2xl:w-[45em] xl:w-[40em] lg:w-[33em]">
-            <Slider {...settings} className="grid-cols-2 grid-rows-4">
+        <div className="absolute xl:left-[5em] lg:left-[4em] 2xl:top-[11em] xl:top-[10.5em] lg:top-[7.5em] 2xl:w-[45em] xl:w-[40em] lg:w-[33em]">
+            <Slider {...settings} className="">
             {[0, 1, 2, 3].map((index) => (
                 <div
                 key={index}
