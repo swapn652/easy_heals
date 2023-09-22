@@ -32,7 +32,8 @@ module.exports = withMT({
       'navbar': '#C3C3C3',
       'black': 'black',
       'text-light': '#757575',
-      'text-dark': '#353535'
+      'text-dark': '#353535',
+      'footer-color': '#F0F8F0'
     },
     screens: {
       'sm': '320px',

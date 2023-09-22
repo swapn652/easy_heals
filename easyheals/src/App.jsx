@@ -1,14 +1,7 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import "slick-carousel/slick/slick.css"; // Import the slick-carousel CSS
+import "slick-carousel/slick/slick-theme.css"; // Import the slick-carousel theme CSS
 import './App.css'
 import { Navbar } from './components/Navbar'
-import { BookConsultation } from './components/HeroSection/BookConsultation/BookConsultation'
-import { CommonSymptoms } from './components/HeroSection/CommonSymptoms'
-import { ServiceCard } from './components/HeroSection/ServicesProvided/ServiceCard'
-import { ServicesProvided } from './components/HeroSection/ServicesProvided/ServicesProvided'
-import { OfferCard } from './components/OfferCard'
-import { Doctor } from './components/HeroSection/Doctor'
 import { MainSection } from './components/HeroSection/MainSection/MainSection'
 import { MainSectionMobile } from './components/HeroSection/MainSection/MainSectionMobile'
 import { SearchBarTest } from './components/SearchBarTest'
@@ -20,22 +13,13 @@ import { TreatmentBySpeciality } from './components/TreatmentBySpeciality'
 import { MedicalProfessionals } from './components/MedicalProfessionals'
 import { TreatmentByDiseases } from './components/TreatmentByDiseases'
 import { LabTests } from './components/LabTests'
-import { CarouselTest } from './components/CarouselTest'
-import CarouselTestt from './components/CarouselTestt'
-import { YeahBoi } from './components/YeahBoi'
 import { TopHospitals } from './components/TopHospitals'
 import { DownloadApp } from './components/DownloadApp'
+import { Footer } from './components/Footer'
+import { YeahBoi } from "./components/YeahBoi";
 
 
 function App() {
-
-  const slides = [
-    "https://i.ibb.co/ncrXc2V/1.png",
-    "https://i.ibb.co/B3s7v4h/2.png",
-    "https://i.ibb.co/XXR8kzF/3.png",
-    "https://i.ibb.co/yg7BSdM/4.png"
-      ]
-
   return (
     <>
      <Navbar/>
@@ -75,7 +59,10 @@ function App() {
      <div>
       <DownloadApp/>
      </div>
-     {/* <div className="mt-[500em] mb-[200em]">
+     <div>
+      <Footer/>
+     </div>
+     {/* <div className="mt-[10em]">
       <YeahBoi/>
      </div> */}
     </>

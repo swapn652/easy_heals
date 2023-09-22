@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
+import { FeaturedServicesCard } from './FeaturedServicesCard';
 
 export const FeaturedServices = () => {
   const divStyle = {
@@ -87,6 +88,9 @@ const settings = {
             </div>
             <div className=""> {/* Add a gap between cards */}
               <img src="./featured_services/bone_marrow_transplant.svg" className="2xl:w-[17em] xl:w-[15em] lg:w-[12em] cursor-pointer"/>
+            </div>
+            <div className=""> {/* Add a gap between cards */}
+              <FeaturedServicesCard/>
             </div>
           </Slider>
         </div>

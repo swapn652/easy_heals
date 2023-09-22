@@ -11,13 +11,13 @@ export const LabTests = () => {
     <div className="relative w-screen 2xl:h-[44em] xl:h-[42em] lg:h-[36em] flex flex-row justify-center font-[Raleway]">
         {/* Heading */}
         <div className="flex items-center justify-center absolute top-44">
-            <span className="2xl:w-[540px] xl:w-[430px] lg:w-[320px] h-[1px] bg-text-light"></span>
+            <span className="2xl:w-[540px] xl:w-[500px] lg:w-[380px] h-[1px] bg-text-light"></span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
             <span className="px-4 font-Poppins font-semibold 2xl:text-[27px] xl:text-[23px] lg:text-[22px] mx-2">
                 Lab Tests
             </span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-            <span className="2xl:w-[540px] xl:w-[430px] lg:w-[320px] h-[1px] bg-text-light"></span>
+            <span className="2xl:w-[540px] xl:w-[500px] lg:w-[380px] h-[1px] bg-text-light"></span>
         </div>
         <div style={divStyle} className="absolute w-screen 2xl:h-[27em] xl:h-[25em] lg:h-[21em] flex flex-row justify-center xl:top-[17em] lg:top-[15em]">
             <div className="absolute flex flex-row top-12">

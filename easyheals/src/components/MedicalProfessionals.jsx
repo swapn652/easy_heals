@@ -1,6 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Slider from 'react-slick';
 
 export const MedicalProfessionals = () => {
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    // Custom prev arrow component with custom styling
+    const CustomPrevArrow = ({ onClick }) => (
+      <div
+        className="cursor-pointer custom-arrow prev absolute xl:-left-10 lg:-left-8 2xl:top-32 xl:top-24 lg:top-20 lg:w-[1.7em] xl:w-[2em]"
+        onClick={onClick}
+      >
+        <img src="./navigation_left.svg" />
+      </div>
+    );
+  
+    // Custom next arrow component with custom styling
+    const CustomNextArrow = ({ onClick }) => (
+      <div
+        className="cursor-pointer custom-arrow next absolute xl:-right-8 lg:-right-[1.7em] 2xl:top-32 xl:top-24 lg:top-20 lg:w-[1.7em] xl:w-[2em]"
+        onClick={onClick}
+      >
+        <img src="./navigation_right.svg" />
+      </div>
+    );
+  
+    const settings = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: <CustomPrevArrow />, // Custom previous arrow component
+      nextArrow: <CustomNextArrow />, // Custom next arrow component
+      beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex), // Update the current slide
+    };
+  
+
   return (
     // Parent Container, made flex row to align text on left and doctors carousel on right
     <div className="relative w-screen 2xl:h-[32em] xl:h-[28em] lg:h-[21em] flex flex-row font-[Raleway]">
@@ -78,6 +113,21 @@ export const MedicalProfessionals = () => {
             >
                 Find Best Doctors
             </button>
+        </div>
+
+        <div className="absolute xl:right-[5em] lg:right-[4em] 2xl:top-[10em] xl:top-[9em] lg:top-[7em] 2xl:w-[45em] xl:w-[40em] lg:w-[33em]">
+            <Slider {...settings} className="grid-cols-2 grid-rows-4">
+            {[0, 1, 2, 3].map((index) => (
+                <div
+                key={index}
+                className={`w-[10em] ${
+                    index === currentSlide ? 'scale-100' : 'scale-90'
+                } transition-transform duration-300 ease-in-out`}
+                >
+                <img src="./doc.svg" className="w-full" />
+                </div>
+            ))}
+            </Slider>
         </div>
     </div>
   )

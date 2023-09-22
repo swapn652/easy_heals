@@ -32,7 +32,7 @@ const settings = {
 };
 
   return (
-    <div className="relative w-screen 2xl:h-[40em] xl:h-[38em] lg:h-[37em] flex justify-center">
+    <div className="relative w-screen 2xl:h-[40em] xl:h-[38em] lg:h-[34em] flex justify-center">
         {/* Heading */}
         <div className="flex items-center justify-center absolute top-20">
             <span className="2xl:w-[460px] xl:w-[430px] lg:w-[320px] h-[1px] bg-text-light"></span>
