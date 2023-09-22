@@ -2,11 +2,11 @@ import React from 'react'
 
 export const TopHospitals = () => {
   return (
-    <div className="relative w-screen 2xl:h-[44em] xl:h-[28em] lg:h-[21em] flex justify-center flex-row font-[Raleway]">
-        <img src="./plus_bg_3.svg" alt="plus_bg_3.svg" className="absolute top-[11em] right-0 w-[11em]"/>
-        <div className="w-[90vw] h-[0.5px] bg-text-light absolute top-[10em]"></div>
+    <div className="relative w-screen 2xl:h-[40.5em] xl:h-[40em] lg:h-[30em] flex justify-center flex-row font-[Raleway]">
+        <img src="./plus_bg_3.svg" alt="plus_bg_3.svg" className="absolute xl:top-[7em] right-0 2xl:w-[11em] xl:w-[10em]"/>
+        <div className="w-[90vw] h-[0.5px] bg-text-light absolute xl:top-[6em] lg:top-[4em]"></div>
     {/* Left section */}
-        <div className="absolute flex flex-col right-24 2xl:top-[17em] xl:top-[10em] lg:top-[8em]">
+        <div className="absolute flex flex-col right-24 2xl:top-[13em] xl:top-[12em] lg:top-[10em]">
             <div className="2xl:text-[38px] xl:text-[35px] lg:text-[26px] font-[700]">
                 <div>
                     Find and Book
@@ -29,8 +29,9 @@ export const TopHospitals = () => {
         {/* Buttons */}
         <button className="
             absolute
-            top-[31em]
-            right-[21em]
+            top-[26.5em]
+            xl:right-[21em]
+            lg:right-[23em]
             xl:w-[13em] 
             lg:w-[12em] 
             h-[3em] 
@@ -49,7 +50,7 @@ export const TopHospitals = () => {
                 Find Best Hospitals
         </button>
 
-        <div className="w-[90vw] h-[0.5px] bg-text-light absolute bottom-[8em]"></div>
+        <div className="w-[90vw] h-[0.5px] bg-text-light absolute xl:bottom-[8em] lg:bottom-[6em]"></div>
     </div>
   )
 }

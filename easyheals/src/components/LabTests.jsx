@@ -8,7 +8,7 @@ export const LabTests = () => {
       };
 
   return (
-    <div className="relative w-screen 2xl:h-[40em] xl:h-[30em] lg:h-[23em] flex flex-row justify-center font-[Raleway]">
+    <div className="relative w-screen 2xl:h-[44em] xl:h-[42em] lg:h-[36em] flex flex-row justify-center font-[Raleway]">
         {/* Heading */}
         <div className="flex items-center justify-center absolute top-44">
             <span className="2xl:w-[540px] xl:w-[430px] lg:w-[320px] h-[1px] bg-text-light"></span>
@@ -19,11 +19,11 @@ export const LabTests = () => {
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
             <span className="2xl:w-[540px] xl:w-[430px] lg:w-[320px] h-[1px] bg-text-light"></span>
         </div>
-        <div style={divStyle} className="absolute w-screen xl:h-[27em] lg:h-[24em] flex flex-row justify-center top-[17em]">
+        <div style={divStyle} className="absolute w-screen 2xl:h-[27em] xl:h-[25em] lg:h-[21em] flex flex-row justify-center xl:top-[17em] lg:top-[15em]">
             <div className="absolute flex flex-row top-12">
-                <img src="./LabTestCard.svg" className="w-[27em]"/>
-                <img src="./LabTestCard.svg" className="w-[27em]"/>
-                <img src="./LabTestCard.svg" className="w-[27em]"/>
+                <img src="./LabTestCard.svg" className="2xl:w-[27em] xl:w-[24em] lg:w-[19em]"/>
+                <img src="./LabTestCard.svg" className="2xl:w-[27em] xl:w-[24em] lg:w-[19em]"/>
+                <img src="./LabTestCard.svg" className="2xl:w-[27em] xl:w-[24em] lg:w-[19em]"/>
             </div>
 
             <div className="
@@ -33,8 +33,8 @@ export const LabTests = () => {
             justify-center 
             gap-x-10 
             2xl:top-[22em] 
-            xl:top-[27em] 
-            lg:top-[25em]"
+            xl:top-[19.5em] 
+            lg:top-[16.5em]"
         >
             <button className="
                 lg:w-[12em] 
