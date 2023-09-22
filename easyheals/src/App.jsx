@@ -62,9 +62,6 @@ function App() {
      <div>
       <Footer/>
      </div>
-     {/* <div className="mt-[10em]">
-      <YeahBoi/>
-     </div> */}
     </>
   )
 }
