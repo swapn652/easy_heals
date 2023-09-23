@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from "react-slick";
+import axios from 'axios';
+import { useAuth } from './AuthContext';
+import { TreatmentBySymptomsCard } from './TreatmentBySymptomsCard';
 
 export const TreatmentBySpeciality = () => {
     const divStyle = {
@@ -10,7 +13,7 @@ export const TreatmentBySpeciality = () => {
 
       const CustomPrevArrow = ({ onClick }) => (
         <div
-          className="cursor-pointer custom-arrow prev absolute xl:-left-10 lg:-left-8 xl:top-16 lg:top-12 lg:w-[1.7em] xl:w-[2em]"
+          className="cursor-pointer custom-arrow prev absolute xl:-left-10 lg:-left-8 2xl:top-16 xl:top-12 lg:top-10 lg:w-[1.7em] xl:w-[2em]"
           onClick={onClick}
         >
           <img src="./navigation_left.svg"/>
@@ -20,7 +23,7 @@ export const TreatmentBySpeciality = () => {
       // Custom next arrow component with custom styling
       const CustomNextArrow = ({ onClick }) => (
         <div
-          className="cursor-pointer custom-arrow next absolute xl:-right-8 lg:-right-8 xl:top-16 lg:top-12 lg:w-[1.7em] xl:w-[2em]"
+          className="cursor-pointer custom-arrow next absolute xl:-right-8 lg:-right-8 2xl:top-16 xl:top-12 lg:top-10 lg:w-[1.7em] xl:w-[2em]"
           onClick={onClick}
         >
            <img src="./navigation_right.svg"/>
@@ -35,6 +38,29 @@ export const TreatmentBySpeciality = () => {
       prevArrow: <CustomPrevArrow />, // Custom previous arrow component
       nextArrow: <CustomNextArrow />, // Custom next arrow component
     };
+
+  const bearerToken = useAuth();
+  const [specialities, setSpecialities] = useState([]);
+
+  useEffect(() => {
+    const apiUrl = 'https://api.development.easyheals.com/lookups/specialities';
+
+    // Use the bearerToken obtained from useAuth to make the request
+    axios
+      .get(apiUrl, {
+        headers: {
+          Authorization: `Bearer ${bearerToken}`,
+        },
+      })
+      .then((response) => {
+        const data = response.data.data.filter((item) => item.image !== null && item.title.length <= 10);
+        setSpecialities(data);
+      })
+      .catch((error) => {
+        console.error('Error fetching specialities:', error);
+      });
+  }, [bearerToken]); // Include bearerToken in the dependency array
+    
 
   return (
     <div style={divStyle} className="relative w-screen 2xl:h-[30em] xl:h-[28em] lg:h-[24em] flex justify-center">
@@ -67,32 +93,17 @@ export const TreatmentBySpeciality = () => {
  
         {/* Carousel */}
         <div className="xl:h-[9em] lg:h-[8em] w-[80vw] absolute xl:top-[4.5em] lg:top-16">
-        <Slider {...settings} className="">
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/headache.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
-            </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/acne.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
-            </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/fever.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
-            </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/cough.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
-            </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/gum_pain.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
-            </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/anxiety.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
-            </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/back_pain.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
-            </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./symptoms/headache.svg" className="2xl:w-[11em] xl:w-[10em] lg:w-[8em] cursor-pointer"/>
-            </div>
-          </Slider>
+          <Slider {...settings} className="m-4">
+              {specialities.map((speciality) => (
+                      <div key={speciality.id} className="ml-4">
+                        {/* Pass the symptom data to the TreatmentBySymptomsCard component */}
+                        <TreatmentBySymptomsCard
+                          imageSrc={speciality.image}
+                          title={speciality.title}
+                        />
+                    </div>
+                  ))}
+            </Slider>
         </div>
 
         {/* Button */}

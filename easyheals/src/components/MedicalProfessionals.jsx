@@ -1,5 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
+import { MedicalProfessionalsCard } from './MedicalProfessionalsCard';
+import { useAuth } from './AuthContext';
+import axios from 'axios';
 
 export const MedicalProfessionals = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -35,6 +38,33 @@ export const MedicalProfessionals = () => {
       beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex), // Update the current slide
     };
   
+    const bearerToken = useAuth();
+  const [doctors, setDoctors] = useState([]);
+
+  useEffect(() => {
+    const apiUrl = 'https://api.development.easyheals.com/Search/featuredDoctors';
+
+    axios
+      .get(apiUrl, {
+        headers: {
+          Authorization: `Bearer ${bearerToken}`,
+        },
+      })
+      .then((response) => {
+        const data = response.data.data;
+        const doctorInfo = data.map((doctor) => ({
+          title: doctor.title,
+          imageSrc: doctor.image,
+          department: doctor.specialities && doctor.specialities.length > 0
+            ? doctor.specialities[0].title
+            : 'Unknown', // Get the first specialization or use 'Unknown'
+        }));
+        setDoctors(doctorInfo);
+      })
+      .catch((error) => {
+        console.error('Error fetching featured doctors:', error);
+      });
+  }, [bearerToken]);
 
   return (
     // Parent Container, made flex row to align text on left and doctors carousel on right
@@ -116,19 +146,23 @@ export const MedicalProfessionals = () => {
         </div>
 
         <div className="absolute xl:right-[5em] lg:right-[4em] 2xl:top-[10em] xl:top-[9em] lg:top-[7em] 2xl:w-[45em] xl:w-[40em] lg:w-[33em]">
-            <Slider {...settings} className="grid-cols-2 grid-rows-4">
-            {[0, 1, 2, 3].map((index) => (
-                <div
-                key={index}
-                className={`w-[10em] ${
-                    index === currentSlide ? 'scale-100' : 'scale-90'
-                } transition-transform duration-300 ease-in-out`}
-                >
-                <img src="./doc.svg" className="w-full" />
-                </div>
-            ))}
-            </Slider>
-        </div>
+        <Slider {...settings} className="">
+          {doctors.map((doctor, index) => (
+            <div
+              key={index}
+              className={`w-[10em] ${
+                index === currentSlide ? 'scale-100' : 'scale-90'
+              } transition-transform duration-300 ease-in-out`}
+            >
+              <MedicalProfessionalsCard
+                imageSrc={doctor.imageSrc}
+                name={doctor.title}
+                specialization={doctor.department}
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   )
 }

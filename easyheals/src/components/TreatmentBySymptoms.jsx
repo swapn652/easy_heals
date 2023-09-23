@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Slider from "react-slick";
 import { TreatmentBySymptomsCard } from './TreatmentBySymptomsCard';
 import axios from 'axios';
+import { useAuth } from './AuthContext';
 
 export const TreatmentBySymptoms = () => {
    // Custom prev arrow component with custom styling
@@ -34,40 +35,28 @@ export const TreatmentBySymptoms = () => {
     nextArrow: <CustomNextArrow />, // Custom next arrow component
   };
 
+  const bearerToken = useAuth();
   const [symptoms, setSymptoms] = useState([]);
-  const [bearerToken, setBearerToken] = useState('');
 
   useEffect(() => {
     const apiUrl = 'https://api.development.easyheals.com/lookups/symptoms';
-    const tokenUrl = 'http://localhost:8080/auth-token';
 
+    // Use the bearerToken obtained from useAuth to make the request
     axios
-      .get(tokenUrl)
+      .get(apiUrl, {
+        headers: {
+          Authorization: `Bearer ${bearerToken}`,
+        },
+      })
       .then((response) => {
-        const newToken = response.data;
-        setBearerToken(newToken);
-        // console.log("Bearer token: ", newToken)
-
-        // Use the obtained token to fetch symptom data
-        const apiUrl = 'https://api.development.easyheals.com/lookups/symptoms';
-        axios
-          .get(apiUrl, {
-            headers: {
-              Authorization: `Bearer ${newToken}`,
-            },
-          })
-          .then((response) => {
-            const data = response.data.data.filter((item) => item.image !== null && item.title.length <= 10);
-            setSymptoms(data);
-          })
-          .catch((error) => {
-            console.error('Error fetching data:', error);
-          });
+        const data = response.data.data.filter((item) => item.image !== null && item.title.length <= 10);
+        setSymptoms(data);
       })
       .catch((error) => {
-        console.error('Error fetching bearer token:', error);
+        console.error('Error fetching data:', error);
       });
-  }, []);
+  }, [bearerToken]); // Include bearerToken in the dependency array
+
 
 
   return (

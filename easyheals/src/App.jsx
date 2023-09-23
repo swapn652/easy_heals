@@ -16,11 +16,12 @@ import { LabTests } from './components/LabTests'
 import { TopHospitals } from './components/TopHospitals'
 import { DownloadApp } from './components/DownloadApp'
 import { Footer } from './components/Footer'
-
+import { AuthProvider } from "./components/AuthContext";
 
 function App() {
   return (
     <>
+    <AuthProvider>
      <Navbar/>
      <div className="hidden md:block">
       <MainSection/>
@@ -61,6 +62,7 @@ function App() {
      <div>
       <Footer/>
      </div>
+    </AuthProvider>
     </>
   )
 }
