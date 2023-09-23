@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from "react-slick";
+import { TreatmentByDiseasesCard } from './TreatmentByDiseasesCard';
+import { useAuth } from '../AuthContext';
+import axios from 'axios';
 
 export const TreatmentByDiseases = () => {
 
       // Custom prev arrow component with custom styling
   const CustomPrevArrow = ({ onClick }) => (
     <div
-      className="custom-arrow prev absolute lg:-left-16 2xl:top-28 xl:top-[5.3em] lg:top-[4em] lg:w-[1.7em] xl:w-[2em]"
+      className="custom-arrow prev absolute 2xl:-left-20 xl:-left-14 lg:-left-14 2xl:top-28 xl:top-[6.4em] lg:top-[5.8em] lg:w-[1.7em] xl:w-[2em]"
       onClick={onClick}
     >
       <img src="./navigation_left.svg"/>
@@ -16,7 +19,7 @@ export const TreatmentByDiseases = () => {
   // Custom next arrow component with custom styling
   const CustomNextArrow = ({ onClick }) => (
     <div
-      className="custom-arrow next absolute lg:-right-16 2xl:top-28 xl:top-[5.3em] lg:top-[4em] lg:w-[1.7em] xl:w-[2em]"
+      className="custom-arrow next absolute 2xl:-right-16 xl:-right-12 lg:-right-10 2xl:top-28 xl:top-[6.4em] lg:top-[5.8em] lg:w-[1.7em] xl:w-[2em]"
       onClick={onClick}
     >
        <img src="./navigation_right.svg"/>
@@ -35,6 +38,43 @@ export const TreatmentByDiseases = () => {
 
     };
 
+    const bearerToken = useAuth();
+    const [problems, setProblems] = useState([]);
+
+    useEffect(() => {
+      const apiUrl = 'https://api.development.easyheals.com/lookups/problems';
+    
+      // Use the bearerToken obtained from useAuth to make the request
+      axios
+        .get(apiUrl, {
+          headers: {
+            Authorization: `Bearer ${bearerToken}`,
+          },
+        })
+        .then((response) => {
+          const data = response.data.data
+            .filter((item) => item.image !== null) // Filter out items with null images
+            .map((item) => {
+              // Filter out items with title length > 15
+              if (item.title.length > 25) {
+                return { ...item, title: item.title.slice(0, 25) + '...' };
+              }
+    
+              // Truncate description to 50 characters and add "..." if it's longer
+              if (item.short_description.length > 100) {
+                return { ...item, short_description: item.short_description.slice(0, 100) + '...' };
+              }
+    
+              return item;
+            });
+          setProblems(data);
+        })
+        .catch((error) => {
+          console.error('Error fetching problems:', error);
+        });
+    }, [bearerToken]);
+    
+
   return (
     <div className="relative w-screen 2xl:h-[28em] xl:h-[23em] lg:h-[17em] flex justify-center font-[Raleway]">
         {/* Heading */}
@@ -48,35 +88,25 @@ export const TreatmentByDiseases = () => {
             <span className="2xl:w-[460px] xl:w-[430px] lg:w-[320px] h-[1px] bg-text-light"></span>
         </div>
 
+        <img src="./plus_bg_4.svg" className="absolute left-0 2xl:top-4 xl:top-10 lg:top-12 2xl:w-[11em] xl:w-[8em] lg:w-[7em]"/>
+        <img src="./diseases_section_vector.svg" className="absolute left-0 2xl:-top-[25em] xl:-top-[23em] lg:-top-[20em] 2xl:w-[25em] xl:w-[23em] lg:w-[20em]"/>
+
          {/* Carousel */}
-         <div className="2xl:h-[20em] xl:h-[18em] lg:h-[14em] xl:w-[87vw] lg:w-[80vw] absolute 2xl:top-44 xl:top-40 lg:top-36 mx-[4.5em]">
-          <Slider {...settings} className="flex 2xl:ml-4 xl:ml-0">
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./chronic_reflex.svg" className="2xl:w-[26em] xl:w-[23em] lg:w-[21em] cursor-pointer"/>
-            </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./chronic_reflex.svg" className="2xl:w-[26em] xl:w-[23em] lg:w-[21em] cursor-pointer"/>
-            </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./chronic_reflex.svg" className="2xl:w-[26em] xl:w-[23em] lg:w-[21em] cursor-pointer"/>
-            </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./chronic_reflex.svg" className="2xl:w-[26em] xl:w-[23em] lg:w-[21em] cursor-pointer"/>
-            </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./chronic_reflex.svg" className="2xl:w-[26em] xl:w-[23em] lg:w-[21em] cursor-pointer"/>
-            </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./chronic_reflex.svg" className="2xl:w-[26em] xl:w-[23em] lg:w-[21em] cursor-pointer"/>
-            </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./chronic_reflex.svg" className="2xl:w-[26em] xl:w-[23em] lg:w-[21em] cursor-pointer"/>
-            </div>
-            <div className=""> {/* Add a gap between cards */}
-              <img src="./chronic_reflex.svg" className="2xl:w-[26em] xl:w-[23em] lg:w-[21em] cursor-pointer"/>
-            </div>
-          </Slider>
+         {problems.length > 0 && (
+  <div className="2xl:h-[20em] xl:h-[18em] lg:h-[14em] xl:w-[87vw] lg:w-[80vw] absolute 2xl:top-44 xl:top-40 lg:top-36 mx-[4.5em]">
+    <Slider {...settings} className="flex 2xl:ml-6 xl:ml-0">
+      {problems.map((problem) => (
+        <div key={problem.id}>
+          <TreatmentByDiseasesCard
+            imageSrc={problem.image}
+            title={problem.title}
+            description={problem.short_description}
+          />
         </div>
+      ))}
+    </Slider>
+  </div>
+)}
 
         {/* Button */}
         <button className="
@@ -92,9 +122,7 @@ export const TreatmentByDiseases = () => {
             text-buttonColor 
             rounded-lg 
             absolute  
-            2xl:top-[29em] 
-            xl:top-[30em]
-            lg:top-[29em] 
+            lg:top-[30em] 
             flex 
             self-center 
             justify-center 
