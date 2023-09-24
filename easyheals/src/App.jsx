@@ -34,10 +34,10 @@ function App() {
      <div className="xl:mt-28 lg:mt-16 md:mt-12">
       <Issues/>
      </div>
-     {/* <div className="2xl:mt-56 xl:mt-[12em] lg:mt-[10em]">
+     <div className="2xl:mt-56 xl:mt-[12em] lg:mt-[10em] md:mt-[4em]">
       <FeaturedServices/>
      </div>
-     <div>
+     {/* <div>
       <TreatmentBySymptoms/>
      </div>
      <div>

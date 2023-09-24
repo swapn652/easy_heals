@@ -36,6 +36,8 @@ responsive: [
       slidesToShow: 2,
       slidesToScroll: 1,
       infinite: true,
+      prevArrow: null, // Custom previous arrow component
+      nextArrow: null // Custom next arrow component
     }
   }
 ]
@@ -43,18 +45,18 @@ responsive: [
 
   return (
       <div>
-        <Slider {...settings} className="flex mx-20 mr-24">
+        <Slider {...settings} className="flex mx-20">
           <div className="mx-2"> {/* Add a gap between cards */}
-            <img src="./issues/acne.svg" className=" 2xl:w-[26em] xl:w-[22em] lg:w-[17em] md:w-[18em] cursor-pointer"/>
+            <img src="./issues/acne.svg" className=" 2xl:w-[26em] xl:w-[22em] lg:w-[17em] md:w-[18.5em] cursor-pointer"/>
           </div>
           <div className="mx-2"> {/* Add a gap between cards */}
-            <img src="./issues/men_health.svg" className="2xl:w-[26em] xl:w-[22em] lg:w-[17em] md:w-[18em] cursor-pointer"/>
+            <img src="./issues/men_health.svg" className="2xl:w-[26em] xl:w-[22em] lg:w-[17em] md:w-[18.5em] cursor-pointer"/>
           </div>
           <div className="mx-2"> {/* Add a gap between cards */}
-            <img src="./issues/acne.svg" className="2xl:w-[26em] xl:w-[22em] lg:w-[17em] md:w-[18em] cursor-pointer"/>
+            <img src="./issues/acne.svg" className="2xl:w-[26em] xl:w-[22em] lg:w-[17em] md:w-[18.5em] cursor-pointer"/>
           </div>
           <div className="mx-2"> {/* Add a gap between cards */}
-            <img src="./issues/men_health.svg" className="2xl:w-[26em] xl:w-[22em] lg:w-[17em] md:w-[18em] cursor-pointer"/>
+            <img src="./issues/men_health.svg" className="2xl:w-[26em] xl:w-[22em] lg:w-[17em] md:w-[18.gem] cursor-pointer"/>
           </div>
         </Slider>
       </div>

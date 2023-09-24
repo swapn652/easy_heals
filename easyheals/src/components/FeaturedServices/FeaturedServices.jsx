@@ -36,6 +36,18 @@ const settings = {
   slidesToScroll: 1,
   prevArrow: <CustomPrevArrow />, // Custom previous arrow component
   nextArrow: <CustomNextArrow />, // Custom next arrow component
+  responsive: [
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        prevArrow: null, // Custom previous arrow component
+        nextArrow: null, // Custom next arrow component
+      }
+    },
+  ]
 };
 
 
@@ -49,27 +61,29 @@ const settings = {
             2xl:-top-[14em] 
             xl:-top-[12.3em] 
             lg:-top-[10.6em] 
+            md:-top-[6em]
             2xl:w-52 
             xl:w-44 
-            lg:w-36"
+            lg:w-36
+            md:w-24"
         />
       <div 
         style={{boxShadow: "0px 4px 40px 0px #60606040"}} 
         className="w-[90vw] 2xl:h-[35em] xl:h-[31em] lg:h-[26em] bg-white absolute -top-12 flex flex-col"
       >
         {/* Heading */}
-        <div className="absolute top-10 flex items-center justify-center">
-            <span className="2xl:w-[491.6px] xl:w-[436.8px] lg:w-[326px] h-[1px] bg-text-light"></span>
+        <div className="absolute top-10 flex items-center justify-center md:ml-2 lg:ml-0">
+            <span className="2xl:w-[491.6px] xl:w-[428px] lg:w-[326px] md:w-[25vw] h-[1px] bg-text-light"></span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-            <span className="px-4 font-Poppins font-semibold 2xl:text-[27px] xl:text-[23px] lg:text-[22px] mx-2">
+            <span className="px-4 font-Poppins font-semibold 2xl:text-[27px] xl:text-[23px] md:text-[22px] mx-2">
                 Featured Services
             </span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-            <span className="2xl:w-[491.6px] xl:w-[436.8px] lg:w-[326px] h-[1px] bg-text-light"></span>
+            <span className="2xl:w-[491.6px] xl:w-[428px] lg:w-[326px] md:w-[28vw] h-[1px] bg-text-light"></span>
         </div>
 
         {/* Carousel */}
-        <div className="2xl:h-[20em] xl:h-[18em] lg:h-[14em] w-[80vw] absolute xl:top-32 lg:top-28 mx-[4.5em]">
+        <div className="2xl:h-[20em] xl:h-[18em] lg:h-[14em] w-[80vw] absolute xl:top-32 lg:top-28 md:top-24 lg:mx-[4.5em] md:mx-[2em]">
           <Slider {...settings} className="flex 2xl:ml-4 xl:ml-0 lg:-ml-6">
             <div className=""> {/* Add a gap between cards */}
               <img src="./featured_services/chemotherapy.svg" className="2xl:w-[17em] xl:w-[15em] lg:w-[12em] cursor-pointer"/>
@@ -98,12 +112,13 @@ const settings = {
         {/* Button */}
         <button className="
             lg:w-[14em] 
+            md:w-[12em]
             h-[3em] 
             border-2 
             border-buttonColor 
             2xl:text-[16px] 
             xl:text-[14px] 
-            lg:text-[12px] 
+            md:text-[12px]
             font-[Poppins] 
             font-[700] 
             text-buttonColor 
@@ -111,7 +126,7 @@ const settings = {
             absolute 
             2xl:top-[29em] 
             xl:top-[30em] 
-            lg:top-[29em] 
+            md:top-[29em]
             flex 
             self-center 
             justify-center 
