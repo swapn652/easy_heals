@@ -1,5 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
+import { useAuth } from '../AuthContext';
+import axios from 'axios';
+import { HospitalCard } from './HospitalCard';
 
 export const TopHospitals = () => {
 
@@ -8,7 +11,7 @@ export const TopHospitals = () => {
     // Custom prev arrow component with custom styling
     const CustomPrevArrow = ({ onClick }) => (
       <div
-        className="cursor-pointer custom-arrow prev absolute xl:-left-10 lg:-left-8 2xl:top-32 xl:top-24 lg:top-20 lg:w-[1.7em] xl:w-[2em]"
+        className="cursor-pointer custom-arrow prev absolute xl:-left-12 lg:-left-[2.2em] 2xl:top-32 xl:top-24 lg:top-20 lg:w-[1.7em] xl:w-[2em]"
         onClick={onClick}
       >
         <img src="./navigation_left.svg" />
@@ -35,6 +38,45 @@ export const TopHospitals = () => {
       nextArrow: <CustomNextArrow />, // Custom next arrow component
       beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex), // Update the current slide
     };
+
+    // Function to extract the second and third last terms from the address
+    // Did because the address was too long so took the name of main area and city
+    const extractAddress = (address) => {
+      const addressTerms = address.split(',').map((term) => term.trim());
+      if (addressTerms.length >= 3) {
+        return addressTerms[1] + ', ' + addressTerms[addressTerms.length - 3];
+      }
+      return address;
+    };
+
+    const bearerToken = useAuth();
+    const [hospitals, setHospitals] = useState([]);
+    
+    useEffect(() => {
+      const apiUrl = 'https://api.development.easyheals.com/Search/featuredHospitals';
+    
+      axios
+        .get(apiUrl, {
+          headers: {
+            Authorization: `Bearer ${bearerToken}`,
+          },
+        })
+        .then((response) => {
+          const data = response.data.data.filter((hospital) => hospital.title && hospital.title.length <= 30)  // Filter out hospitals with names > 25 characters
+          .map((hospital) => ({ 
+            name: hospital.title,
+            imageSrc: hospital.image,
+            address: extractAddress(hospital.address),
+          }))
+          .filter((hospital) => hospital.address && hospital.address.length <= 50); // Filter out hospitals with missing or > 25 characters address
+
+          console.log(data)
+          setHospitals(data);
+        })
+        .catch((error) => {
+          console.error('Error fetching featured hospitals:', error);
+        });
+    }, [bearerToken]);
 
   return (
     <div className="relative w-screen 2xl:h-[40.5em] xl:h-[40em] lg:h-[30em] flex justify-center flex-row font-[Raleway]">
@@ -87,20 +129,26 @@ export const TopHospitals = () => {
 
         <div className="w-[90vw] h-[0.5px] bg-text-light absolute xl:bottom-[8em] lg:bottom-[6em]"></div>
 
-        <div className="absolute xl:left-[5em] lg:left-[4em] 2xl:top-[11em] xl:top-[10.5em] lg:top-[7.5em] 2xl:w-[45em] xl:w-[40em] lg:w-[33em]">
-            <Slider {...settings} className="">
-            {[0, 1, 2, 3].map((index) => (
+        <div className="z-10 absolute xl:left-[5em] lg:left-[4em] 2xl:top-[11em] xl:top-[10.5em] lg:top-[7.5em] 2xl:w-[45em] xl:w-[40em] lg:w-[33em]">
+          <Slider {...settings} className="">
+              {hospitals.map((hospital, index) => (
                 <div
-                key={index}
-                className={`w-[10em] ${
+                  key={index}
+                  className={`w-[10em] ${
                     index === currentSlide ? 'scale-100' : 'scale-90'
-                } transition-transform duration-300 ease-in-out`}
+                  } transition-transform duration-300 ease-in-out`}
                 >
-                <img src="./doc.svg" className="w-full" />
+                  <HospitalCard
+                    imageSrc={hospital.imageSrc}
+                    name={hospital.name}
+                    address={hospital.address}
+                  />
                 </div>
-            ))}
+              ))}
             </Slider>
         </div>
+
+        <img src="./hospitals_vector.svg" className="absolute left-0"/>
     </div>
   )
 }

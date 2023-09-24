@@ -8,7 +8,7 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     // Fetch the bearer token when the component mounts
-    const tokenUrl = 'http://localhost:8080/auth-token';
+    const tokenUrl = 'https://easyheals-website-middleware.azurewebsites.net/';
 
     axios
       .get(tokenUrl)

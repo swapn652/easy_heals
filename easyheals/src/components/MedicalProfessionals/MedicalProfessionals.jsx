@@ -10,7 +10,7 @@ export const MedicalProfessionals = () => {
     // Custom prev arrow component with custom styling
     const CustomPrevArrow = ({ onClick }) => (
       <div
-        className="cursor-pointer custom-arrow prev absolute xl:-left-10 lg:-left-8 2xl:top-32 xl:top-24 lg:top-20 lg:w-[1.7em] xl:w-[2em]"
+        className="cursor-pointer custom-arrow prev absolute xl:-left-10 lg:-left-[2.2em] 2xl:top-36 xl:top-28 lg:top-20 lg:w-[1.7em] xl:w-[2em]"
         onClick={onClick}
       >
         <img src="./navigation_left.svg" />
@@ -20,7 +20,7 @@ export const MedicalProfessionals = () => {
     // Custom next arrow component with custom styling
     const CustomNextArrow = ({ onClick }) => (
       <div
-        className="cursor-pointer custom-arrow next absolute xl:-right-8 lg:-right-[1.7em] 2xl:top-32 xl:top-24 lg:top-20 lg:w-[1.7em] xl:w-[2em]"
+        className="cursor-pointer custom-arrow next absolute xl:-right-8 lg:-right-[1.7em] 2xl:top-36 xl:top-28 lg:top-20 lg:w-[1.7em] xl:w-[2em]"
         onClick={onClick}
       >
         <img src="./navigation_right.svg" />
@@ -38,7 +38,7 @@ export const MedicalProfessionals = () => {
       beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex), // Update the current slide
     };
   
-    const bearerToken = useAuth();
+  const bearerToken = useAuth();
   const [doctors, setDoctors] = useState([]);
 
   useEffect(() => {
@@ -145,24 +145,27 @@ export const MedicalProfessionals = () => {
             </button>
         </div>
 
-        <div className="absolute xl:right-[5em] lg:right-[4em] 2xl:top-[10em] xl:top-[9em] lg:top-[7em] 2xl:w-[45em] xl:w-[40em] lg:w-[33em]">
-        <Slider {...settings} className="">
-          {doctors.map((doctor, index) => (
-            <div
-              key={index}
-              className={`w-[10em] ${
-                index === currentSlide ? 'scale-100' : 'scale-90'
-              } transition-transform duration-300 ease-in-out`}
-            >
-              <MedicalProfessionalsCard
-                imageSrc={doctor.imageSrc}
-                name={doctor.title}
-                specialization={doctor.department}
-              />
-            </div>
-          ))}
-        </Slider>
-      </div>
+        <div className="z-10 absolute xl:right-[5em] lg:right-[4em] 2xl:top-[10em] xl:top-[9em] lg:top-[7em] 2xl:w-[45em] xl:w-[40em] lg:w-[33em]">
+          <Slider {...settings} className="">
+            {doctors.map((doctor, index) => (
+              <div
+                key={index}
+                className={`w-[10em] ${
+                  index === currentSlide ? 'scale-100' : 'scale-90'
+                } transition-transform duration-300 ease-in-out`}
+              >
+                <MedicalProfessionalsCard
+                  imageSrc={doctor.imageSrc}
+                  name={doctor.title}
+                  specialization={doctor.department}
+                />
+              </div>
+            ))}
+          </Slider>
+        </div>
+
+        <img src="./dotted.svg" className="2xl:w-[15em] xl:w-[12em] lg:w-[10em] absolute 2xl:top-28 xl:top-[7em] lg:top-[5em] 2xl:left-[35em] xl:left-[32em] lg:left-[26em]"/>
+        <img src="./doctors_bg.svg" className="2xl:w-[47em] xl:w-[42em] lg:w-[34em] absolute 2xl:top-[15em] xl:top-[13em] lg:top-[10.5em] right-0"/>
     </div>
   )
 }

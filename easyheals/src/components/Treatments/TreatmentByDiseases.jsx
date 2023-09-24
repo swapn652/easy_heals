@@ -9,7 +9,7 @@ export const TreatmentByDiseases = () => {
       // Custom prev arrow component with custom styling
   const CustomPrevArrow = ({ onClick }) => (
     <div
-      className="custom-arrow prev absolute 2xl:-left-20 xl:-left-14 lg:-left-14 2xl:top-28 xl:top-[6.4em] lg:top-[5.8em] lg:w-[1.7em] xl:w-[2em]"
+      className="cursor-pointer custom-arrow prev absolute 2xl:-left-20 xl:-left-14 lg:-left-14 2xl:top-28 xl:top-[6.4em] lg:top-[5.8em] lg:w-[1.7em] xl:w-[2em]"
       onClick={onClick}
     >
       <img src="./navigation_left.svg"/>
@@ -19,7 +19,7 @@ export const TreatmentByDiseases = () => {
   // Custom next arrow component with custom styling
   const CustomNextArrow = ({ onClick }) => (
     <div
-      className="custom-arrow next absolute 2xl:-right-16 xl:-right-12 lg:-right-10 2xl:top-28 xl:top-[6.4em] lg:top-[5.8em] lg:w-[1.7em] xl:w-[2em]"
+      className="cursor-pointer custom-arrow next absolute 2xl:-right-16 xl:-right-12 lg:-right-10 2xl:top-28 xl:top-[6.4em] lg:top-[5.8em] lg:w-[1.7em] xl:w-[2em]"
       onClick={onClick}
     >
        <img src="./navigation_right.svg"/>
@@ -81,7 +81,7 @@ export const TreatmentByDiseases = () => {
         <div className="flex items-center justify-center absolute top-20">
             <span className="2xl:w-[460px] xl:w-[430px] lg:w-[320px] h-[1px] bg-text-light"></span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-            <span className="px-4 font-Poppins font-semibold 2xl:text-[27px] xl:text-[23px] lg:text-[22px] mx-2">
+            <span className="px-4 font-Poppins font-[700] 2xl:text-[27px] xl:text-[23px] lg:text-[22px] mx-2">
                 Treatment By Diseases
             </span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
@@ -126,7 +126,8 @@ export const TreatmentByDiseases = () => {
             flex 
             self-center 
             justify-center 
-            items-center"
+            items-center
+            cursor-pointer"
         >
             View all Diseases
         </button>
