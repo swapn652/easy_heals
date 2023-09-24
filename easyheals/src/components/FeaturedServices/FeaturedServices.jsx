@@ -111,8 +111,7 @@ const settings = {
 
         {/* Button */}
         <button className="
-            lg:w-[14em] 
-            md:w-[12em]
+            md:w-[14em] 
             h-[3em] 
             border-2 
             border-buttonColor 

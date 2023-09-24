@@ -56,7 +56,7 @@ responsive: [
             <img src="./issues/acne.svg" className="2xl:w-[26em] xl:w-[22em] lg:w-[17em] md:w-[18.5em] cursor-pointer"/>
           </div>
           <div className="mx-2"> {/* Add a gap between cards */}
-            <img src="./issues/men_health.svg" className="2xl:w-[26em] xl:w-[22em] lg:w-[17em] md:w-[18.gem] cursor-pointer"/>
+            <img src="./issues/men_health.svg" className="2xl:w-[26em] xl:w-[22em] lg:w-[17em] md:w-[18.5em] cursor-pointer"/>
           </div>
         </Slider>
       </div>

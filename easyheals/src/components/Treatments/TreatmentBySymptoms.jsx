@@ -33,6 +33,19 @@ export const TreatmentBySymptoms = () => {
     slidesToScroll: 1,
     prevArrow: <CustomPrevArrow />, // Custom previous arrow component
     nextArrow: <CustomNextArrow />, // Custom next arrow component
+    responsive: [
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          infinite: true,
+          centerMode: true,
+          prevArrow: null,
+          nextArrow: null
+        }
+      }
+    ]
   };
 
   const bearerToken = useAuth();
@@ -60,20 +73,20 @@ export const TreatmentBySymptoms = () => {
 
 
   return (
-    <div className="relative w-screen 2xl:h-[40em] xl:h-[38em] lg:h-[34em] flex justify-center">
+    <div className="relative w-screen 2xl:h-[39em] xl:h-[35em] lg:h-[30em] md:h-[21em] flex justify-center">
         {/* Heading */}
         <div className="flex items-center justify-center absolute top-20">
-            <span className="2xl:w-[460px] xl:w-[430px] lg:w-[320px] h-[1px] bg-text-light"></span>
+            <span className="2xl:w-[460px] xl:w-[430px] lg:w-[320px] md:w-[23vw] h-[1px] bg-text-light"></span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-            <span className="px-4 font-Poppins font-semibold 2xl:text-[27px] xl:text-[23px] lg:text-[22px] mx-2">
+            <span className="px-4 font-Poppins font-semibold 2xl:text-[27px] xl:text-[23px] md:text-[22px] mx-2">
                 Treatment By Symptoms
             </span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-            <span className="2xl:w-[460px] xl:w-[430px] lg:w-[320px] h-[1px] bg-text-light"></span>
+            <span className="2xl:w-[460px] xl:w-[430px] lg:w-[320px] md:w-[23vw] h-[1px] bg-text-light"></span>
         </div>
 
         {/* Carousel */}
-        <div className="2xl:h-[20em] xl:h-[18em] lg:h-[14em] w-[90vw] absolute xl:top-40 lg:top-36">
+        <div className="2xl:h-[20em] xl:h-[18em] lg:h-[14em] w-[90vw] absolute xl:top-40 lg:top-36 md:top-32">
           <Slider {...settings} className="">
             {symptoms.map((symptom) => (
                     <div key={symptom.id} className="m-4">
@@ -95,17 +108,19 @@ export const TreatmentBySymptoms = () => {
             justify-center 
             gap-x-10 
             2xl:top-[26em] 
-            xl:top-[24.5em] 
-            lg:top-[21em]"
+            xl:top-[23.5em] 
+            lg:top-[20em]
+            md:top-[19.5em]"
         >
             <button className="
-                lg:w-[14em] 
+                md:w-[14em] 
                 h-[3em] 
                 bg-buttonColor 
                 text-white 
                 2xl:text-[16px] 
                 xl:text-[14px] 
                 lg:text-[12px] 
+                md:text-[13px]
                 font-[Poppins] 
                 font-[700] 
                 rounded-lg 
@@ -117,12 +132,13 @@ export const TreatmentBySymptoms = () => {
             </button>
 
             <button className="
-                lg:w-[14em] 
+                md:w-[14em]
                 h-[3em] border-2 
                 border-buttonColor 
                 2xl:text-[16px] 
                 xl:text-[14px] 
                 lg:text-[12px] 
+                md:text-[13px]
                 font-[Poppins] 
                 font-[700] 
                 text-buttonColor 

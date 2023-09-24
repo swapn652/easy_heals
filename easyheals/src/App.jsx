@@ -16,6 +16,7 @@ import { TopHospitals } from './components/MedicalProfessionals/TopHospitals'
 import { DownloadApp } from './components/DownloadApp'
 import { Footer } from './components/Footer'
 import { AuthProvider } from "./components/AuthContext";
+import { TreatmentBySpecialityMediumScreen } from "./components/Treatments/TreatmentBySpecialityMediumScreen";
 
 function App() {
   return (
@@ -37,13 +38,16 @@ function App() {
      <div className="2xl:mt-56 xl:mt-[12em] lg:mt-[10em] md:mt-[4em]">
       <FeaturedServices/>
      </div>
-     {/* <div>
+     <div className="lg:mt-0 md:mt-[20em]">
       <TreatmentBySymptoms/>
      </div>
-     <div>
+     <div className="md:hidden lg:block">
       <TreatmentBySpeciality/>
      </div>
-     <div>
+     <div className="md:block lg:hidden">
+      <TreatmentBySpecialityMediumScreen/>
+     </div>
+     {/* <div>
       <MedicalProfessionals/>
      </div>
      <div>
