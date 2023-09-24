@@ -37,7 +37,8 @@ module.exports = withMT({
     },
     screens: {
       'sm': '320px',
-      'md': '768px',
+      'md': '768px', //iPad Mini
+      '2md': '820px', //iPad Air
       'lg': '1024px',
       'xl': '1280px',
       '2xl': '1440px',
