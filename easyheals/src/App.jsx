@@ -31,7 +31,7 @@ function App() {
      <div className="2xl:mt-[10em] xl:mt-[10em] lg:mt-[9em] md:mt-[8em]">
       <Partners/>
      </div>
-     <div className="xl:mt-28 lg:mt-16">
+     {/* <div className="xl:mt-28 lg:mt-16">
       <Issues/>
      </div>
      <div className="2xl:mt-56 xl:mt-[12em] lg:mt-[10em]">
@@ -60,7 +60,7 @@ function App() {
      </div>
      <div>
       <Footer/>
-     </div>
+     </div> */}
     </AuthProvider>
     </>
   )

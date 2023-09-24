@@ -15,12 +15,12 @@ export const Partners = () => {
         </div>
 
         {/* Partners logos */}
-        <div className="flex flex-row justify-between xl:mx-36 lg:mx-24 xl:mt-10 lg:mt-6">
-            <img src="./partners/ruby.svg" alt="Ruby Hall Clinic" className="xl:w-48 lg:w-36" />
-            <img src="./partners/agarwal.svg" alt="Dr. Agarwals" className="xl:w-44 lg:w-32"/>
-            <img src="./partners/unity.svg" alt="Unity Hospital" className="xl:w-36 lg:w-24"/>
-            <img src="./partners/orion.svg" alt="Orion Hospital" className="xl:w-36 lg:w-20"/>
-            <img src="./partners/sahyadri.svg" alt="Sahyadri Hospitals" className="w-32"/>
+        <div className="flex flex-row justify-between xl:mx-36 lg:mx-24 md:mx-16 xl:mt-10 md:mt-6">
+            <img src="./partners/ruby.svg" alt="Ruby Hall Clinic" className="xl:w-48 lg:w-36 md:w-32" />
+            <img src="./partners/agarwal.svg" alt="Dr. Agarwals" className="xl:w-44 lg:w-32 md:w-28"/>
+            <img src="./partners/unity.svg" alt="Unity Hospital" className="xl:w-36 lg:w-24 md:w-20"/>
+            <img src="./partners/orion.svg" alt="Orion Hospital" className="xl:w-36 lg:w-20 md:w-16"/>
+            <img src="./partners/sahyadri.svg" alt="Sahyadri Hospitals" className="lg:w-32 md:w-24"/>
         </div>
     </div>
   );
