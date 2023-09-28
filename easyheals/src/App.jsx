@@ -19,6 +19,7 @@ import { AuthProvider } from "./components/AuthContext";
 import { TreatmentBySpecialityMediumScreen } from "./components/Treatments/TreatmentBySpecialityMediumScreen";
 import { MedicalProfessionalsMediumScreen } from "./components/MedicalProfessionals/MedicalProfessionalsMediumScreen";
 import { TreatmentByDiseasesMediumScreen } from "./components/Treatments/TreatmentByDiseasesMediumScreen";
+import { LabTestMediumScreen } from "./components/LabTestMediumScreen";
 
 function App() {
   return (
@@ -61,9 +62,12 @@ function App() {
      <div className="block lg:hidden">
       <TreatmentByDiseasesMediumScreen/>
      </div>
-     {/* <div>
+     <div className="hidden lg:block">
       <LabTests/>
-     </div> */}
+     </div>
+     <div className="block lg:hidden">
+      <LabTestMediumScreen/>
+     </div>
      {/* <div>
       <TopHospitals/>
      </div>

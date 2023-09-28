@@ -56,7 +56,7 @@ export const TreatmentByDiseasesMediumScreen = () => {
 
 
   return (
-    <div className="relative flex flex-col">
+    <div className="relative flex flex-col h-[26em]">
         <div className="flex flex-row justify-center items-center">
             <div className="w-[23.5vw] h-[1px] bg-text-light"></div>
             <img src="./plus_icon.svg" />
@@ -78,6 +78,27 @@ export const TreatmentByDiseasesMediumScreen = () => {
                     ))}
             </Slider>
         </div>
+
+        <button className="
+            w-[15em]
+            h-[3em] 
+            border-2 
+            border-buttonColor 
+            md:text-[13px]
+            font-[Poppins] 
+            font-[700] 
+            text-buttonColor 
+            rounded-lg 
+            absolute  
+            top-[25.5em]
+            flex 
+            self-center 
+            justify-center 
+            items-center
+            cursor-pointer"
+        >
+            View all Diseases
+        </button>
     </div>
   )
 }

@@ -14,6 +14,7 @@ export const LabTestCard = ({title, preparation, hospitalName1, hospitalAddress1
             <div className="2xl:w-[25.95em] xl:w-[23.95em] lg:w-[18.95em] h-[1px] bg-text-light absolute 2xl:top-[5em] xl:top-[4.5em] lg:top-[3.2em]"></div>
         </div>
 
+        {/* Information about first Hospital */}
         <div className="flex flex-row h-[3em]">
             <div className="flex flex-col ml-6 2xl:w-[17em] xl:w-[15em] lg:w-[12em]">
                 <div className="flex flex-row items-center">
@@ -42,6 +43,7 @@ export const LabTestCard = ({title, preparation, hospitalName1, hospitalAddress1
             </div>
         </div>
 
+        {/* Information About second hospital */}
         <div className="flex flex-row h-[4em] 2xl:mt-6 xl:mt-4 lg:mt-2">
             <div className="flex flex-col ml-6 2xl:w-[17em] xl:w-[15em] lg:w-[12em]">
                 <div className="flex flex-row items-center">
