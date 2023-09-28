@@ -9,7 +9,7 @@ export const TreatmentByDiseasesMediumScreen = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
         prevArrow: null,
         nextArrow: null,
@@ -36,13 +36,13 @@ export const TreatmentByDiseasesMediumScreen = () => {
             .filter((item) => item.image !== null) // Filter out items with null images
             .map((item) => {
               // Filter out items with title length > 15
-              if (item.title.length > 25) {
-                return { ...item, title: item.title.slice(0, 25) + '...' };
+              if (item.title.length > 20) {
+                return { ...item, title: item.title.slice(0, 20) + '...' };
               }
     
               // Truncate description to 50 characters and add "..." if it's longer
-              if (item.short_description.length > 100) {
-                return { ...item, short_description: item.short_description.slice(0, 100) + '...' };
+              if (item.short_description.length > 50) {
+                return { ...item, short_description: item.short_description.slice(0, 50) + '...' };
               }
     
               return item;

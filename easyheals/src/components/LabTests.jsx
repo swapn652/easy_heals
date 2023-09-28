@@ -76,14 +76,16 @@ export const LabTests = () => {
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
             <span className="2xl:w-[540px] xl:w-[500px] lg:w-[380px] h-[1px] bg-text-light"></span>
         </div>
+        
+        {/* Cards */}
         <div style={divStyle} className="absolute w-screen 2xl:h-[27em] xl:h-[25em] lg:h-[21em] flex flex-row justify-center xl:top-[17em] lg:top-[15em]">
-            <div className="absolute flex flex-row top-12 gap-x-4">
-            {labTests.map((labTest, index) => (
-        <LabTestCard key={index} {...labTest} />
-      ))}
-            </div>
+            {/* <div className="absolute flex flex-row top-12 gap-x-4">
+              {labTests.map((labTest, index) => (
+                <LabTestCard key={index} {...labTest} />
+              ))}
+            </div> */}
 
-            <div className="
+            {/* <div className="
             absolute 
             flex 
             flex-row 
@@ -127,7 +129,7 @@ export const LabTests = () => {
             >
                 Browse Symptoms
             </button>
-        </div>
+        </div> */}
         </div>
     
     </div>

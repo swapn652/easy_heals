@@ -63,8 +63,8 @@ function App() {
      </div>
      {/* <div>
       <LabTests/>
-     </div>
-     <div>
+     </div> */}
+     {/* <div>
       <TopHospitals/>
      </div>
      <div>
