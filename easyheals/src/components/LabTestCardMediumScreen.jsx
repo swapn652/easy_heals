@@ -3,7 +3,7 @@ import React from 'react'
 export const LabTestCardMediumScreen = ({title, preparation, hospitalName1, hospitalAddress1, hospitalPrice1, hospitalOfferPrice1,
     hospitalName2, hospitalAddress2, hospitalPrice2, hospitalOfferPrice2}) => {
   return (
-    <div style={{boxShadow: "0px 2px 10px 0px #60606026"}} className="relative h-[16em] w-[15em] border-[0.1px] border-text-light rounded-lg border-2 border-black">
+    <div style={{boxShadow: "0px 2px 10px 0px #60606026"}} className="relative h-[16em] w-[15em] border-[0.1px] border-text-light rounded-lg">
         <div className="flex flex-col">
             <div className="flex flex-col h-[5em]">
                 <div className="absolute left-4 top-2 font-[700] text-[13px]">
@@ -23,7 +23,7 @@ export const LabTestCardMediumScreen = ({title, preparation, hospitalName1, hosp
                             {hospitalName1}
                         </div>
                         <img src="./star_icon.svg" className="w-[0.8em] ml-2"/>
-                        <div className="text-[10px] text-text-light font-[300] ml-[0.5em] absolute top-[0.2em] left-[12.8em]">
+                        <div className="text-[10px] text-text-light font-[300] ml-[0.5em] mt-[0.2em]">
                             4.0
                         </div>
                     </div>
@@ -33,14 +33,14 @@ export const LabTestCardMediumScreen = ({title, preparation, hospitalName1, hosp
                             {hospitalAddress1}
                         </div>
                     </div>
-                    <div className="flex flex-row absolute top-[8em] items-center left-4">
+                    <div className="flex flex-row absolute top-[14em] text-[9px] items-center left-4">
                         <div className="text-[14px]">
                             ₹{hospitalOfferPrice1}
                         </div>
-                        <div className="line-through text-buttonColor text-[10px] ml-2">
+                        <div className="line-through text-buttonColor text-[8px] ml-2">
                             ₹{hospitalPrice1}
                         </div>
-                        <div className="text-green2 text-[9px] font-[300] ml-12">
+                        <div className="text-green2 text-[9px] font-[300] ml-8">
                             Center Visit Only
                         </div>
                     </div>
@@ -53,7 +53,7 @@ export const LabTestCardMediumScreen = ({title, preparation, hospitalName1, hosp
                             {hospitalName2}
                         </div>
                         <img src="./star_icon.svg" className="w-[0.8em] ml-2"/>
-                        <div className="text-[10px] text-text-light font-[300] ml-[0.5em] absolute top-[0.2em] left-[12.8em]">
+                        <div className="text-[10px] text-text-light font-[300] ml-[0.5em] mt-[0.2em]">
                             4.0
                         </div>
                     </div>
@@ -63,14 +63,14 @@ export const LabTestCardMediumScreen = ({title, preparation, hospitalName1, hosp
                             {hospitalAddress2}
                         </div>
                     </div>
-                    <div className="flex flex-row absolute top-[13.4em] items-center left-4">
+                    <div className="flex flex-row absolute top-[24em] text-[9px] items-center left-4">
                         <div className="text-[14px]">
-                            ₹{hospitalOfferPrice2}
+                            ₹{hospitalOfferPrice1}
                         </div>
-                        <div className="line-through text-buttonColor text-[10px] ml-2">
-                            ₹{hospitalPrice2}
+                        <div className="line-through text-buttonColor text-[8px] ml-2">
+                            ₹{hospitalPrice1}
                         </div>
-                        <div className="text-green2 text-[9px] font-[300] ml-12">
+                        <div className="text-green2 text-[9px] font-[300] ml-8">
                             Center Visit Only
                         </div>
                     </div>

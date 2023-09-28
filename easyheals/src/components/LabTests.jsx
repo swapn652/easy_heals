@@ -87,7 +87,7 @@ export const LabTests = () => {
 
 
 
-            {/* <div className="
+            <div className="
             absolute 
             flex 
             flex-row 
@@ -131,7 +131,7 @@ export const LabTests = () => {
             >
                 Browse Symptoms
             </button>
-        </div> */}
+        </div>
         </div>
     
     </div>
