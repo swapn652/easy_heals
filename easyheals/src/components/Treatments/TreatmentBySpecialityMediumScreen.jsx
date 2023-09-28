@@ -39,7 +39,7 @@ export const TreatmentBySpecialityMediumScreen = () => {
 
 
   return (
-    <div className="relative w-screen flex justify-center">
+    <div className="relative w-screen h-[26em] flex justify-center">
         {/* Heading */}
         <div className="flex items-center justify-center absolute top-20">
             <span className="w-[23vw] h-[1px] bg-text-light"></span>

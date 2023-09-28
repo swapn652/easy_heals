@@ -17,6 +17,8 @@ import { DownloadApp } from './components/DownloadApp'
 import { Footer } from './components/Footer'
 import { AuthProvider } from "./components/AuthContext";
 import { TreatmentBySpecialityMediumScreen } from "./components/Treatments/TreatmentBySpecialityMediumScreen";
+import { MedicalProfessionalsMediumScreen } from "./components/MedicalProfessionals/MedicalProfessionalsMediumScreen";
+import { TreatmentByDiseasesMediumScreen } from "./components/Treatments/TreatmentByDiseasesMediumScreen";
 
 function App() {
   return (
@@ -47,13 +49,19 @@ function App() {
      <div className="md:block lg:hidden">
       <TreatmentBySpecialityMediumScreen/>
      </div>
-     {/* <div>
+     <div className="md:hidden lg:block">
       <MedicalProfessionals/>
      </div>
-     <div>
+     <div className="lg:hidden md:block">
+      <MedicalProfessionalsMediumScreen/>
+     </div>
+     <div className="hidden lg:block">
       <TreatmentByDiseases/>
      </div>
-     <div>
+     <div className="block lg:hidden">
+      <TreatmentByDiseasesMediumScreen/>
+     </div>
+     {/* <div>
       <LabTests/>
      </div>
      <div>

@@ -34,8 +34,7 @@ export const TreatmentByDiseases = () => {
         prevArrow: <CustomPrevArrow />, // Custom previous arrow component
         nextArrow: <CustomNextArrow />, // Custom next arrow component
         rows: 2,
-        itemsPerRow: 2
-
+        itemsPerRow: 2,
     };
 
     const bearerToken = useAuth();
@@ -93,30 +92,32 @@ export const TreatmentByDiseases = () => {
 
          {/* Carousel */}
          {problems.length > 0 && (
-  <div className="2xl:h-[20em] xl:h-[18em] lg:h-[14em] xl:w-[87vw] lg:w-[80vw] absolute 2xl:top-44 xl:top-40 lg:top-36 mx-[4.5em]">
-    <Slider {...settings} className="flex 2xl:ml-6 xl:ml-0">
-      {problems.map((problem) => (
-        <div key={problem.id}>
-          <TreatmentByDiseasesCard
-            imageSrc={problem.image}
-            title={problem.title}
-            description={problem.short_description}
-          />
-        </div>
-      ))}
-    </Slider>
-  </div>
+            <div className="2xl:h-[20em] xl:h-[18em] lg:h-[14em] md:h-[30em] xl:w-[87vw] lg:w-[80vw] absolute 2xl:top-44 xl:top-40 lg:top-36 lg:mx-[4.5em]">
+              <Slider {...settings} className="flex 2xl:ml-6 xl:ml-0">
+                {problems.map((problem) => (
+                  <div key={problem.id}>
+                    <TreatmentByDiseasesCard
+                      imageSrc={problem.image}
+                      title={problem.title}
+                      description={problem.short_description}
+                    />
+                  </div>
+                ))}
+              </Slider>
+            </div>
 )}
 
         {/* Button */}
         <button className="
             lg:w-[14em] 
+            md:w-[15em]
             h-[3em] 
             border-2 
             border-buttonColor 
             2xl:text-[16px] 
             xl:text-[14px] 
             lg:text-[12px] 
+            md:text-[13px]
             font-[Poppins] 
             font-[700] 
             text-buttonColor 
