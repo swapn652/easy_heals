@@ -22,6 +22,7 @@ import { TreatmentByDiseasesMediumScreen } from "./components/Treatments/Treatme
 import { LabTestMediumScreen } from "./components/LabTestMediumScreen";
 import { TopHospitalsMediumScreen } from "./components/MedicalProfessionals/TopHospitalsMediumScreen";
 import { DownloadAppMediumScreen } from "./components/DownloadAppMediumScreen";
+import { FooterMediumScreen } from "./components/FooterMediumScreen";
 
 function App() {
   return (
@@ -82,9 +83,12 @@ function App() {
      <div className="block lg:hidden">
       <DownloadAppMediumScreen/>
      </div>
-     {/* <div>
+     <div className="hidden lg:block">
       <Footer/>
-     </div> */}
+     </div>
+     <div className="block lg:hidden">
+      <FooterMediumScreen/>
+     </div>
     </AuthProvider>
     </>
   )
