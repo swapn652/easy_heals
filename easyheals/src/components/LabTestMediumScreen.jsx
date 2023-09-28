@@ -62,7 +62,7 @@ export const LabTestMediumScreen = () => {
     }, [bearerToken]);
 
   return (
-    <div className="relative flex flex-col h-[26em]">
+    <div className="relative flex flex-col h-[29em]">
         {/* Heading */}
         <div className="flex flex-row justify-center items-center">
             <div className="w-[30vw] h-[1px] bg-text-light"></div>

@@ -59,7 +59,7 @@ export const MedicalProfessionalsMediumScreen = () => {
                     at your service
                 </div>
             </div>
-            <div className="text-[14px] text-text-dark font-[Raleway]">
+            <div className="text-[14px] text-text-dark font-[Raleway] mt-2">
                 Delivering Exceptional Care and Specialized Expertise to Enhance Your Health and Well-being
             </div>
         </div>
@@ -69,7 +69,6 @@ export const MedicalProfessionalsMediumScreen = () => {
             {doctors.map((doctor, index) => (
               <div
                 key={index}
-                className=""
               >
                 <MedicalProfessionalsCard
                   imageSrc={doctor.imageSrc}
@@ -81,7 +80,7 @@ export const MedicalProfessionalsMediumScreen = () => {
           </Slider>
         </div>
 
-        <img src="./dotted.svg" className="w-[14em] absolute top-14"/>
+        <img src="./dotted.svg" className="w-[14em] absolute top-16"/>
         <img src="./plus_bg_1.svg" className="w-[10em] absolute right-0 -top-24"/>
         
         <div className="

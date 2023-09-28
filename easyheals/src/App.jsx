@@ -20,6 +20,7 @@ import { TreatmentBySpecialityMediumScreen } from "./components/Treatments/Treat
 import { MedicalProfessionalsMediumScreen } from "./components/MedicalProfessionals/MedicalProfessionalsMediumScreen";
 import { TreatmentByDiseasesMediumScreen } from "./components/Treatments/TreatmentByDiseasesMediumScreen";
 import { LabTestMediumScreen } from "./components/LabTestMediumScreen";
+import { TopHospitalsMediumScreen } from "./components/MedicalProfessionals/TopHospitalsMediumScreen";
 
 function App() {
   return (
@@ -68,10 +69,13 @@ function App() {
      <div className="block lg:hidden">
       <LabTestMediumScreen/>
      </div>
-     {/* <div>
+     <div className="hidden lg:block">
       <TopHospitals/>
      </div>
-     <div>
+     <div className="block lg:hidden">
+      <TopHospitalsMediumScreen/>
+     </div>
+     {/* <div>
       <DownloadApp/>
      </div>
      <div>

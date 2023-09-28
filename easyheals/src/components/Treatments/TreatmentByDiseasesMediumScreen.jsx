@@ -56,7 +56,7 @@ export const TreatmentByDiseasesMediumScreen = () => {
 
 
   return (
-    <div className="relative flex flex-col h-[26em]">
+    <div className="relative flex flex-col h-[27em]">
         <div className="flex flex-row justify-center items-center">
             <div className="w-[23.5vw] h-[1px] bg-text-light"></div>
             <img src="./plus_icon.svg" />
