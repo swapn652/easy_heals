@@ -17,7 +17,7 @@ export const MainSectionMobile = () => {
 
   return (
     <div  style={{ ...backgroundStyles, backgroundPosition: 'center' }}>
-        <div className="relative mt-24 flex flex-col h-[50em]">
+        <div className="relative mt-24 flex flex-col h-[50em] sm:h-[52em]">
             <div className="flex mx-auto justify-center">
                 <BookConsultationMobile/>
             </div>

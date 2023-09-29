@@ -39,24 +39,35 @@ responsive: [
       prevArrow: null, // Custom previous arrow component
       nextArrow: null // Custom next arrow component
     }
+  },
+  {
+    breakpoint: 767,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerMode: true,
+      infinite: true,
+      prevArrow: null, // Custom previous arrow component
+      nextArrow: null // Custom next arrow component
+    }
   }
 ]
 };
 
   return (
       <div>
-        <Slider {...settings} className="flex mx-20">
+        <Slider {...settings} className="flex md:mx-20 mx-6">
           <div className="mx-2"> {/* Add a gap between cards */}
-            <img src="./issues/acne.svg" className=" 2xl:w-[26em] xl:w-[22em] lg:w-[17em] md:w-[18.5em] cursor-pointer"/>
+            <img src="./issues/acne.svg" className=" 2xl:w-[26em] xl:w-[22em] lg:w-[17em] md:w-[18.5em] sm:w-[15em] xs:w-[14em] 2xs:w-[13em] 3xs:w-[12em] cursor-pointer"/>
           </div>
           <div className="mx-2"> {/* Add a gap between cards */}
-            <img src="./issues/men_health.svg" className="2xl:w-[26em] xl:w-[22em] lg:w-[17em] md:w-[18.5em] cursor-pointer"/>
+            <img src="./issues/men_health.svg" className="2xl:w-[26em] xl:w-[22em] lg:w-[17em] md:w-[18.5em] sm:w-[15em] xs:w-[14em] 2xs:w-[13em] 3xs:w-[12em] cursor-pointer"/>
           </div>
           <div className="mx-2"> {/* Add a gap between cards */}
-            <img src="./issues/acne.svg" className="2xl:w-[26em] xl:w-[22em] lg:w-[17em] md:w-[18.5em] cursor-pointer"/>
+            <img src="./issues/acne.svg" className="2xl:w-[26em] xl:w-[22em] lg:w-[17em] md:w-[18.5em] sm:w-[15em] xs:w-[14em] 2xs:w-[13em] 3xs:w-[12em] cursor-pointer"/>
           </div>
           <div className="mx-2"> {/* Add a gap between cards */}
-            <img src="./issues/men_health.svg" className="2xl:w-[26em] xl:w-[22em] lg:w-[17em] md:w-[18.5em] cursor-pointer"/>
+            <img src="./issues/men_health.svg" className="2xl:w-[26em] xl:w-[22em] lg:w-[17em] md:w-[18.5em] sm:w-[15em] xs:w-[14em] 2xs:w-[13em] 3xs:w-[12em] cursor-pointer"/>
           </div>
         </Slider>
       </div>

@@ -30,7 +30,7 @@ export const Navbar = () => {
         sm:px-4
         shadow-md"
     >
-      <img src="/easyHealsLogo.svg" className="sm:w-32 lg:w-36" alt="Logo" />
+      <img src="/easyHealsLogo.svg" className="sm:w-32 lg:w-36 3xs:w-[8em]" alt="Logo" />
       <div
         onClick={() => setOpen(!open)}
         className="text-3xl absolute right-2 top-[16px] cursor-pointer md:hidden"

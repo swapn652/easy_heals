@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-const withMT = require("@material-tailwind/react/utils/withMT");
 
-module.exports = withMT({
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -36,12 +35,14 @@ module.exports = withMT({
       'footer-color': '#F0F8F0'
     },
     screens: {
-      'sm': '320px',
-      'md': '768px', //iPad Mini
-      '2md': '820px', //iPad Air
+      '3xs': '360px',
+      '2xs': '375px',
+      'xs': '390px',
+      'sm': '410px',
+      'md': '768px',
       'lg': '1024px',
       'xl': '1280px',
       '2xl': '1440px',
-    },
+    }
   }
-})
+}

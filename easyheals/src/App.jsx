@@ -24,6 +24,7 @@ import { TopHospitalsMediumScreen } from "./components/MedicalProfessionals/TopH
 import { DownloadAppMediumScreen } from "./components/DownloadSection/DownloadAppMediumScreen";
 import { FooterMediumScreen } from "./components/Footers/FooterMediumScreen";
 import { PartnersMobile } from "./components/PartnersMobile";
+import { FeaturedServicesMobile } from "./components/FeaturedServices/FeaturedServicesMobile";
 
 function App() {
   return (
@@ -42,13 +43,16 @@ function App() {
      <div className="block md:hidden">
       <PartnersMobile/>
      </div>
-     {/* <div className="xl:mt-28 lg:mt-16 md:mt-12">
+     <div className="xl:mt-28 lg:mt-16 md:mt-12 3xs:mt-10">
       <Issues/>
      </div>
-     <div className="2xl:mt-56 xl:mt-[12em] lg:mt-[10em] md:mt-[4em]">
+     <div className="hidden md:block 2xl:mt-56 xl:mt-[12em] lg:mt-[10em] md:mt-[4em]">
       <FeaturedServices/>
      </div>
-     <div className="lg:mt-0 md:mt-[20em]">
+     <div className="block md:hidden">
+      <FeaturedServicesMobile/>
+     </div>
+     {/* <div className="lg:mt-0 md:mt-[20em]">
       <TreatmentBySymptoms/>
      </div>
      <div className="md:hidden lg:block">

@@ -10,11 +10,11 @@ export const FooterMediumScreen = () => {
                     <div className="italic absolute top-[5.4em] left-[6em] text-[20px]">Easy access to Healthcare</div>
                 </div>
                 <div className="flex flex-row gap-x-4 absolute right-4 top-[3em]">
-                    <img src="./social_media/facebook.svg" />
-                    <img src="./social_media/instagram.svg" />
-                    <img src="./social_media/linkedin.svg" />
-                    <img src="./social_media/youtube.svg" />
-                    <img src="./social_media/twitter.svg" />
+                    <a href="https://www.facebook.com/easyheals" target="_blank"><img src="./social_media/facebook.svg" /></a>
+                    <a href="https://www.instagram.com/easy_heals/" target="_blank"><img src="./social_media/instagram.svg" /></a>
+                    <a href="https://www.linkedin.com/company/easyheals" target="_blank"><img src="./social_media/linkedin.svg" /></a>
+                    <a href="https://www.youtube.com/@easyheals" target="_blank"><img src="./social_media/youtube.svg" /></a>
+                    <a href="https://twitter.com/easyheals" target="_blank"><img src="./social_media/twitter.svg" /></a>
                 </div>
             </div>
             <div className="flex flex-row">
@@ -53,8 +53,8 @@ export const FooterMediumScreen = () => {
                     Download Mobile Application
                 </div>
                 <div className="flex flex-row gap-x-4 absolute right-6 top-[26.4em]">
-                    <img src="./downloads/google_play_store.svg" className="w-[11em]"/>
-                    <img src="./downloads/app_store.svg" className="w-[10em]"/>
+                    <a href="https://play.google.com/store/apps/details?id=com.Easyheals.patient" target="_blank"><img src="./downloads/google_play_store.svg" className="w-[11em]"/></a>
+                    <a href="https://apps.apple.com/app/easyheals/id6462711867" target="_blank"><img src="./downloads/app_store.svg" className="w-[10em]"/></a>
                 </div>
             </div>
         </div>

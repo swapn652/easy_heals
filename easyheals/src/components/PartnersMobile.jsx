@@ -16,14 +16,14 @@ export const PartnersMobile = () => {
   return (
     <div className="flex flex-col mt-10">
         <div className="flex flex-row items-center justify-center">
-            <div className="h-[1px] w-[20vw] bg-text-light"></div>
+            <div className="h-[1px] w-[17vw] bg-text-light"></div>
             <img src="./plus_icon.svg" />
-            <div className="ml-2 mr-2 font-[700] text-[16px]">Our Trusted Partners</div>
+            <div className="mx-4 font-[700] text-[16px]">Our Trusted Partners</div>
             <img src="./plus_icon.svg" />
-            <div className="h-[1px] w-[20vw] bg-text-light"></div>
+            <div className="h-[1px] w-[17vw] bg-text-light"></div>
         </div>
 
-        <Slider {...settings} className="mx-4 mt-6">
+        <Slider {...settings} className="mx-6 mt-6">
             <img src="./partners/ruby.svg" alt="Ruby Hall Clinic" className="w-10"  />
             <img src="./partners/agarwal.svg" alt="Dr. Agarwals" className=""/>
             <img src="./partners/unity.svg" alt="Unity Hospital" className=""/>

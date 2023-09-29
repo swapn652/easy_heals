@@ -19,8 +19,8 @@ export const ServicesProvidedMobileScreen = () => {
 
   return (
     <div>
-        <Slider {...settings} className="mx-6">
-            <div>
+        <Slider {...settings} className="mx-6 sm:mx-10">
+            <div className="">
                 <ServiceCard
                 imageUrl="./doctor.png"
                 heading="Top Rated Doctors"
