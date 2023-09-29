@@ -16,18 +16,20 @@ export const MainSectionMobile = () => {
       };
 
   return (
-    <div style={{ ...backgroundStyles }} className="relative mt-24 flex flex-col h-[50em]">
-        <div className="flex mx-auto justify-center">
-            <BookConsultationMobile/>
-        </div>
-        <div>
-            <Doctor/>
-        </div>
-        <div className="flex justify-center -mt-2 z-10">
-            <SearchBarMobile/>
-        </div>
-        <div className="mt-6">
-            <ServicesProvidedMobileScreen/>
+    <div  style={{ ...backgroundStyles, backgroundPosition: 'center' }}>
+        <div className="relative mt-24 flex flex-col h-[50em]">
+            <div className="flex mx-auto justify-center">
+                <BookConsultationMobile/>
+            </div>
+            <div>
+                <Doctor/>
+            </div>
+            <div className="flex justify-center -mt-2 z-10">
+                <SearchBarMobile/>
+            </div>
+            <div className="mt-6">
+                <ServicesProvidedMobileScreen/>
+            </div>
         </div>
     </div>
   )

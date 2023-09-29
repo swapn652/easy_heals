@@ -23,6 +23,7 @@ import { LabTestMediumScreen } from "./components/LabTest/LabTestMediumScreen";
 import { TopHospitalsMediumScreen } from "./components/MedicalProfessionals/TopHospitalsMediumScreen";
 import { DownloadAppMediumScreen } from "./components/DownloadSection/DownloadAppMediumScreen";
 import { FooterMediumScreen } from "./components/Footers/FooterMediumScreen";
+import { PartnersMobile } from "./components/PartnersMobile";
 
 function App() {
   return (
@@ -35,10 +36,13 @@ function App() {
      <div className="block md:hidden">
         <MainSectionMobile/>
      </div>
-     {/* <div className="2xl:mt-[10em] xl:mt-[10em] lg:mt-[9em] md:mt-[8em]">
+     <div className="hidden md:block 2xl:mt-[10em] xl:mt-[10em] lg:mt-[9em] md:mt-[8em]">
       <Partners/>
      </div>
-     <div className="xl:mt-28 lg:mt-16 md:mt-12">
+     <div className="block md:hidden">
+      <PartnersMobile/>
+     </div>
+     {/* <div className="xl:mt-28 lg:mt-16 md:mt-12">
       <Issues/>
      </div>
      <div className="2xl:mt-56 xl:mt-[12em] lg:mt-[10em] md:mt-[4em]">
