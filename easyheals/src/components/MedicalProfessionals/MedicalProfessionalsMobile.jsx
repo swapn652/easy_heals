@@ -46,7 +46,8 @@ export const MedicalProfessionalsMobile = () => {
 };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col 3xs:h-[32em] 2xs:h-[33em] xs:h-[34.5em] sm:h-[36.5em]">
+
         {/* Heading and subheading */}
         <div className="flex flex-col items-center font-[Poppins]">
             <div className="flex flex-row font-[600] 3xs:text-[20px] xs:text-[21px] sm:text-[24px]">
