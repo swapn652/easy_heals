@@ -43,11 +43,11 @@ export const TreatmentBySymptomsMobile = () => {
   return (
     <div className="flex flex-col relative 3xs:h-[17.5em] xs:h-[19em] sm:h-[20em]">
         <div className="flex flex-row items-center justify-center">
-            <div className="h-[1px] 3xs:w-[14.2vw] 2xs:w-[15.6vw] xs:w-[16.8vw] sm:w-[18.7vw] bg-text-light"></div>
+            <div className="h-[1px] 3xs:w-[11.2vw] 2xs:w-[12.8vw] xs:w-[12.8vw] sm:w-[13.7vw] bg-text-light"></div>
             <img src="./plus_icon.svg" />
-            <div className="mx-4 font-[700] text-[16px]">Treatment By Symptoms</div>
+            <div className="mx-4 font-[700] 3xs:text-[18px] xs:text-[19px] sm:text-[20px]">Treatment By Symptoms</div>
             <img src="./plus_icon.svg" />
-            <div className="h-[1px] 3xs:w-[14.2vw] 2xs:w-[15.6vw] xs:w-[16.8vw] sm:w-[18.7vw] bg-text-light"></div>
+            <div className="h-[1px] 3xs:w-[11.2vw] 2xs:w-[12.8vw] xs:w-[12.8vw] sm:w-[13.7vw] bg-text-light"></div>
         </div>
 
         <div>

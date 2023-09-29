@@ -28,6 +28,7 @@ import { FeaturedServicesMobile } from "./components/FeaturedServices/FeaturedSe
 import { TreatmentBySymptomsMobile } from "./components/Treatments/TreatmentBySymptomsMobile";
 import { TreatmentBySpecialityMobile } from "./components/Treatments/TreatmentBySpecialityMobile";
 import { MedicalProfessionalsMobile } from "./components/MedicalProfessionals/MedicalProfessionalsMobile";
+import { TreatmentByDiseasesMobile } from "./components/Treatments/TreatmentByDiseasesMobile";
 
 function App() {
   return (
@@ -79,13 +80,16 @@ function App() {
      <div className="block md:hidden">
       <MedicalProfessionalsMobile/>
      </div>
-     {/* <div className="hidden lg:block">
+     <div className="3xs:hidden lg:block">
       <TreatmentByDiseases/>
      </div>
-     <div className="block lg:hidden">
+     <div className="3xs:hidden md:block lg:hidden">
       <TreatmentByDiseasesMediumScreen/>
      </div>
-     <div className="hidden lg:block">
+     <div className="block md:hidden">
+      <TreatmentByDiseasesMobile/>
+     </div>
+     {/* <div className="hidden lg:block">
       <LabTests/>
      </div>
      <div className="block lg:hidden">

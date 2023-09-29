@@ -49,13 +49,13 @@ export const MedicalProfessionalsMobile = () => {
     <div className="flex flex-col">
         {/* Heading and subheading */}
         <div className="flex flex-col items-center font-[Poppins]">
-            <div className="flex flex-row font-[600] 3xs:text-[18px] sm:text-[20px]">
+            <div className="flex flex-row font-[600] 3xs:text-[20px] xs:text-[21px] sm:text-[24px]">
                 <div className="">Top</div>
                 <div className="ml-[0.3em] text-green2">Medical Professionals</div>
             </div>
-            <div className="text-[18px] font-[600]">at Your Service</div>
+            <div className="text-[18px] font-[600] 3xs:text-[20px] xs:text-[21px] sm:text-[24px]">at Your Service</div>
         </div>
-        <div className="flex flex-col items-center font-[Raleway] 3xs:text-[13px] sm:text-[14px] text-text-dark mt-2">
+        <div className="flex flex-col items-center font-[Raleway] 3xs:text-[14px] xs:text-[15px] sm:text-[16px] text-text-dark mt-2">
             <div>Delivering Exceptional Care and Specialized</div>
             <div>Expertise to Enhance Your Health and Well-being</div>
         </div>

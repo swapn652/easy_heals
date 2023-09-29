@@ -18,6 +18,7 @@ export const MedicalProfessionalsCard = ({ imageSrc, name, specialization }) => 
         3xs:h-[15em]
         2xl:w-[14.5em] 
         xl:w-[13em] 
+        lg:w-[11em]
         md:w-[12em]
         sm:w-[15em]
         xs:w-[14em]
