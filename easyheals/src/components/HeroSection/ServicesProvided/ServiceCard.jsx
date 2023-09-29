@@ -22,13 +22,13 @@ export const ServiceCard = ({ imageUrl, heading, description }) => {
         rounded-lg 
         font-[Raleway]"
       >
-      <div className="flex flex-row items-center">
-        <img src={imageUrl} alt={heading} className="lg:w-8 xl:w-[2.2em]"/> {/* Use the imageUrl prop */}
+      <div className="flex flex-row items-center ml-4 md:ml-0">
+        <img src={imageUrl} alt={heading} className="xl:w-[2.2em] lg:w-8 md:w-[2.5em] sm:w-[2em]"/> {/* Use the imageUrl prop */}
         <div className="ml-2 font-bold 2xl:text-[15px] xl:text-[13px] lg:text-[11px] md:text-[18px] sm:text-[16px]">
             {heading}
         </div> {/* Use the heading prop */}
       </div>
-      <div className="mt-2 2xl:text-[10px] xl:text-[8px] lg:text-[7px] md:text-[14px] sm:text-[12px]">
+      <div className="mt-2 2xl:text-[10px] xl:text-[8px] lg:text-[7px] md:text-[14px] sm:text-[12px] ml-4 md:ml-0 w-[23em] md:w-[19em]">
         {description} {/* Use the description prop */}
       </div>
     </div>

@@ -6,15 +6,11 @@ import { CommonSymptoms } from '../CommonSymptoms'
 import { Doctor } from '../Doctor'
 import { SearchBarMobile } from '../SearchBar/SearchBarMobile'
 import { ServicesProvidedMediumScreens } from '../ServicesProvided/ServicesProvidedMediumScreens'
+import { ServicesProvidedMobileScreen } from '../ServicesProvided/ServicesProvidedMobileScreen'
 
 export const MainSectionMobile = () => {
   return (
     <div className="relative mt-24 flex flex-col">
-        {/* <div className="relative flex justify-center ml-8">
-            <div className="w-48">
-                <BookConsultation/>
-            </div>
-        </div> */}
         <div className="flex mx-auto justify-center">
             <BookConsultationMobile/>
         </div>
@@ -25,7 +21,7 @@ export const MainSectionMobile = () => {
             <SearchBarMobile/>
         </div>
         <div className="mt-6">
-            <ServicesProvidedMediumScreens/>
+            <ServicesProvidedMobileScreen/>
         </div>
     </div>
   )
