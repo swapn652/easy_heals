@@ -11,18 +11,18 @@ import { TreatmentBySymptoms } from './components/Treatments/TreatmentBySymptoms
 import { TreatmentBySpeciality } from './components/Treatments/TreatmentBySpeciality'
 import { MedicalProfessionals } from "./components/MedicalProfessionals/MedicalProfessionals";
 import { TreatmentByDiseases } from './components/Treatments/TreatmentByDiseases'
-import { LabTests } from './components/LabTests'
+import { LabTests } from './components/LabTest/LabTests'
 import { TopHospitals } from './components/MedicalProfessionals/TopHospitals'
-import { DownloadApp } from './components/DownloadApp'
-import { Footer } from './components/Footer'
+import { DownloadApp } from './components/DownloadSection/DownloadApp'
+import { Footer } from './components/Footers/Footer'
 import { AuthProvider } from "./components/AuthContext";
 import { TreatmentBySpecialityMediumScreen } from "./components/Treatments/TreatmentBySpecialityMediumScreen";
 import { MedicalProfessionalsMediumScreen } from "./components/MedicalProfessionals/MedicalProfessionalsMediumScreen";
 import { TreatmentByDiseasesMediumScreen } from "./components/Treatments/TreatmentByDiseasesMediumScreen";
-import { LabTestMediumScreen } from "./components/LabTestMediumScreen";
+import { LabTestMediumScreen } from "./components/LabTest/LabTestMediumScreen";
 import { TopHospitalsMediumScreen } from "./components/MedicalProfessionals/TopHospitalsMediumScreen";
-import { DownloadAppMediumScreen } from "./components/DownloadAppMediumScreen";
-import { FooterMediumScreen } from "./components/FooterMediumScreen";
+import { DownloadAppMediumScreen } from "./components/DownloadSection/DownloadAppMediumScreen";
+import { FooterMediumScreen } from "./components/Footers/FooterMediumScreen";
 
 function App() {
   return (

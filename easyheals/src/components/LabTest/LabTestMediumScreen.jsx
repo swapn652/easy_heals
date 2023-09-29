@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useAuth } from './AuthContext';
+import { useAuth } from '../AuthContext';
 import { LabTestCardMediumScreen } from './LabTestCardMediumScreen'
 import axios from 'axios';
 
