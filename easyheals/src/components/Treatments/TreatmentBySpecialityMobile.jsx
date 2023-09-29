@@ -48,8 +48,9 @@ export const TreatmentBySpecialityMobile = () => {
             <div className="h-[1px] 3xs:w-[13.3vw] 2xs:w-[14.8vw] xs:w-[16.1vw] sm:w-[17.9vw] bg-text-light"></div>
         </div>
 
+        {/* Carousel */}
         <div>
-            <Slider {...settings} className="mx-6">
+            <Slider {...settings} className="mx-6 3xs:mt-4">
               {specialities.map((speciality) => (
                       <div key={speciality.id} className="ml-4">
                         {/* Pass the symptom data to the TreatmentBySymptomsCard component */}
@@ -61,6 +62,29 @@ export const TreatmentBySpecialityMobile = () => {
                   ))}
             </Slider>
         </div>
+
+        {/* Button */}
+        <button className="
+            w-[15em] 
+            h-[2.7em] 
+            border-2 
+            border-buttonColor 
+            font-[Poppins] 
+            font-[700] 
+            text-[14px]
+            text-buttonColor 
+            rounded-lg 
+            absolute 
+            sm:top-[16em]
+            xs:top-[15em]
+            3xs:top-[14em]
+            flex 
+            self-center 
+            justify-center 
+            items-center"
+        >
+            Browse All Symptoms
+        </button>
     </div>
   )
 }
