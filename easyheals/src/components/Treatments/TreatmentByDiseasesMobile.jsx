@@ -56,7 +56,7 @@ export const TreatmentByDiseasesMobile = () => {
     };
 
   return (
-    <div className="flex flex-col relative">
+    <div className="flex flex-col relative sm:h-[26em] xs:h-[24em] 2xs:h-[22em] 3xs:h-[21em]">
         {/* Heading */}
         <div className="flex flex-row items-center justify-center">
             <div className="h-[1px] 3xs:w-[13.4vw] 2xs:w-[14.8vw] xs:w-[14.8vw] sm:w-[15.6vw] bg-text-light"></div>

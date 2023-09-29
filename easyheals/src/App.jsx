@@ -29,6 +29,7 @@ import { TreatmentBySymptomsMobile } from "./components/Treatments/TreatmentBySy
 import { TreatmentBySpecialityMobile } from "./components/Treatments/TreatmentBySpecialityMobile";
 import { MedicalProfessionalsMobile } from "./components/MedicalProfessionals/MedicalProfessionalsMobile";
 import { TreatmentByDiseasesMobile } from "./components/Treatments/TreatmentByDiseasesMobile";
+import { TopHospitalsMobile } from "./components/MedicalProfessionals/TopHospitalsMobile";
 
 function App() {
   return (
@@ -94,14 +95,17 @@ function App() {
      </div>
      <div className="block lg:hidden">
       <LabTestMediumScreen/>
-     </div>
-     <div className="hidden lg:block">
+     </div> */}
+     <div className="3xs:hidden lg:block">
       <TopHospitals/>
      </div>
-     <div className="block lg:hidden">
+     <div className="3xs:hidden md:block lg:hidden">
       <TopHospitalsMediumScreen/>
      </div>
-     <div className="hidden lg:block">
+     <div className="block md:hidden">
+      <TopHospitalsMobile/>
+     </div>
+     {/* <div className="hidden lg:block">
       <DownloadApp/>
      </div>
      <div className="block lg:hidden">
