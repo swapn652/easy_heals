@@ -15,10 +15,10 @@ export const TreatmentBySymptomsCard = ({ imageSrc, title }) => {
       xl:h-[10em] 
       lg:h-[8em] 
       md:h-[8em]
-      sm:h-[7em]
-      xs:h-[7em]
-      2xs:h-[7em]
-      3xs:h-[7em]
+      sm:h-[11em]
+      xs:h-[10em]
+      2xs:h-[9em]
+      3xs:h-[8em]
       flex 
       flex-col 
       justify-center 

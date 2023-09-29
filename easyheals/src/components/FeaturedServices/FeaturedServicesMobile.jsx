@@ -14,7 +14,7 @@ export const FeaturedServicesMobile = () => {
         nextArrow: null
     }
   return (
-    <div className="flex flex-col mt-10 3xs:h-[24em] 2xs:h-[25em] xs:h-[26em] sm:h-[27em] relative">
+    <div className="flex flex-col mt-10 3xs:h-[24em] 2xs:h-[25em] xs:h-[26em] sm:h-[28em] relative">
         <div className="flex flex-row items-center justify-center">
             <div className="h-[1px] 3xs:w-[21.2vw] 2xs:w-[22.2vw] xs:w-[23.5vw] sm:w-[24.8vw] bg-text-light"></div>
             <img src="./plus_icon.svg" />

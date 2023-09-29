@@ -41,7 +41,7 @@ export const TreatmentBySymptomsMobile = () => {
 
 
   return (
-    <div className="flex flex-col relative">
+    <div className="flex flex-col relative 3xs:h-[17.5em] xs:h-[19em] sm:h-[20em]">
         <div className="flex flex-row items-center justify-center">
             <div className="h-[1px] 3xs:w-[14.2vw] 2xs:w-[15.6vw] xs:w-[16.8vw] sm:w-[18.7vw] bg-text-light"></div>
             <img src="./plus_icon.svg" />
@@ -51,7 +51,7 @@ export const TreatmentBySymptomsMobile = () => {
         </div>
 
         <div>
-            <Slider {...settings} className="mx-6 mt-4">
+            <Slider {...settings} className="mx-6">
                 {symptoms.map((symptom) => (
                     <div key={symptom.id} className="m-4">
                       {/* Pass the symptom data to the TreatmentBySymptomsCard component */}
@@ -76,8 +76,8 @@ export const TreatmentBySymptomsMobile = () => {
             text-buttonColor 
             rounded-lg 
             absolute 
-            sm:top-[15em]
-            xs:top-[14.5em]
+            sm:top-[16em]
+            xs:top-[15em]
             3xs:top-[14em]
             flex 
             self-center 
