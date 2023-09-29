@@ -9,8 +9,14 @@ import { ServicesProvidedMediumScreens } from '../ServicesProvided/ServicesProvi
 import { ServicesProvidedMobileScreen } from '../ServicesProvided/ServicesProvidedMobileScreen'
 
 export const MainSectionMobile = () => {
+    const backgroundStyles = {
+        backgroundImage: 'url("./bg.png")', // Use the imported image
+        backgroundSize: 'cover', // Adjust this based on your image requirements
+        backgroundRepeat: 'no-repeat',
+      };
+
   return (
-    <div className="relative mt-24 flex flex-col">
+    <div style={{ ...backgroundStyles }} className="relative mt-24 flex flex-col h-[50em]">
         <div className="flex mx-auto justify-center">
             <BookConsultationMobile/>
         </div>

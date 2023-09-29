@@ -2,6 +2,9 @@ import React from 'react';
 import Slider from 'react-slick';
 import { ServiceCard } from './ServiceCard';
 
+const PrevArrow = (props) => <div />; // Custom previous arrow component
+const NextArrow = (props) => <div />; // Custom next arrow component
+
 export const ServicesProvidedMobileScreen = () => {
     const settings = {
         dots: false,
@@ -10,8 +13,8 @@ export const ServicesProvidedMobileScreen = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: null, // Custom previous arrow component
-        nextArrow: null, // Custom next arrow component
+        prevArrow: <PrevArrow />, // Use custom previous arrow component
+        nextArrow: <NextArrow />, // Use custom next arrow component
 };
 
   return (
