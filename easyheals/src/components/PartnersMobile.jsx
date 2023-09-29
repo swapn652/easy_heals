@@ -16,11 +16,11 @@ export const PartnersMobile = () => {
   return (
     <div className="flex flex-col mt-10">
         <div className="flex flex-row items-center justify-center">
-            <div className="h-[1px] w-[17vw] bg-text-light"></div>
+            <div className="h-[1px] 3xs:w-[18vw] 2xs:w-[19.47vw] xs:w-[20.6vw] sm:w-[22.2vw] bg-text-light"></div>
             <img src="./plus_icon.svg" />
             <div className="mx-4 font-[700] text-[16px]">Our Trusted Partners</div>
             <img src="./plus_icon.svg" />
-            <div className="h-[1px] w-[17vw] bg-text-light"></div>
+            <div className="h-[1px] 3xs:w-[18vw] 2xs:w-[19.47vw] xs:w-[20.6vw] sm:w-[22.2vw] bg-text-light"></div>
         </div>
 
         <Slider {...settings} className="mx-6 mt-6">

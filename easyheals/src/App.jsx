@@ -25,6 +25,7 @@ import { DownloadAppMediumScreen } from "./components/DownloadSection/DownloadAp
 import { FooterMediumScreen } from "./components/Footers/FooterMediumScreen";
 import { PartnersMobile } from "./components/PartnersMobile";
 import { FeaturedServicesMobile } from "./components/FeaturedServices/FeaturedServicesMobile";
+import { TreatmentBySymptomsMobile } from "./components/Treatments/TreatmentBySymptomsMobile";
 
 function App() {
   return (
@@ -52,10 +53,13 @@ function App() {
      <div className="block md:hidden">
       <FeaturedServicesMobile/>
      </div>
-     {/* <div className="lg:mt-0 md:mt-[20em]">
+     <div className="hidden md:block lg:mt-0 md:mt-[20em]">
       <TreatmentBySymptoms/>
      </div>
-     <div className="md:hidden lg:block">
+     <div className="block md:hidden">
+      <TreatmentBySymptomsMobile/>
+     </div>
+     {/* <div className="md:hidden lg:block">
       <TreatmentBySpeciality/>
      </div>
      <div className="md:block lg:hidden">
