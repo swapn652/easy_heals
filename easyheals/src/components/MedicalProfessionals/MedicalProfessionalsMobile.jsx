@@ -47,6 +47,7 @@ export const MedicalProfessionalsMobile = () => {
 
   return (
     <div className="flex flex-col 3xs:h-[32em] 2xs:h-[33em] xs:h-[34.5em] sm:h-[36.5em]">
+        {/* <img src="./plus_bg_1.svg" className="absolute w-[6em] right-0"/> */}
 
         {/* Heading and subheading */}
         <div className="flex flex-col items-center font-[Poppins]">

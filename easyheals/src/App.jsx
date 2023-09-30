@@ -33,6 +33,7 @@ import { TopHospitalsMobile } from "./components/MedicalProfessionals/TopHospita
 import { DownloadAppMobile } from "./components/DownloadSection/DownloadAppMobile";
 import { FooterMobile } from "./components/Footers/FooterMobile";
 import { NavbarMobile } from "./components/NavbarMobile";
+import { LabTestMobile } from "./components/LabTest/LabTestMobile";
 
 function App() {
   return (
@@ -103,6 +104,9 @@ function App() {
      </div>
      <div className="3xs:hidden md:block lg:hidden">
       <LabTestMediumScreen/>
+     </div>
+     <div className="block md:hidden">
+      <LabTestMobile/>
      </div>
      <div className="3xs:hidden lg:block">
       <TopHospitals/>

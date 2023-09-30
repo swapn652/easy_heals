@@ -55,6 +55,7 @@ export const TopHospitalsMobile = () => {
 
   return (
     <div className="flex flex-col relative 3xs:h-[34em] 2xs:h-[35em] xs:h-[37em] sm:h-[39em]">
+        <img src="./plus_bg_1.svg" className="absolute w-[6em] right-0 -top-[4em]"/>
 
         {/* Heading and subheading */}
         <div className="flex flex-col items-center font-[Poppins]">
