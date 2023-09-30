@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { LabTestCard } from './LabTestCard';
-import { useAuth } from '../AuthContext';
+import { useAuth } from '../../AuthContext';
 import axios from 'axios';
 
 export const LabTests = () => {

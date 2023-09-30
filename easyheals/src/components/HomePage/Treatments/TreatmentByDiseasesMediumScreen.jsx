@@ -1,10 +1,22 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState, useEffect } from 'react'
 import Slider from 'react-slick';
-import { useAuth } from '../AuthContext';
 import { TreatmentByDiseasesCard } from './TreatmentByDiseasesCard';
+import axios from 'axios';
+import { useAuth } from '../../AuthContext';
 
-export const TreatmentByDiseasesMobile = () => {
+export const TreatmentByDiseasesMediumScreen = () => {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        prevArrow: null,
+        nextArrow: null,
+        rows: 2,
+        itemsPerRow: 2,
+        centerMode: true
+    };
 
     const bearerToken = useAuth();
     const [problems, setProblems] = useState([]);
@@ -24,8 +36,8 @@ export const TreatmentByDiseasesMobile = () => {
             .filter((item) => item.image !== null) // Filter out items with null images
             .map((item) => {
               // Filter out items with title length > 15
-              if (item.title.length > 16) {
-                return { ...item, title: item.title.slice(0, 16) + '...' };
+              if (item.title.length > 20) {
+                return { ...item, title: item.title.slice(0, 20) + '...' };
               }
     
               // Truncate description to 50 characters and add "..." if it's longer
@@ -42,33 +54,19 @@ export const TreatmentByDiseasesMobile = () => {
         });
     }, [bearerToken]);
 
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        prevArrow: null,
-        nextArrow: null,
-        rows: 2,
-        itemsPerRow: 2,
-        centerMode: true
-    };
 
   return (
-    <div className="flex flex-col relative sm:h-[26em] xs:h-[24em] 2xs:h-[22em] 3xs:h-[21em]">
-        {/* Heading */}
-        <div className="flex flex-row items-center justify-center">
-            <div className="h-[1px] 3xs:w-[13.4vw] 2xs:w-[14.8vw] xs:w-[14.8vw] sm:w-[15.6vw] bg-text-light"></div>
+    <div className="relative flex flex-col h-[27em]">
+        <div className="flex flex-row justify-center items-center">
+            <div className="2md:w-[30.2vw] md:w-[29.1vw] h-[1px] bg-text-light"></div>
             <img src="./plus_icon.svg" />
-            <div className="mx-4 font-[700] 3xs:text-[18px] xs:text-[19px] sm:text-[20px]">Treatment By Diseases</div>
+            <div className="text-[22px] mx-6 font-[700] font-[Raleway]">Treatment by Diseases</div>
             <img src="./plus_icon.svg" />
-            <div className="h-[1px] 3xs:w-[13.4vw] 2xs:w-[14.8vw] xs:w-[14.8vw] sm:w-[15.6vw] bg-text-light"></div>
+            <div className="2md:w-[30.2vw] md:w-[29.1vw] h-[1px] bg-text-light"></div>
         </div>
 
-        {/* Carousel */}
-        <div>
-            <Slider {...settings} className="mx-6">
+        <div className="mx-10 mt-6">
+            <Slider {...settings}>
                 {problems.map((problem) => (
                     <div key={problem.id}>
                         <TreatmentByDiseasesCard
@@ -81,26 +79,23 @@ export const TreatmentByDiseasesMobile = () => {
             </Slider>
         </div>
 
-        {/* Button */}
         <button className="
-            w-[15em] 
-            h-[2.7em] 
+            w-[15em]
+            h-[3em] 
             border-2 
             border-buttonColor 
+            md:text-[13px]
             font-[Poppins] 
             font-[700] 
-            text-[14px]
             text-buttonColor 
             rounded-lg 
-            absolute 
-            sm:top-[21em]
-            xs:top-[18.5em]
-            2xs:top-[16em]
-            3xs:top-[16em]
+            absolute  
+            top-[25.5em]
             flex 
             self-center 
             justify-center 
-            items-center"
+            items-center
+            cursor-pointer"
         >
             View all Diseases
         </button>

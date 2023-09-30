@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
-import { useAuth } from '../AuthContext';
+import { useAuth } from '../../AuthContext';
 import axios from 'axios';
 import { HospitalCard } from './HospitalCard'
 

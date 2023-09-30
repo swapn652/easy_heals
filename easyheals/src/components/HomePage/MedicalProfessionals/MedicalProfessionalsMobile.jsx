@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { MedicalProfessionalsCard } from './MedicalProfessionalsCard';
 import axios from 'axios';
 import Slider from 'react-slick';
-import { useAuth } from '../AuthContext';
+import { useAuth } from '../../AuthContext';
 
 export const MedicalProfessionalsMobile = () => {
     

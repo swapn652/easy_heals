@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import { MedicalProfessionalsCard } from './MedicalProfessionalsCard';
-import { useAuth } from '../AuthContext';
+import { useAuth } from '../../AuthContext';
 import axios from 'axios';
 
 export const MedicalProfessionalsMediumScreen = () => {

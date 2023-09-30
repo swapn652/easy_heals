@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Slider from "react-slick";
 import { TreatmentBySymptomsCard } from './TreatmentBySymptomsCard';
 import axios from 'axios';
-import { useAuth } from '../AuthContext';
+import { useAuth } from '../../AuthContext';
 
 export const TreatmentBySymptoms = () => {
    // Custom prev arrow component with custom styling

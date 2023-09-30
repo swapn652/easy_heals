@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import { useAuth } from '../AuthContext';
-import { LabTestCardMediumScreen } from './LabTestCardMediumScreen'
+import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+import { useAuth } from '../../AuthContext';
+import Slider from 'react-slick';
+import { LabTestCardMediumScreen } from './LabTestCardMediumScreen';
 
-export const LabTestMediumScreen = () => {
+export const LabTestMobile = () => {
     const extractAddress = (address) => {
         const addressTerms = address.split(',').map((term) => term.trim());
         if (addressTerms.length >= 3) {
@@ -61,49 +62,45 @@ export const LabTestMediumScreen = () => {
       });
     }, [bearerToken]);
 
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        centerMode: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: null, // Custom previous arrow component
+        nextArrow: null, // Custom next arrow component
+    };
+
   return (
-    <div className="relative flex flex-col h-[29em]">
-        {/* Heading */}
-        <div className="flex flex-row justify-center items-center">
-            <div className="2md:w-[38.8vw] md:w-[38.2vw] h-[1px] bg-text-light"></div>
+    <div className="flex flex-col relative sm:h-[30em] 2xs:h-[29em] 3xs:h-[28.5em]">
+        <img src="./plus_bg_1.svg" className="absolute w-[4em]"/>
+         <div className="flex flex-row items-center justify-center">
+            <div className="h-[1px] 3xs:w-[29.2vw] 2xs:w-[30.2vw] xs:w-[30.3vw] sm:w-[31vw] bg-text-light"></div>
             <img src="./plus_icon.svg" />
-            <div className="text-[22px] mx-6 font-[700] font-[Raleway]">Lab Tests</div>
+            <div className="mx-4 font-[700] 3xs:text-[18px] xs:text-[19px] sm:text-[20px]">Lab Tests</div>
             <img src="./plus_icon.svg" />
-            <div className="2md:w-[38.8vw] md:w-[38.2vw] h-[1px] bg-text-light"></div>
+            <div className="h-[1px] 3xs:w-[29.2vw] 2xs:w-[30.2vw] xs:w-[30.3vw] sm:w-[31vw] bg-text-light"></div>
         </div>
 
-        {/* Cards */}
-        <div className="flex flex-row gap-x-4 mx-8 font-[Poppins] mt-10">
-             {labTests.map((labTest, index) => (
+        <Slider {...settings} className="mx-6 mt-6">
+            {labTests.map((labTest, index) => (
                 <LabTestCardMediumScreen key={index} {...labTest} />
               ))}
-        </div>
+        </Slider>
 
         {/* Buttons */}
         <div className="
             flex 
             flex-row 
             justify-center
-            mt-10
-            gap-x-10"
+            mt-8
+            gap-x-4"
         >
             <button className="
-                w-[15em]
-                h-[3em] 
-                bg-buttonColor 
-                text-white 
-                text-[13px]
-                font-[Poppins] 
-                font-[700] 
-                rounded-lg 
-                flex 
-                justify-center 
-                items-center"
-            >
-                Book Lab Tests
-            </button>
-            <button className="
-                w-[15em]
+                w-[12em]
                 h-[3em] 
                 border-2 
                 border-buttonColor 
@@ -117,6 +114,22 @@ export const LabTestMediumScreen = () => {
                 items-center"
             >
                 View all Lab Tests
+            </button>
+
+            <button className="
+                w-[12em]
+                h-[3em] 
+                bg-buttonColor 
+                text-white 
+                text-[13px]
+                font-[Poppins] 
+                font-[700] 
+                rounded-lg 
+                flex 
+                justify-center 
+                items-center"
+            >
+                Book Lab Tests
             </button>
         </div>
     </div>
