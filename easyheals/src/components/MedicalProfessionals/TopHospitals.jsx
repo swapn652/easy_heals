@@ -80,7 +80,7 @@ export const TopHospitals = () => {
 
   return (
     <div className="relative w-screen 2xl:h-[40.5em] xl:h-[40em] lg:h-[30em] flex justify-center flex-row font-[Raleway]">
-        <img src="./plus_bg_3.svg" alt="plus_bg_3.svg" className="absolute xl:top-[7em] right-0 2xl:w-[11em] xl:w-[10em]"/>
+        <img src="./plus_bg_3.svg" alt="plus_bg_3.svg" className="absolute xl:top-[7em] lg:top-[4em] right-0 2xl:w-[11em] xl:w-[10em] lg:w-[9em]"/>
         <div className="w-[90vw] h-[0.5px] bg-text-light absolute xl:top-[6em] lg:top-[4em]"></div>
     {/* Left section */}
         <div className="absolute flex flex-col right-24 2xl:top-[13em] xl:top-[12em] lg:top-[10em]">

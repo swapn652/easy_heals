@@ -24,8 +24,8 @@ export const PartnersMobile = () => {
         </div>
 
         <Slider {...settings} className="mx-6 mt-6">
-            <img src="./partners/ruby.svg" alt="Ruby Hall Clinic" className="w-10"  />
-            <img src="./partners/agarwal.svg" alt="Dr. Agarwals" className=""/>
+            <img src="./partners/ruby.svg" alt="Ruby Hall Clinic" className="w-[2em]"  />
+            <img src="./partners/agarwal.svg" alt="Dr. Agarwals" className="w-[2em]"/>
             <img src="./partners/unity.svg" alt="Unity Hospital" className=""/>
             <img src="./partners/orion.svg" alt="Orion Hospital" className=""/>
             <img src="./partners/sahyadri.svg" alt="Sahyadri Hospitals" className=""/>

@@ -163,7 +163,8 @@ export const MedicalProfessionals = () => {
             ))}
           </Slider>
         </div>
-
+        
+        <img src="./circle-element.svg" className="absolute 2xl:w-[7em] xl:w-[6em] lg:w-[5em] right-0 2xl:top-[23em] xl:top-[21em] lg:top-[16em]" />
         <img src="./dotted.svg" className="2xl:w-[15em] xl:w-[12em] lg:w-[10em] absolute 2xl:top-28 xl:top-[7em] lg:top-[5em] 2xl:left-[35em] xl:left-[32em] lg:left-[26em]"/>
         <img src="./doctors_bg.svg" className="2xl:w-[47em] xl:w-[42em] lg:w-[34em] absolute 2xl:top-[15em] xl:top-[13em] lg:top-[10.5em] right-0"/>
     </div>

@@ -30,8 +30,8 @@ export const NavbarMobile = () => {
         <div className="flex flex-row justify-center items-center absolute top-[2.5em]"> {/* Use justify-center and items-center */}
           <img src="./user_mobile.svg" className="w-[4.2em]" />
           <div className="flex flex-col ml-[1em]">
-            <div className="font-[Raleway]">New to Easyheals?</div>
-            <button className="w-[8em] h-[3em] bg-buttonColor text-white text-[12px] rounded-lg font-[Poppins] mt-2">
+            <div className="font-[Raleway] text-[15px]">New to Easyheals?</div>
+            <button className="w-[9em] h-[3em] bg-buttonColor text-white text-[12px] rounded-lg font-[Poppins] mt-2">
               Login/Sign Up
             </button>
           </div>

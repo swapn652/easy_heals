@@ -46,7 +46,7 @@ export const MedicalProfessionalsMediumScreen = () => {
   
 
   return (
-    <div className="w-screen h-[30em] flex flex-col relative">
+    <div className="w-screen h-[32em] flex flex-col relative">
         <div className="flex flex-col items-center">
             <div className="flex flex-row font-[Poppins] font-[700] text-[22px]">
                 <div>

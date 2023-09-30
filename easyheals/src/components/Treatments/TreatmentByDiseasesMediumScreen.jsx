@@ -58,11 +58,11 @@ export const TreatmentByDiseasesMediumScreen = () => {
   return (
     <div className="relative flex flex-col h-[27em]">
         <div className="flex flex-row justify-center items-center">
-            <div className="w-[23.5vw] h-[1px] bg-text-light"></div>
+            <div className="2md:w-[30.2vw] md:w-[29.1vw] h-[1px] bg-text-light"></div>
             <img src="./plus_icon.svg" />
             <div className="text-[22px] mx-6 font-[700] font-[Raleway]">Treatment by Diseases</div>
             <img src="./plus_icon.svg" />
-            <div className="w-[23.5vw] h-[1px] bg-text-light"></div>
+            <div className="2md:w-[30.2vw] md:w-[29.1vw] h-[1px] bg-text-light"></div>
         </div>
 
         <div className="mx-10 mt-6">

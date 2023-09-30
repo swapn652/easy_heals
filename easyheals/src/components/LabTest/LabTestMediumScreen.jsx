@@ -65,11 +65,11 @@ export const LabTestMediumScreen = () => {
     <div className="relative flex flex-col h-[29em]">
         {/* Heading */}
         <div className="flex flex-row justify-center items-center">
-            <div className="w-[30vw] h-[1px] bg-text-light"></div>
+            <div className="2md:w-[38.8vw] md:w-[38.2vw] h-[1px] bg-text-light"></div>
             <img src="./plus_icon.svg" />
             <div className="text-[22px] mx-6 font-[700] font-[Raleway]">Lab Tests</div>
             <img src="./plus_icon.svg" />
-            <div className="w-[30vw] h-[1px] bg-text-light"></div>
+            <div className="2md:w-[38.8vw] md:w-[38.2vw] h-[1px] bg-text-light"></div>
         </div>
 
         {/* Cards */}

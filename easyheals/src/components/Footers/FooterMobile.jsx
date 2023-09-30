@@ -12,11 +12,11 @@ export const FooterMobile = () => {
             </div>
 
             <div className="flex flex-row gap-x-2 absolute 3xs:top-[3.3em] sm:top-[3.8em] right-6">
-                <img src="./social_media/facebook.svg" className="3xs:w-[1.5em] 2xs:w-[1.6em] xs:w-[1.7em] sm:w-[1.8em]"/>
-                <img src="./social_media/instagram.svg" className="3xs:w-[1.5em] 2xs:w-[1.6em] xs:w-[1.7em] sm:w-[1.8em]"/>
-                <img src="./social_media/linkedin.svg" className="3xs:w-[1.5em] 2xs:w-[1.6em] xs:w-[1.7em] sm:w-[1.8em]"/>
-                <img src="./social_media/youtube.svg" className="3xs:w-[1.5em] 2xs:w-[1.6em] xs:w-[1.7em] sm:w-[1.8em]"/>
-                <img src="./social_media/twitter.svg" className="3xs:w-[1.5em] 2xs:w-[1.6em] xs:w-[1.7em] sm:w-[1.8em]"/>
+                <a href="https://www.facebook.com/easyheals" target="_blank"> <img src="./social_media/facebook.svg" className="3xs:w-[1.5em] 2xs:w-[1.6em] xs:w-[1.7em] sm:w-[1.8em]"/></a>
+                <a href="https://www.instagram.com/easy_heals/" target="_blank"> <img src="./social_media/instagram.svg" className="3xs:w-[1.5em] 2xs:w-[1.6em] xs:w-[1.7em] sm:w-[1.8em]"/></a>
+                <a href="https://www.linkedin.com/company/easyheals" target="_blank"> <img src="./social_media/linkedin.svg" className="3xs:w-[1.5em] 2xs:w-[1.6em] xs:w-[1.7em] sm:w-[1.8em]"/></a>
+                <a href="https://www.youtube.com/@easyheals" target="_blank"> <img src="./social_media/youtube.svg" className="3xs:w-[1.5em] 2xs:w-[1.6em] xs:w-[1.7em] sm:w-[1.8em]"/></a>
+                <a href="https://twitter.com/easyheals" target="_blank"> <img src="./social_media/twitter.svg" className="3xs:w-[1.5em] 2xs:w-[1.6em] xs:w-[1.7em] sm:w-[1.8em]"/></a>
             </div>
         </div>
 
@@ -66,8 +66,8 @@ export const FooterMobile = () => {
             </div>
             
             <div className="flex flex-row gap-x-4 justify-center 2xs:mt-4 mt-2">
-                <img src="./downloads/google_play_store.svg" className="sm:w-[9em] xs:w-[8em] 2xs:w-[7em] 3xs:w-[7em]" alt="Google Play Store" />
-                <img src="./downloads/app_store.svg" className="sm:w-[8.2em] xs:w-[7.2em] 2xs:w-[6.5em] 3xs:w-[6.2em]" alt="App Store" />
+                <a href="https://play.google.com/store/apps/details?id=com.Easyheals.patient" target="_blank"><img src="./downloads/google_play_store.svg" className="sm:w-[9em] xs:w-[8em] 2xs:w-[7em] 3xs:w-[7em]" alt="Google Play Store" /></a>
+                <a href="https://apps.apple.com/app/easyheals/id6462711867" target="_blank"><img src="./downloads/app_store.svg" className="sm:w-[8.2em] xs:w-[7.2em] 2xs:w-[6.5em] 3xs:w-[6.2em]" alt="App Store" /></a>
             </div>
         </div>
 

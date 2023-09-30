@@ -69,21 +69,21 @@ const settings = {
         />
       <div 
         style={{boxShadow: "0px 4px 40px 0px #60606040"}} 
-        className="w-[90vw] 2xl:h-[35em] xl:h-[31em] lg:h-[26em] bg-white absolute -top-12 flex flex-col"
+        className="lg:w-[90vw] w-[100vw] 2xl:h-[35em] xl:h-[31em] lg:h-[26em] bg-white absolute -top-12 flex flex-col"
       >
         {/* Heading */}
-        <div className="absolute top-10 flex items-center justify-center md:ml-2 lg:ml-0">
-            <span className="2xl:w-[491.6px] xl:w-[428px] lg:w-[326px] md:w-[25vw] h-[1px] bg-text-light"></span>
+        <div className="absolute top-10 flex items-center justify-center lg:ml-0">
+            <span className="2xl:w-[491.6px] xl:w-[428px] lg:w-[330px] 2md:w-[34.1vw] md:w-[33vw] h-[1px] bg-text-light"></span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
             <span className="px-4 font-Poppins font-semibold 2xl:text-[27px] xl:text-[23px] md:text-[22px] mx-2">
                 Featured Services
             </span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-            <span className="2xl:w-[491.6px] xl:w-[428px] lg:w-[326px] md:w-[28vw] h-[1px] bg-text-light"></span>
+            <span className="2xl:w-[491.6px] xl:w-[428px] lg:w-[330px] 2md:w-[34.1vw] md:w-[33vw] h-[1px] bg-text-light"></span>
         </div>
 
         {/* Carousel */}
-        <div className="2xl:h-[20em] xl:h-[18em] lg:h-[14em] w-[80vw] absolute xl:top-32 lg:top-28 md:top-24 lg:mx-[4.5em] md:mx-[2em]">
+        <div className="2xl:h-[20em] xl:h-[18em] lg:h-[14em] lg:w-[80vw] md:w-[90vw] absolute xl:top-32 lg:top-28 md:top-24 lg:mx-[4.5em] 2md:mx-[2.5em] md:mx-[2.3em]">
           <Slider {...settings} className="flex 2xl:ml-4 xl:ml-0 lg:-ml-6">
             <div className=""> {/* Add a gap between cards */}
               <img src="./featured_services/chemotherapy.svg" className="2xl:w-[17em] xl:w-[15em] lg:w-[12em] cursor-pointer"/>
@@ -125,7 +125,9 @@ const settings = {
             absolute 
             2xl:top-[29em] 
             xl:top-[30em] 
-            md:top-[29em]
+            lg:top-[28em]
+            2md:top-[32em]
+            md:top-[30em]
             flex 
             self-center 
             justify-center 

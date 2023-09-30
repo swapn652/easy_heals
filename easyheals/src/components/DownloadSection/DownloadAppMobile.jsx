@@ -28,10 +28,10 @@ export const DownloadAppMobile = () => {
         {/* Download buttons */}
         <div className="flex flex-row justify-center absolute 3xs:top-[24em] 2xs:top-[25em] xs:top-[26.5em] sm:top-[27em]">
           <div className="relative">
-            <img src="./downloads/google_play_store.svg" className="sm:w-[10em] xs:w-[9em] w-[8em]" />
+            <a href="https://play.google.com/store/apps/details?id=com.Easyheals.patient" target="_blank"><img src="./downloads/google_play_store.svg" className="sm:w-[10em] xs:w-[9em] w-[8em]" /></a>
           </div>
           <div className="relative ml-4"> {/* Add margin to separate the buttons */}
-            <img src="./downloads/app_store.svg" className="sm:w-[9em] xs:w-[8em] w-[7.2em]" />
+            <a href="https://apps.apple.com/app/easyheals/id6462711867" target="_blank"><img src="./downloads/app_store.svg" className="sm:w-[9em] xs:w-[8em] w-[7.2em]" /></a>
           </div>
         </div>
 

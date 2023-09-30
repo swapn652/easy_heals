@@ -66,7 +66,7 @@ function App() {
      <div className="block md:hidden">
       <FeaturedServicesMobile/>
      </div>
-     <div className="hidden md:block lg:mt-0 md:mt-[20em]">
+     <div className="hidden md:block lg:mt-0 2md:mt-[21em] md:mt-[20em]">
       <TreatmentBySymptoms/>
      </div>
      <div className="block md:hidden">

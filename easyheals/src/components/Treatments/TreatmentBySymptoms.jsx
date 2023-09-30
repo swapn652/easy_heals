@@ -76,17 +76,17 @@ export const TreatmentBySymptoms = () => {
     <div className="relative w-screen 2xl:h-[39em] xl:h-[35em] lg:h-[30em] md:h-[21em] flex justify-center">
         {/* Heading */}
         <div className="flex items-center justify-center absolute top-20">
-            <span className="2xl:w-[460px] xl:w-[430px] lg:w-[320px] md:w-[23vw] h-[1px] bg-text-light"></span>
+            <span className="2xl:w-[460px] xl:w-[430px] lg:w-[320px] 2md:w-[30.1vw] md:w-[28.7vw] h-[1px] bg-text-light"></span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
             <span className="px-4 font-Poppins font-semibold 2xl:text-[27px] xl:text-[23px] md:text-[22px] mx-2">
                 Treatment By Symptoms
             </span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-            <span className="2xl:w-[460px] xl:w-[430px] lg:w-[320px] md:w-[23vw] h-[1px] bg-text-light"></span>
+            <span className="2xl:w-[460px] xl:w-[430px] lg:w-[320px] 2md:w-[30.1vw] md:w-[28.7vw] h-[1px] bg-text-light"></span>
         </div>
 
         {/* Carousel */}
-        <div className="2xl:h-[20em] xl:h-[18em] lg:h-[14em] w-[90vw] absolute xl:top-40 lg:top-36 md:top-32">
+        {symptoms.length > 0 && (<div className="2xl:h-[20em] xl:h-[18em] lg:h-[14em] w-[90vw] absolute xl:top-40 lg:top-36 md:top-32">
           <Slider {...settings} className="">
             {symptoms.map((symptom) => (
                     <div key={symptom.id} className="m-4">
@@ -99,6 +99,7 @@ export const TreatmentBySymptoms = () => {
                 ))}
           </Slider>
         </div>
+        )}
 
         {/* Buttons */}
         <div className="
