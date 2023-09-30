@@ -127,7 +127,8 @@ export const TopHospitals = () => {
                 Find Best Hospitals
         </button>
 
-        <div className="w-[90vw] h-[0.5px] bg-text-light absolute xl:bottom-[1em] lg:bottom-[6em]"></div>
+      {/* Line at the end of the section , i.e., after the carousel*/}
+        <div className="w-[90vw] h-[0.5px] bg-text-light absolute 2xl:bottom-[6em] xl:bottom-[8em] lg:bottom-[6em]"></div>
 
         <div className="z-10 absolute xl:left-[5em] lg:left-[4em] 2xl:top-[11em] xl:top-[10.5em] lg:top-[7.5em] 2xl:w-[45em] xl:w-[40em] lg:w-[33em]">
           <Slider {...settings} className="">

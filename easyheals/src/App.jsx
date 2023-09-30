@@ -32,16 +32,22 @@ import { TreatmentByDiseasesMobile } from "./components/Treatments/TreatmentByDi
 import { TopHospitalsMobile } from "./components/MedicalProfessionals/TopHospitalsMobile";
 import { DownloadAppMobile } from "./components/DownloadSection/DownloadAppMobile";
 import { FooterMobile } from "./components/Footers/FooterMobile";
+import { NavbarMobile } from "./components/NavbarMobile";
 
 function App() {
   return (
     <>
     <AuthProvider>
-     <Navbar/>
+     <div className="hidden md:block">
+        <Navbar/>
+     </div>
+     <div className="block md:hidden">
+        <NavbarMobile/>
+     </div>
      <div className="hidden md:block">
       <MainSection/>
      </div>
-     <div className="block md:hidden">
+     <div className="block md:hidden -mt-16">
         <MainSectionMobile/>
      </div>
      <div className="hidden md:block 2xl:mt-[10em] xl:mt-[10em] lg:mt-[9em] md:mt-[8em]">
@@ -92,12 +98,12 @@ function App() {
      <div className="block md:hidden">
       <TreatmentByDiseasesMobile/>
      </div>
-     {/* <div className="hidden lg:block">
+     <div className="3xs:hidden lg:block">
       <LabTests/>
      </div>
-     <div className="block lg:hidden">
+     <div className="3xs:hidden md:block lg:hidden">
       <LabTestMediumScreen/>
-     </div> */}
+     </div>
      <div className="3xs:hidden lg:block">
       <TopHospitals/>
      </div>
