@@ -28,10 +28,10 @@ export const DownloadAppMobile = () => {
         {/* Download buttons */}
         <div className="flex flex-row justify-center absolute 3xs:top-[24em] 2xs:top-[25em] xs:top-[26.5em] sm:top-[27em]">
           <div className="relative">
-            <img src="./downloads/google_play_store.svg" className="w-[8em]" />
+            <img src="./downloads/google_play_store.svg" className="sm:w-[10em] xs:w-[9em] w-[8em]" />
           </div>
           <div className="relative ml-4"> {/* Add margin to separate the buttons */}
-            <img src="./downloads/app_store.svg" className="w-[7em]" />
+            <img src="./downloads/app_store.svg" className="sm:w-[9em] xs:w-[8em] w-[7.2em]" />
           </div>
         </div>
 

@@ -54,7 +54,7 @@ export const TopHospitalsMobile = () => {
     };
 
   return (
-    <div className="flex flex-col relative 3xs:h-[34em] 2xs:h-[33em] xs:h-[34.5em] sm:h-[36.5em]">
+    <div className="flex flex-col relative 3xs:h-[34em] 2xs:h-[35em] xs:h-[37em] sm:h-[39em]">
 
         {/* Heading and subheading */}
         <div className="flex flex-col items-center font-[Poppins]">
