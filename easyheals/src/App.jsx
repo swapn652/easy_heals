@@ -30,6 +30,7 @@ import { TreatmentBySpecialityMobile } from "./components/Treatments/TreatmentBy
 import { MedicalProfessionalsMobile } from "./components/MedicalProfessionals/MedicalProfessionalsMobile";
 import { TreatmentByDiseasesMobile } from "./components/Treatments/TreatmentByDiseasesMobile";
 import { TopHospitalsMobile } from "./components/MedicalProfessionals/TopHospitalsMobile";
+import { DownloadAppMobile } from "./components/DownloadSection/DownloadAppMobile";
 
 function App() {
   return (
@@ -105,13 +106,16 @@ function App() {
      <div className="block md:hidden">
       <TopHospitalsMobile/>
      </div>
-     {/* <div className="hidden lg:block">
+     <div className="3xs:hidden lg:block">
       <DownloadApp/>
      </div>
-     <div className="block lg:hidden">
+     <div className="3xs:hidden md:block lg:hidden">
       <DownloadAppMediumScreen/>
      </div>
-     <div className="hidden lg:block">
+     <div className="block md:hidden">
+      <DownloadAppMobile/>
+     </div>
+     {/* <div className="hidden lg:block">
       <Footer/>
      </div>
      <div className="block lg:hidden">

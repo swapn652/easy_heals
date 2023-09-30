@@ -18,6 +18,7 @@ export const HospitalCard = ({imageSrc, name, address}) => {
                 3xs:h-[15.5em]
                 2xl:w-[14.5em] 
                 xl:w-[13em] 
+                lg:w-[11em]
                 md:w-[12em] 
                 sm:w-[15em]
                 xs:w-[14em]
