@@ -8,6 +8,7 @@ import { Footer } from "./components/HomePage/Footers/Footer";
 import { FooterMobile } from "./components/HomePage/Footers/FooterMobile";
 import { FooterMediumScreen } from "./components/HomePage/Footers/FooterMediumScreen";
 import { HomePage } from "./components/HomePage/HomePage";
+import { ThreeColumnLayout } from "./components/ThreeColumnLayout";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
             <NavbarMobile/>
         </div>
 
-        <HomePage/>
+        {/* <HomePage/> */}
+        <ThreeColumnLayout/>
 
         <div className="3xs:hidden lg:block">
           <Footer/>
@@ -36,4 +38,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

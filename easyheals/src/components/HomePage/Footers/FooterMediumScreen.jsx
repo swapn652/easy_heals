@@ -2,7 +2,7 @@ import React from 'react'
 
 export const FooterMediumScreen = () => {
   return (
-    <div className="w-screen h-[33em] bg-footer-color mt-[7em] relative font-[Raleway]">
+    <div className="w-screen h-[33em] bg-footer-color relative font-[Raleway]">
         <div className="flex flex-col">
             <div className="flex flex-row">
                 <div className="flex flex-col">

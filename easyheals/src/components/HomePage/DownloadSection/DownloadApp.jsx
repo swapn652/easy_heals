@@ -2,7 +2,7 @@ import React from 'react'
 
 export const DownloadApp = () => {
   return (
-    <div style={{background: "var(--icon-green, linear-gradient(134deg, #74B641 7.31%, #159939 78.04%))"}} className="relative w-screen 2xl:h-[26em] xl:h-[24em] lg:h-[20em] flex flex-row font-[Poppins]">
+    <div style={{background: "var(--icon-green, linear-gradient(134deg, #74B641 7.31%, #159939 78.04%))"}} className="relative w-screen 2xl:h-[26em] xl:h-[24em] lg:h-[20em] flex flex-row font-[Poppins] xl:mb-[8em] lg:mb-[7em]">
       <div className="flex flex-col absolute text-white 2xl:left-[14em] xl:left-[12em] lg:left-[8em] 2xl:top-[6em] xl:top-[5em] lg:top-[4em]">
         <div className="2xl:text-[36px] xl:text-[32px] lg:text-[25px] font-[700]">
           Download the EasyHeals

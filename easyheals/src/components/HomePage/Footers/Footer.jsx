@@ -2,8 +2,8 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div className="2xl:h-[32em] xl:h-[28em] w-screen relative">
-        <div className='absolute 2xl:h-[22em] xl:h-[21em] lg:h-[20em] w-screen bg-footer-color top-[8em] flex flex-row'>
+    <div className=" w-screen relative">
+        <div className='absolute 2xl:h-[22em] xl:h-[21em] lg:h-[20em] w-screen bg-footer-color flex flex-row'>
             {/* Logo and social media links */}
             <div className="flex flex-col">
                 <img src="./easyHealsLogo.svg" alt="Easy heals logo" className="absolute top-[4em] left-[5em] 2xl:w-[16em] xl:w-[13em] lg:w-[10em]"/>
@@ -59,7 +59,7 @@ export const Footer = () => {
             </div>
         </div>
 
-        <div className="bg-green2 h-[4em] w-screen absolute 2xl:top-[30em] xl:top-[29em] lg:top-[35em] flex items-center justify-center text-white xl:text-base lg:text-[12px] font-[Raleway] font-[600]">
+        <div className="bg-green2 h-[4em] w-screen absolute 2xl:top-[22em] xl:top-[21em] lg:top-[25em] flex items-center justify-center text-white xl:text-base lg:text-[12px] font-[Raleway] font-[600]">
             Copyright © 2023 by EasyHeals Technologies Private Limited. All Rights Reserved.
         </div>
     </div>
