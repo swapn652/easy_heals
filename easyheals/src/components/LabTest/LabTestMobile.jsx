@@ -76,6 +76,7 @@ export const LabTestMobile = () => {
 
   return (
     <div className="flex flex-col relative sm:h-[30em] 2xs:h-[29em] 3xs:h-[28.5em]">
+        <img src="./plus_bg_1.svg" className="absolute w-[4em]"/>
          <div className="flex flex-row items-center justify-center">
             <div className="h-[1px] 3xs:w-[29.2vw] 2xs:w-[30.2vw] xs:w-[30.3vw] sm:w-[31vw] bg-text-light"></div>
             <img src="./plus_icon.svg" />
