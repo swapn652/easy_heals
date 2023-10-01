@@ -76,13 +76,13 @@ export const TreatmentBySymptoms = () => {
     <div className="relative w-screen 2xl:h-[39em] xl:h-[35em] lg:h-[30em] md:h-[21em] flex justify-center">
         {/* Heading */}
         <div className="flex items-center justify-center absolute top-20">
-            <span className="2xl:w-[460px] xl:w-[32vw] lg:w-[320px] 2md:w-[30.1vw] md:w-[28.7vw] h-[1px] bg-text-light"></span>
+            <span className="3xl:w-[32vw] 2xl:w-[460px] xl:w-[32vw] lg:w-[320px] 2md:w-[30.1vw] md:w-[28.7vw] h-[1px] bg-text-light"></span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
             <span className="px-4 font-Poppins font-semibold 2xl:text-[27px] xl:text-[23px] md:text-[22px] mx-2">
                 Treatment By Symptoms
             </span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-            <span className="2xl:w-[460px] xl:w-[32vw] lg:w-[320px] 2md:w-[30.1vw] md:w-[28.7vw] h-[1px] bg-text-light"></span>
+            <span className="3xl:w-[32vw] 2xl:w-[460px] xl:w-[32vw] lg:w-[320px] 2md:w-[30.1vw] md:w-[28.7vw] h-[1px] bg-text-light"></span>
         </div>
 
         {/* Carousel */}
@@ -118,6 +118,7 @@ export const TreatmentBySymptoms = () => {
                 h-[3em] 
                 bg-buttonColor 
                 text-white 
+                3xl:text-[18px]
                 2xl:text-[16px] 
                 xl:text-[14px] 
                 lg:text-[12px] 
@@ -136,6 +137,7 @@ export const TreatmentBySymptoms = () => {
                 md:w-[14em]
                 h-[3em] border-2 
                 border-buttonColor 
+                3xl:text-[18px]
                 2xl:text-[16px] 
                 xl:text-[14px] 
                 lg:text-[12px] 
