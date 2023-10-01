@@ -65,20 +65,20 @@ export const LabTests = () => {
 
 
   return (
-    <div className="relative w-screen 2xl:h-[44em] xl:h-[42em] lg:h-[36em] flex flex-row justify-center font-[Raleway]">
+    <div className="relative w-screen 3xl:h-[45em] 2xl:h-[44em] xl:h-[42em] lg:h-[36em] flex flex-row justify-center font-[Raleway]">
         {/* Heading */}
         <div className="flex items-center justify-center absolute top-44">
-            <span className="2xl:w-[540px] xl:w-[38vw] lg:w-[380px] md:w-[31.5vw] h-[1px] bg-text-light"></span>
+            <span className="3xl:w-[37vw] 2xl:w-[540px] xl:w-[38vw] lg:w-[380px] md:w-[31.5vw] h-[1px] bg-text-light"></span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-            <span className="px-4 font-Poppins 2xl:text-[27px] xl:text-[23px] md:text-[22px] font-[700] mx-2">
+            <span className="px-4 font-Poppins 3xl:text-[30px] 2xl:text-[27px] xl:text-[23px] md:text-[22px] font-[700] mx-2">
                 Lab Tests
             </span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-            <span className="2xl:w-[540px] xl:w-[38vw] lg:w-[380px] md:w-[31.5vw] h-[1px] bg-text-light"></span>
+            <span className="3xl:w-[37vw] 2xl:w-[540px] xl:w-[38vw] lg:w-[380px] md:w-[31.5vw] h-[1px] bg-text-light"></span>
         </div>
         
         {/* Cards */}
-        <div style={divStyle} className="absolute w-screen 2xl:h-[27em] xl:h-[25em] lg:h-[21em] flex flex-row justify-center xl:top-[17em] lg:top-[15em]">
+        <div style={divStyle} className="absolute w-screen 3xl:h-[28em] 2xl:h-[27em] xl:h-[25em] lg:h-[21em] flex flex-row justify-center xl:top-[17em] lg:top-[15em]">
             <div className="absolute flex flex-row top-12 gap-x-4">
               {labTests.map((labTest, index) => (
                 <LabTestCard key={index} {...labTest} />
@@ -102,6 +102,7 @@ export const LabTests = () => {
                 h-[3em] 
                 bg-buttonColor 
                 text-white 
+                3xl:text-[18px]
                 2xl:text-[14px] 
                 xl:text-[14px] 
                 lg:text-[12px] 
@@ -119,6 +120,7 @@ export const LabTests = () => {
                 lg:w-[12em] 
                 h-[3em] border-2 
                 border-buttonColor 
+                3xl:text-[18px]
                 2xl:text-[14px] 
                 xl:text-[14px] 
                 lg:text-[12px] 

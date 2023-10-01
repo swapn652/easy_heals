@@ -3,7 +3,7 @@ import React from 'react'
 export const LabTestCard = ({title, preparation, hospitalName1, hospitalAddress1, hospitalPrice1, hospitalOfferPrice1,
      hospitalName2, hospitalAddress2, hospitalPrice2, hospitalOfferPrice2}) => {
   return (
-    <div style={{boxShadow: "0px 2px 10px 0px #60606026"}} className="2xl:w-[26em] xl:w-[24em] lg:w-[19em] 2xl:h-[15.5em] xl:h-[13.5em] lg:h-[11em] border-[0.1px] border-text-light rounded-lg flex flex-col relative bg-white font-[Poppins]">
+    <div style={{boxShadow: "0px 2px 10px 0px #60606026"}} className="3xl:w-[30em] 2xl:w-[26em] xl:w-[24em] lg:w-[19em] 3xl:h-[17em] 2xl:h-[15.5em] xl:h-[13.5em] lg:h-[11em] border-[0.1px] border-text-light rounded-lg flex flex-col relative bg-white font-[Poppins]">
         <div className="flex flex-col 2xl:h-[7em] xl:h-[6em] lg:h-[5em]">
             <div className="absolute left-6 2xl:top-[1em] xl:top-[0.8em] lg:top-[0.5em] text-buttonColor 2xl:text-[20px] xl:text-[18px] lg:text-[16px] font-[700]">
                 {title}
@@ -11,7 +11,7 @@ export const LabTestCard = ({title, preparation, hospitalName1, hospitalAddress1
             <div className="absolute left-6 xl:top-[3.8em] lg:top-[3.2em] 2xl:text-[13px] xl:text-[11px] lg:text-[9px] text-text-light">
                 {preparation}
             </div>
-            <div className="2xl:w-[25.95em] xl:w-[23.95em] lg:w-[18.95em] h-[1px] bg-text-light absolute 2xl:top-[5em] xl:top-[4.5em] lg:top-[3.2em]"></div>
+            <div className="w-[100%] h-[1px] bg-text-light absolute 2xl:top-[5em] xl:top-[4.5em] lg:top-[3.2em]"></div>
         </div>
 
         {/* Information about first Hospital */}
