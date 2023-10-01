@@ -78,16 +78,16 @@ export const TreatmentBySpeciality = () => {
             />
         <div 
             style={{boxShadow: "0px 4px 40px 0px #60606040"}}  
-            className="absolute w-[90vw] 2xl:h-[28em] xl:h-[27em] lg:h-[22em] bg-white -top-12"
+            className="absolute w-[90vw] 3xl:h-[30em] 2xl:h-[28em] xl:h-[27em] lg:h-[22em] bg-white -top-12"
         >
             <div className="mt-10 flex items-center justify-center">
-                <span className="2xl:w-[455.6px] xl:w-[32.25vw] lg:w-[296.5px] h-[1px] bg-text-light"></span>
+                <span className="3xl:w-[32.4vw] 2xl:w-[455.6px] xl:w-[32.25vw] lg:w-[296.5px] h-[1px] bg-text-light"></span>
                 <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-                <span className="px-4 font-Poppins font-semibold 2xl:text-[27px] xl:text-[23px] lg:text-[22px] mx-2">
+                <span className="px-4 font-Poppins font-semibold 3xl:text-[30px] 2xl:text-[27px] xl:text-[23px] lg:text-[22px] mx-2">
                     Treatment By Speciality
                 </span>
                 <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-                <span className="2xl:w-[455.6px] xl:w-[32.25vw] lg:w-[296.5px] h-[1px] bg-text-light"></span>
+                <span className="3xl:w-[32.4vw] 2xl:w-[455.6px] xl:w-[32.25vw] lg:w-[296.5px] h-[1px] bg-text-light"></span>
             </div>
         </div>
  
@@ -112,6 +112,7 @@ export const TreatmentBySpeciality = () => {
             h-[3em] 
             border-2 
             border-green2 
+            3xl:text-[18px]
             2xl:text-[16px] 
             xl:text-[14px] 
             lg:text-[12px] 
@@ -120,6 +121,7 @@ export const TreatmentBySpeciality = () => {
             text-green2 
             rounded-lg 
             absolute 
+            3xl:top-[18em]
             2xl:top-[19em] 
             xl:top-[21em] 
             lg:top-[19em] 
