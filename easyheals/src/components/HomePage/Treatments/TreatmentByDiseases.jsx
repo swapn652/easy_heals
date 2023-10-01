@@ -80,7 +80,7 @@ export const TreatmentByDiseases = () => {
         <div className="flex items-center justify-center absolute top-20">
             <span className="3xl:w-[32vw] 2xl:w-[460px] xl:w-[32vw] lg:w-[320px] h-[1px] bg-text-light"></span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-            <span className="px-4 font-Poppins font-[700] 3xl:text-[30px] 2xl:text-[27px] xl:text-[23px] lg:text-[22px] mx-2">
+            <span className="px-4 font-Poppins font-[700] 4xl:text-[34px] 3xl:text-[30px] 2xl:text-[27px] xl:text-[23px] lg:text-[22px] mx-2">
                 Treatment By Diseases
             </span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
