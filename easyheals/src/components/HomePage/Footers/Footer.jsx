@@ -18,7 +18,7 @@ export const Footer = () => {
             </div>
 
             {/* Company */}
-            <div className="flex flex-col font-[Raleway] 2xl:text-[16px] xl:text-[15px] lg:text-[13px] gap-y-4 absolute xl:top-[5em] lg:top-[5.5em] 2xl:left-[32em] xl:left-[30em] lg:left-[28em]">
+            <div className="flex flex-col font-[Raleway] 3xl:text-[20px] 2xl:text-[16px] xl:text-[15px] lg:text-[13px] gap-y-4 absolute 3xl:top-[3em] xl:top-[5em] lg:top-[5.5em 3xl:left-[25em] 2xl:left-[32em] xl:left-[30em] lg:left-[28em]">
                 <div className="font-[600] cursor-pointer">Company</div>
                 <div className="cursor-pointer">About Us</div>
                 <div className="cursor-pointer">Terms & Conditions</div>
@@ -27,7 +27,7 @@ export const Footer = () => {
             </div>
             
             {/* Services */}
-            <div className="flex flex-col font-[Raleway] 2xl:text-[16px] xl:text-[15px] lg:text-[13px] gap-y-4 absolute xl:top-[5em] lg:top-[5.5em] 2xl:left-[50em] xl:left-[47em] lg:left-[44em]">
+            <div className="flex flex-col font-[Raleway] 3xl:text-[20px] 2xl:text-[16px] xl:text-[15px] lg:text-[13px] gap-y-4 absolute 3xl:top-[3em] xl:top-[5em] lg:top-[5.5em] 3xl:left-[40em] 2xl:left-[50em] xl:left-[47em] lg:left-[44em]">
                 <div className="font-[600] cursor-pointer">Services</div>
                 <div className="cursor-pointer">Treatment</div>
                 <div className="cursor-pointer">Doctor Appointment</div>
@@ -36,7 +36,7 @@ export const Footer = () => {
             </div>
 
             {/* Contact info */}
-            <div className="flex flex-col font-[Raleway] 2xl:text-[16px] xl:text-[15px] lg:text-[13px] gap-y-6 absolute xl:top-[5em] lg:top-[5.5em] 2xl:left-[67em] xl:left-[64em] lg:left-[60em]">
+            <div className="flex flex-col font-[Raleway] 3xl:text-[20px] 2xl:text-[16px] xl:text-[15px] lg:text-[13px] gap-y-6 absolute 3xl:top-[3em] xl:top-[5em] lg:top-[5.5em] 3xl:left-[56em] 2xl:left-[67em] xl:left-[64em] lg:left-[60em]">
                 <div className="flex flex-row">
                     <img src="./contact_info/phone.svg" className="w-[1.5em]"/>
                     <span className="ml-2 font-[600]">+91-7510818108</span>
@@ -52,7 +52,7 @@ export const Footer = () => {
                 <div className="font-[600] text-[#678765]">
                     Download Mobile Application
                 </div>
-                <div className="flex flex-row gap-x-4 absolute lg:top-[13em] xl:top-[12em]">
+                <div className="flex flex-row gap-x-4 absolute 3xl:top-[10.5em] lg:top-[13em] xl:top-[12em]">
                     <a href="https://play.google.com/store/apps/details?id=com.Easyheals.patient" target="_blank"><img src="./downloads/google_play_store.svg" className="cursor-pointer xl:w-[9em] lg:w-[8em]"/></a>
                     <a href="https://apps.apple.com/app/easyheals/id6462711867" target="_blank"><img src="./downloads/app_store.svg" className="cursor-pointer xl:w-[8em] lg:w-[7em]"/></a>
                 </div>
