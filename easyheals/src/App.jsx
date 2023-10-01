@@ -9,6 +9,7 @@ import { FooterMobile } from "./components/HomePage/Footers/FooterMobile";
 import { FooterMediumScreen } from "./components/HomePage/Footers/FooterMediumScreen";
 import { HomePage } from "./components/HomePage/HomePage";
 import { ThreeColumnLayout } from "./components/ThreeColumnLayout";
+import { TreatmentPage } from "./components/TreatmentPage";
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
             <NavbarMobile/>
         </div>
 
-        {/* <HomePage/> */}
-        <ThreeColumnLayout/>
+        <HomePage/>
+        {/* <ThreeColumnLayout/> */}
+        {/* <TreatmentPage/> */}
 
         <div className="3xs:hidden lg:block">
           <Footer/>

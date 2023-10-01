@@ -8,8 +8,25 @@ export const NavbarMobile = () => {
   };
 
   const menuStyle = {
-    transform: isMenuOpen ? 'translateX(0)' : 'translateX(100%)',
-    transition: 'transform 0.4s ease', // Adjust the duration (0.4s) as needed
+    width: isMenuOpen ? '74vw' : '0', // Set the width based on the menu state
+    transition: 'width 0.4s ease', // Apply transition to the width property
+    overflowX: isMenuOpen ? 'auto' : 'hidden',
+  };
+  
+  const textContainerStyle = {
+    width: '100%', // Set a fixed width for the text container
+    whiteSpace: 'nowrap', // Prevent text wrapping
+  };
+
+  const overlayStyle = {
+    display: isMenuOpen ? 'block' : 'none',
+    position: 'fixed',
+    top: 64,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    background: 'rgba(0, 0, 0, 0.5)', // Translucent overlay color
+    zIndex: 13, // Ensure the overlay is above other content
   };
 
   return (
@@ -18,6 +35,9 @@ export const NavbarMobile = () => {
       <div className="text-4xl" onClick={toggleMenu}>
         <ion-icon name="menu-outline"></ion-icon>
       </div>
+
+      {/* Translucent overlay */}
+      <div style={overlayStyle}></div>
 
       {/* Mobile menu */}
       <div
@@ -29,7 +49,7 @@ export const NavbarMobile = () => {
        >
         <div className="flex flex-row justify-center items-center absolute top-[2.5em]"> {/* Use justify-center and items-center */}
           <img src="./user_mobile.svg" className="w-[4.2em]" />
-          <div className="flex flex-col ml-[1em]">
+          <div className="flex flex-col ml-[1em]" style={{ ...textContainerStyle }}>
             <div className="font-[Raleway] text-[15px]">New to Easyheals?</div>
             <button className="w-[9em] h-[3em] bg-buttonColor text-white text-[12px] rounded-lg font-[Poppins] mt-2">
               Login/Sign Up

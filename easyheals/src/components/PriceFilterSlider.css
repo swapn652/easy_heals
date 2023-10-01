@@ -1,0 +1,30 @@
+/* Increase specificity to override default styles */
+.noUi-connect {
+    background-color: #FF5733;
+    height: 8px;
+}
+
+.noUi-target {
+    height: 8px;
+}
+
+/* Hide the vertical bars inside the default handle */
+.noUi-handle::before {
+    content: none;
+}
+
+/* Hide the vertical bars inside the default handle */
+.noUi-handle::after {
+    content: none;
+}
+
+/* Customize the appearance of the default handle square */
+.noUi-origin > .noUi-handle {
+    width: 18px; /* Adjust the width as needed */
+    height: 18px; /* Adjust the height as needed */
+    top: -6px;
+    right: -9px; /* half the width */
+    border-radius: 9px; /* Adjust the border radius as needed */
+    border-color: #FF5733;
+    border-width: 4px;
+}
