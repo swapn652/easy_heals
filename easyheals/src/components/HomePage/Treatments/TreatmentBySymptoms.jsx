@@ -78,7 +78,7 @@ export const TreatmentBySymptoms = () => {
         <div className="flex items-center justify-center absolute top-20">
             <span className="3xl:w-[32vw] 2xl:w-[460px] xl:w-[32vw] lg:w-[320px] 2md:w-[30.1vw] md:w-[28.7vw] h-[1px] bg-text-light"></span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-            <span className="px-4 font-Poppins font-semibold 3xl:text-[30px] 2xl:text-[27px] xl:text-[23px] md:text-[22px] mx-2">
+            <span className="px-4 font-Poppins font-semibold 4xl:text-[34px] 3xl:text-[30px] 2xl:text-[27px] xl:text-[23px] md:text-[22px] mx-2">
                 Treatment By Symptoms
             </span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
@@ -118,6 +118,7 @@ export const TreatmentBySymptoms = () => {
                 h-[3em] 
                 bg-buttonColor 
                 text-white 
+                4xl:text-[20px]
                 3xl:text-[18px]
                 2xl:text-[16px] 
                 xl:text-[14px] 
@@ -137,6 +138,7 @@ export const TreatmentBySymptoms = () => {
                 md:w-[14em]
                 h-[3em] border-2 
                 border-buttonColor 
+                4xl:text-[20px]
                 3xl:text-[18px]
                 2xl:text-[16px] 
                 xl:text-[14px] 

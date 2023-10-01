@@ -3,6 +3,7 @@ import React from 'react';
 export const TreatmentBySymptomsCard = ({ imageSrc, title }) => {
   return (
     <div className="
+      4xl:w-[13em]
       3xl:w-[10.5em]
       2xl:w-[9.2em] 
       xl:w-[7.45em] 
