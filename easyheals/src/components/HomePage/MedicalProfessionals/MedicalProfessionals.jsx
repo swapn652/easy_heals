@@ -71,7 +71,7 @@ export const MedicalProfessionals = () => {
     <div className="relative w-screen 2xl:h-[32em] xl:h-[28em] lg:h-[21em] flex flex-row font-[Raleway]">
         {/* Left section */}
         <div className="absolute flex flex-col left-20 3xl:top-[9em] 2xl:top-[11em] xl:top-[10em] lg:top-[8em]">
-            <div className="3xl:text-[42px] 2xl:text-[38px] xl:text-[35px] lg:text-[26px] font-[700]">
+            <div className="4xl:text-[52px] 3xl:text-[42px] 2xl:text-[38px] xl:text-[35px] lg:text-[26px] font-[700]">
                 <div className="flex flex-row ">
                     <div>
                         Top
@@ -84,7 +84,7 @@ export const MedicalProfessionals = () => {
                     at Your Service
                 </div>
             </div>
-            <div className="3xl:text-[18px] 2xl:text-[15px] xl:text-[14px] lg:text-[11.2px] text-text-dark mt-2">
+            <div className="4xl:text-[22px] 3xl:text-[18px] 2xl:text-[15px] xl:text-[14px] lg:text-[11.2px] text-text-dark mt-2">
                 <div>
                     Delivering Exceptional Care and Specialized Expertise to 
                 </div>
@@ -101,6 +101,7 @@ export const MedicalProfessionals = () => {
             justify-center 
             xl:gap-x-6 
             lg:gap-x-4 
+            4xl:top-[25em]
             2xl:top-[23.5em] 
             xl:top-[21.5em] 
             lg:top-[16.7em] 
@@ -112,6 +113,7 @@ export const MedicalProfessionals = () => {
                 h-[3em] 
                 bg-buttonColor 
                 text-white 
+                4xl:text-[20px]
                 3xl:text-[18px]
                 2xl:text-[15px] 
                 xl:text-[14px] 
@@ -130,7 +132,8 @@ export const MedicalProfessionals = () => {
                 lg:w-[12em] 
                 h-[3em] 
                 border-2 
-                border-buttonColor 
+                border-buttonColor
+                4xl:text-[20px] 
                 3xl:text-[18px]
                 2xl:text-[15px] 
                 xl:text-[14px] 
@@ -147,13 +150,13 @@ export const MedicalProfessionals = () => {
             </button>
         </div>
 
-        <div className="z-10 absolute xl:right-[5em] lg:right-[4em] 2xl:top-[10em] xl:top-[9em] lg:top-[7em] 3xl:w-[50em] 2xl:w-[45em] xl:w-[40em] lg:w-[33em]">
+        <div className="z-10 absolute xl:right-[5em] lg:right-[4em] 2xl:top-[10em] xl:top-[9em] lg:top-[7em] 4xl:w-[55em] 3xl:w-[50em] 2xl:w-[45em] xl:w-[40em] lg:w-[33em]">
           <Slider {...settings} className="">
             {doctors.map((doctor, index) => (
               <div
                 key={index}
                 className={`w-[10em] ${
-                  index === currentSlide ? 'scale-100' : 'scale-90'
+                  index === currentSlide ? 'scale-95' : 'scale-[85%]'
                 } transition-transform duration-300 ease-in-out`}
               >
                 <MedicalProfessionalsCard
@@ -167,7 +170,7 @@ export const MedicalProfessionals = () => {
         </div>
         
         <img src="./circle-element.svg" className="absolute 2xl:w-[7em] xl:w-[6em] lg:w-[5em] right-0 2xl:top-[23em] xl:top-[21em] lg:top-[16em]" />
-        <img src="./dotted.svg" className="2xl:w-[15em] xl:w-[12em] lg:w-[10em] absolute 2xl:top-28 xl:top-[7em] lg:top-[5em] 3xl:left-[40em] 2xl:left-[35em] xl:left-[32em] lg:left-[26em]"/>
+        <img src="./dotted.svg" className="2xl:w-[15em] xl:w-[12em] lg:w-[10em] absolute 2xl:top-28 xl:top-[7em] lg:top-[5em] 4xl:left-[49em] 3xl:left-[40em] 2xl:left-[35em] xl:left-[32em] lg:left-[26em]"/>
         <img src="./doctors_bg.svg" className="3xl:w-[50em] 2xl:w-[47em] xl:w-[42em] lg:w-[34em] absolute 2xl:top-[15em] xl:top-[13em] lg:top-[10.5em] right-0"/>
     </div>
   )
