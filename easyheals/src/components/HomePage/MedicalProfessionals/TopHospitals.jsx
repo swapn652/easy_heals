@@ -84,7 +84,7 @@ export const TopHospitals = () => {
         <div className="w-[90vw] h-[0.5px] bg-text-light absolute xl:top-[6em] lg:top-[4em]"></div>
     {/* Left section */}
         <div className="absolute flex flex-col right-24 2xl:top-[13em] xl:top-[12em] lg:top-[10em]">
-            <div className="2xl:text-[38px] xl:text-[35px] lg:text-[26px] font-[700]">
+            <div className="3xl:text-[42px] 2xl:text-[38px] xl:text-[35px] lg:text-[26px] font-[700]">
                 <div>
                     Find and Book
                 </div>
@@ -93,7 +93,7 @@ export const TopHospitals = () => {
                     <div className="ml-[0.2em]">near you</div>
                 </div>
             </div>
-            <div className="2xl:text-[15px] xl:text-[14px] lg:text-[11.2px] text-text-dark mt-2">
+            <div className="3xl:text-[18px] 2xl:text-[15px] xl:text-[14px] lg:text-[11.2px] text-text-dark mt-2">
                 <div>
                     Delivering Exceptional Care and Specialized Expertise to 
                 </div>
@@ -106,7 +106,9 @@ export const TopHospitals = () => {
         {/* Buttons */}
         <button className="
             absolute
+            3xl:top-[23em]
             top-[26.5em]
+            3xl:right-[18em]
             xl:right-[21em]
             lg:right-[23em]
             xl:w-[13em] 
@@ -114,6 +116,7 @@ export const TopHospitals = () => {
             h-[3em] 
             bg-buttonColor 
             text-white 
+            3xl:text-[18px]
             2xl:text-[15px] 
             xl:text-[14px] 
             lg:text-[11px] 
@@ -130,7 +133,7 @@ export const TopHospitals = () => {
       {/* Line at the end of the section , i.e., after the carousel*/}
         <div className="w-[90vw] h-[0.5px] bg-text-light absolute 2xl:bottom-[6em] xl:bottom-[8em] lg:bottom-[6em]"></div>
 
-        <div className="z-10 absolute xl:left-[5em] lg:left-[4em] 2xl:top-[11em] xl:top-[10.5em] lg:top-[7.5em] 2xl:w-[45em] xl:w-[40em] lg:w-[33em]">
+        <div className="z-10 absolute xl:left-[5em] lg:left-[4em] 2xl:top-[11em] xl:top-[10.5em] lg:top-[7.5em] 2xl:w-[45em] 3xl:w-[50em] xl:w-[40em] lg:w-[33em]">
           <Slider {...settings} className="">
               {hospitals.map((hospital, index) => (
                 <div
