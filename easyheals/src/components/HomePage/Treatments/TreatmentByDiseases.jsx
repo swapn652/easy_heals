@@ -78,13 +78,13 @@ export const TreatmentByDiseases = () => {
     <div className="relative w-screen 2xl:h-[28em] xl:h-[23em] lg:h-[17em] flex justify-center font-[Raleway]">
         {/* Heading */}
         <div className="flex items-center justify-center absolute top-20">
-            <span className="2xl:w-[460px] xl:w-[32vw] lg:w-[320px] h-[1px] bg-text-light"></span>
+            <span className="3xl:w-[32vw] 2xl:w-[460px] xl:w-[32vw] lg:w-[320px] h-[1px] bg-text-light"></span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-            <span className="px-4 font-Poppins font-[700] 2xl:text-[27px] xl:text-[23px] lg:text-[22px] mx-2">
+            <span className="px-4 font-Poppins font-[700] 3xl:text-[30px] 2xl:text-[27px] xl:text-[23px] lg:text-[22px] mx-2">
                 Treatment By Diseases
             </span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-            <span className="2xl:w-[460px] xl:w-[32vw] lg:w-[320px] h-[1px] bg-text-light"></span>
+            <span className="3xl:w-[32vw] 2xl:w-[460px] xl:w-[32vw] lg:w-[320px] h-[1px] bg-text-light"></span>
         </div>
 
         <img src="./plus_bg_4.svg" className="absolute left-0 2xl:top-4 xl:top-10 lg:top-12 2xl:w-[11em] xl:w-[8em] lg:w-[7em]"/>
@@ -105,7 +105,7 @@ export const TreatmentByDiseases = () => {
                 ))}
               </Slider>
             </div>
-)}
+          )}
 
         {/* Button */}
         <button className="
@@ -114,6 +114,7 @@ export const TreatmentByDiseases = () => {
             h-[3em] 
             border-2 
             border-buttonColor 
+            3xl:text-[18px]
             2xl:text-[16px] 
             xl:text-[14px] 
             lg:text-[12px] 
@@ -123,6 +124,7 @@ export const TreatmentByDiseases = () => {
             text-buttonColor 
             rounded-lg 
             absolute  
+            3xl:top-[27em]
             lg:top-[30em] 
             flex 
             self-center 

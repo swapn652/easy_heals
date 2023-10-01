@@ -5,6 +5,7 @@ export const TreatmentByDiseasesCard = ({ imageSrc, title, description }) => {
     <div 
       style={{boxShadow: "0px 2px 10px 0px #60606026"}} 
       className="
+        3xl:w-[27em]
         2xl:w-[24.5em] 
         xl:w-[22em] 
         lg:w-[16em] 
