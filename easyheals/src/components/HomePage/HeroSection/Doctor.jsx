@@ -13,7 +13,7 @@ export const Doctor = () => {
       <div className="absolute 2xl:mt-24 xl:mt-24 lg:mt-24 md:mt-14 sm:mt-16 2xl:ml-[25.5em] xl:ml-[24.5em] lg:ml-[20.5em] md:ml-[14.5em] sm:ml-[16.5em]">
         <OfferCard imageUrl="./dicount.png" heading="Get Best Offers" />
       </div> */}
-      <img src="./ladyDoctor.svg" alt="doctor" className="2xl:w-[38rem] xl:w-[34rem] lg:w-[28rem] md:w-[22rem] 2xl:h-[33rem]"/>
+      <img src="./ladyDoctor.svg" alt="doctor" className="4xl:w-[45rem] 2xl:w-[38rem] xl:w-[34rem] lg:w-[28rem] md:w-[22rem] 2xl:h-[33rem]"/>
     </div>
   )
 }

@@ -33,6 +33,7 @@ export const SearchBar = () => {
         lg:left-12 
         flex 
         flex-row 
+        4xl:w-[52em]
         2xl:w-[47em] 
         xl:w-[41em] 
         lg:w-[32em] 

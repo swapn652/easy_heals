@@ -9,6 +9,7 @@ export const BookConsultation = () => {
 
         <div className="
             absolute 
+            4xl:text-[45px]
             2xl:text-[38px] 
             xl:text-[30px] 
             lg:text-[26px] 
@@ -35,11 +36,13 @@ export const BookConsultation = () => {
             hidden 
             md:block 
             absolute 
+            4xl:text-[21px]
             2xl:text-[16px] 
             xl:text-[12px] 
             lg:text-[11.2px] 
             md:text-[9.5px] 
             2xl:mt-52 
+            4xl:mt-[14rem]
             xl:mt-[11.5rem] 
             lg:mt-[9.5rem] 
             md:mt-[8.8rem] 

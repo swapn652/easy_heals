@@ -35,10 +35,10 @@ export const MainSection = () => {
             <div className="absolute md:block lg:hidden w-[40em] left-16">
                 <BookConsultationMediumScreen/>
             </div>
-            <div className="absolute w-screen 2xl:mt-72 xl:mt-60 lg:mt-52 md:mt-[18.5em] md:flex md:justify-center lg:justify-start">
+            <div className="absolute w-screen 4xl:mt-80 2xl:mt-72 xl:mt-60 lg:mt-52 md:mt-[18.5em] md:flex md:justify-center lg:justify-start">
                <SearchBar/>
             </div>
-            <div className="absolute md:hidden lg:block w-[30em] 2xl:mt-[25em] xl:mt-[21.5em] lg:mt-[18em] md:mt-[17em] lg:left-12 xl:left-16">
+            <div className="absolute md:hidden lg:block w-[30em] 4xl:mt-[26.5em] 2xl:mt-[25em] xl:mt-[21.5em] lg:mt-[18em] md:mt-[17em] lg:left-12 xl:left-16">
                 <CommonSymptoms/>
             </div>
             <div className="absolute hidden lg:block 2xl:mt-[31em] xl:mt-[27em] lg:mt-[23em] z-10">
