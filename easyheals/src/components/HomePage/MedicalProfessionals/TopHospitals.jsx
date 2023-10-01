@@ -79,12 +79,12 @@ export const TopHospitals = () => {
     }, [bearerToken]);
 
   return (
-    <div className="relative w-screen 2xl:h-[40.5em] xl:h-[40em] lg:h-[30em] flex justify-center flex-row font-[Raleway]">
+    <div className="relative w-screen 4xl:h-[45em] 2xl:h-[40.5em] xl:h-[40em] lg:h-[30em] flex justify-center flex-row font-[Raleway]">
         <img src="./plus_bg_3.svg" alt="plus_bg_3.svg" className="absolute xl:top-[7em] lg:top-[4em] right-0 2xl:w-[11em] xl:w-[10em] lg:w-[9em]"/>
         <div className="w-[90vw] h-[0.5px] bg-text-light absolute xl:top-[6em] lg:top-[4em]"></div>
     {/* Left section */}
         <div className="absolute flex flex-col right-24 2xl:top-[13em] xl:top-[12em] lg:top-[10em]">
-            <div className="3xl:text-[42px] 2xl:text-[38px] xl:text-[35px] lg:text-[26px] font-[700]">
+            <div className="4xl:text-[52px] 3xl:text-[42px] 2xl:text-[38px] xl:text-[35px] lg:text-[26px] font-[700]">
                 <div>
                     Find and Book
                 </div>
@@ -93,7 +93,7 @@ export const TopHospitals = () => {
                     <div className="ml-[0.2em]">near you</div>
                 </div>
             </div>
-            <div className="3xl:text-[18px] 2xl:text-[15px] xl:text-[14px] lg:text-[11.2px] text-text-dark mt-2">
+            <div className="4xl:text-[22px] 3xl:text-[18px] 2xl:text-[15px] xl:text-[14px] lg:text-[11.2px] text-text-dark mt-2">
                 <div>
                     Delivering Exceptional Care and Specialized Expertise to 
                 </div>
@@ -108,6 +108,7 @@ export const TopHospitals = () => {
             absolute
             3xl:top-[23em]
             top-[26.5em]
+            4xl:right-[20em]
             3xl:right-[18em]
             xl:right-[21em]
             lg:right-[23em]
@@ -116,6 +117,7 @@ export const TopHospitals = () => {
             h-[3em] 
             bg-buttonColor 
             text-white 
+            4xl:text-[20px]
             3xl:text-[18px]
             2xl:text-[15px] 
             xl:text-[14px] 
@@ -133,7 +135,7 @@ export const TopHospitals = () => {
       {/* Line at the end of the section , i.e., after the carousel*/}
         <div className="w-[90vw] h-[0.5px] bg-text-light absolute 2xl:bottom-[6em] xl:bottom-[8em] lg:bottom-[6em]"></div>
 
-        <div className="z-10 absolute xl:left-[5em] lg:left-[4em] 2xl:top-[11em] xl:top-[10.5em] lg:top-[7.5em] 2xl:w-[45em] 3xl:w-[50em] xl:w-[40em] lg:w-[33em]">
+        <div className="z-10 absolute xl:left-[5em] lg:left-[4em] 2xl:top-[11em] xl:top-[10.5em] lg:top-[7.5em] 4xl:w-[55em] 2xl:w-[45em] 3xl:w-[50em] xl:w-[40em] lg:w-[33em]">
           <Slider {...settings} className="">
               {hospitals.map((hospital, index) => (
                 <div

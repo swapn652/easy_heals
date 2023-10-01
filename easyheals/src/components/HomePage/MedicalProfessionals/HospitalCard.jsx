@@ -8,6 +8,7 @@ export const HospitalCard = ({imageSrc, name, address}) => {
         <div 
             style={{boxShadow: "0px 2.310344934463501px 4.620689868927002px 0px #6060601A"}} 
             className="
+                4xl:h-[22em]
                 3xl:h-[20em]
                 2xl:h-[19em] 
                 xl:h-[17em] 
@@ -17,8 +18,9 @@ export const HospitalCard = ({imageSrc, name, address}) => {
                 xs:h-[18em]
                 2xs:h-[16.5em]
                 3xs:h-[15.5em]
-                2xl:w-[14.5em] 
+                4xl:w-[18em]
                 3xl:w-[16em]
+                2xl:w-[14.5em]
                 xl:w-[13em] 
                 lg:w-[11em]
                 md:w-[12em] 
