@@ -72,14 +72,14 @@ const settings = {
         className="lg:w-[90vw] w-[100vw] 2xl:h-[35em] xl:h-[31em] lg:h-[26em] bg-white absolute -top-12 flex flex-col"
       >
         {/* Heading */}
-        <div className="absolute top-10 flex items-center justify-center lg:ml-0">
-            <span className="2xl:w-[491.6px] xl:w-[428px] lg:w-[330px] 2md:w-[34.1vw] md:w-[33vw] h-[1px] bg-text-light"></span>
+        <div className="mt-10 flex items-center justify-center lg:ml-0">
+            <span className="2xl:w-[491.6px] xl:w-[34.5vw] lg:w-[330px] 2md:w-[34.1vw] md:w-[33vw] h-[1px] bg-text-light"></span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
             <span className="px-4 font-Poppins font-semibold 2xl:text-[27px] xl:text-[23px] md:text-[22px] mx-2">
                 Featured Services
             </span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-            <span className="2xl:w-[491.6px] xl:w-[428px] lg:w-[330px] 2md:w-[34.1vw] md:w-[33vw] h-[1px] bg-text-light"></span>
+            <span className="2xl:w-[491.6px] xl:w-[34.5vw] lg:w-[330px] 2md:w-[34.1vw] md:w-[33vw] h-[1px] bg-text-light"></span>
         </div>
 
         {/* Carousel */}

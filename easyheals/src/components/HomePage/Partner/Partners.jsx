@@ -5,13 +5,13 @@ export const Partners = () => {
     <div>
         {/* Heading */}
         <div className="flex items-center justify-center">
-          <span className="2xl:w-[490px] xl:w-[430px] lg:w-[320px] 2md:w-[32.4vw] md:w-[31.2vw] h-[1px] bg-text-light"></span>
+          <span className="2xl:w-[490px] xl:w-[32vw] lg:w-[320px] 2md:w-[32.4vw] md:w-[31.2vw] h-[1px] bg-text-light"></span>
           <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
           <span className="px-4 font-Poppins font-semibold 2xl:text-[27px] xl:text-[23px] md:text-[22px] mx-2">
             Our Trusted Partners
           </span>
           <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-          <span className="2xl:w-[490px] xl:w-[430px] lg:w-[320px] 2md:w-[32.4vw] md:w-[31.2vw] h-[1px] bg-text-light"></span>
+          <span className="2xl:w-[490px] xl:w-[32vw] lg:w-[320px] 2md:w-[32.4vw] md:w-[31.2vw] h-[1px] bg-text-light"></span>
         </div>
 
         {/* Partners logos */}

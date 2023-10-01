@@ -68,13 +68,13 @@ export const LabTests = () => {
     <div className="relative w-screen 2xl:h-[44em] xl:h-[42em] lg:h-[36em] flex flex-row justify-center font-[Raleway]">
         {/* Heading */}
         <div className="flex items-center justify-center absolute top-44">
-            <span className="2xl:w-[540px] xl:w-[500px] lg:w-[380px] md:w-[31.5vw] h-[1px] bg-text-light"></span>
+            <span className="2xl:w-[540px] xl:w-[38vw] lg:w-[380px] md:w-[31.5vw] h-[1px] bg-text-light"></span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
             <span className="px-4 font-Poppins 2xl:text-[27px] xl:text-[23px] md:text-[22px] font-[700] mx-2">
                 Lab Tests
             </span>
             <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-            <span className="2xl:w-[540px] xl:w-[500px] lg:w-[380px] md:w-[31.5vw] h-[1px] bg-text-light"></span>
+            <span className="2xl:w-[540px] xl:w-[38vw] lg:w-[380px] md:w-[31.5vw] h-[1px] bg-text-light"></span>
         </div>
         
         {/* Cards */}

@@ -80,14 +80,14 @@ export const TreatmentBySpeciality = () => {
             style={{boxShadow: "0px 4px 40px 0px #60606040"}}  
             className="absolute w-[90vw] 2xl:h-[28em] xl:h-[27em] lg:h-[22em] bg-white -top-12"
         >
-            <div className="absolute top-10 flex items-center justify-center">
-                <span className="2xl:w-[455.6px] xl:w-[406.2px] lg:w-[296.5px] h-[1px] bg-text-light"></span>
+            <div className="mt-10 flex items-center justify-center">
+                <span className="2xl:w-[455.6px] xl:w-[32.25vw] lg:w-[296.5px] h-[1px] bg-text-light"></span>
                 <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
                 <span className="px-4 font-Poppins font-semibold 2xl:text-[27px] xl:text-[23px] lg:text-[22px] mx-2">
                     Treatment By Speciality
                 </span>
                 <img src="./plus_icon.svg" alt="plus_icon" className="w-4"/>
-                <span className="2xl:w-[455.6px] xl:w-[406.2px] lg:w-[296.5px] h-[1px] bg-text-light"></span>
+                <span className="2xl:w-[455.6px] xl:w-[32.25vw] lg:w-[296.5px] h-[1px] bg-text-light"></span>
             </div>
         </div>
  
