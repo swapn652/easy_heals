@@ -114,6 +114,7 @@ export const TreatmentByDiseases = () => {
             h-[3em] 
             border-2 
             border-buttonColor 
+            4xl:text-[20px]
             3xl:text-[18px]
             2xl:text-[16px] 
             xl:text-[14px] 
@@ -124,6 +125,7 @@ export const TreatmentByDiseases = () => {
             text-buttonColor 
             rounded-lg 
             absolute  
+            4xl:top-[26em]
             3xl:top-[27em]
             lg:top-[30em] 
             flex 
