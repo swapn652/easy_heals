@@ -64,19 +64,19 @@ export const FilterTreatment = () => {
       }, []);
 
   return (
-    <div className="flex flex-col w-[20vw] font-[Raleway] relative">
+    <div className="flex flex-col w-[20vw] font-[Raleway]">
         {/* First section */}
-        <div className="flex flex-col absolute left-[1em] top-[1em]">
+        <div className="flex flex-col ml-[1vw] mt-[1vw]">
             {/* Heading */}
-            <div className="font-[700] 2xl:text-[18px] xl:text-[16px] lg:text-[13px]">
+            <div className="font-[700] text-[1.1vw]">
                 See Results by
             </div>
-            <div className="2xl:text-[18px] xl:text-[16px] lg:text-[13px]">
+            <div className="text-[1.1vw]">
                 most searched diseases
             </div>
             
             {/* The buttons that will be used to filter */}
-            <div className="flex flex-row flex-wrap gap-2 mt-4">
+            <div className="flex flex-row flex-wrap gap-[0.7vw] mt-[1vh] w-[90%]">
                 <MostSearchedDiseasesButton disease="Headaches"/>
                 <MostSearchedDiseasesButton disease="PCOD"/>
                 <MostSearchedDiseasesButton disease="Asthama"/>
@@ -85,12 +85,19 @@ export const FilterTreatment = () => {
         </div>
 
         {/* Divider - 1 */}
-        <div className="h-[1px] w-[100%] bg-text-light absolute 2xl:top-[12em] xl:top-[11em] lg:top-[10em]"></div>
+        <div className="
+            h-[1px] 
+            w-[20vw] 
+            bg-text-light 
+            mt-[2vh]">
+            </div>
 
-        <div className="flex flex-col absolute 2xl:top-[13em] xl:top-[12em] lg:top-[11em] left-[1em]">
-            <div className="text-buttonColor 2xl:text-[18px] xl:text-[16px] lg:text-[13px] font-[700]">Sort by</div>
 
-            <div className="flex flex-col 2xl:text-[16px] xl:text-[14px] lg:text-[11px] gap-y-2 mt-[0.8em]">
+        {/* Sort by section */}
+        <div className="flex flex-col mt-[2vh] ml-[1vw]">
+            <div className="text-buttonColor 2xl:text-[16px] xl:text-[14px] lg:text-[11px] font-[700]">Sort by</div>
+
+            <div className="flex flex-col text-[1vw] gap-y-[0.8vh] mt-[0.8em]">
                 <label className="inline-flex items-center">
                     <input
                     type="radio"
@@ -139,34 +146,49 @@ export const FilterTreatment = () => {
         </div>
 
         {/* Divider 2 */}
-        <div className="h-[1px] w-[100%] bg-text-light absolute 2xl:top-[26em] xl:top-[24em] lg:top-[21.5em]"></div>
-
-        <div className="flex flex-col absolute 2xl:top-[27em] xl:top-[25em] lg:top-[22.5em] left-[1em]">
-            <div className="text-buttonColor 2xl:text-[18px] xl:text-[16px] lg:text-[13px] font-[700]">Filter</div>
-            <div className="2xl:text-[16px] xl:text-[14px] lg:text-[11px] mt-2 font-[600]">Price</div>
-            <div id="price-slider" className="2xl:w-[14.5em] xl:w-[13em] lg:w-[10em] mt-4 left-[0.5em]"></div>
-            <div className="flex justify-between relative text-[14px] mt-2">
-                <div id="min-price-value">₹250</div>
-                <div className="" id="max-price-value">₹5 lakh</div>
+        <div className="
+            h-[1px] 
+            w-[20vw] 
+            bg-text-light 
+            mt-[2vh]">
             </div>
 
-            <div className="mt-2 font-[600] 2xl:text-[16px] xl:text-[14px] lg:text-[12px]">
+        {/* Filter Section */}
+        <div className="flex flex-col mt-[2vh] ml-[1vw]">
+            <div className="text-buttonColor text-[1.1vw] font-[700]">Filter</div>
+            <div className="text-[1vw] mt-2 font-[600]">
+                Price
+            </div>
+
+            {/* Price slider */}
+            <div id="price-slider" className="w-[15.8vw] mt-4 left-[0.5em]"></div>
+
+            <div className="flex justify-between text-[0.9vw] mt-2">
+                <div id="min-price-value">₹250</div>
+                <div className="mr-[1vw]" id="max-price-value">₹5 lakh</div>
+            </div>
+
+            <div className="mt-2 font-[600] text-[1vw]">
                 Distance
             </div>
-            <div id="distance-slider" className="2xl:w-[14.5em] xl:w-[13em] lg:w-[10em] mt-4 left-[0.5em]"></div>
-            <div className="flex justify-between 2xl:text-[14px] xl:text-[12px] lg:text-[10px] mt-2">
+
+            {/* Distance slider */}
+            <div id="distance-slider" className="w-[15.8vw] mt-4 left-[0.5em]"></div>
+
+            <div className="flex justify-between text-[0.9vw] mt-2">
                 <div id="min-distance-value">1 km</div>
-                <div className="" id="max-distance-value">200 km</div>
+                <div className="mr-[1vw]" id="max-distance-value">200 km</div>
             </div>
         </div>
 
-        <div className="flex flex-col absolute 2xl:top-[40em] xl:top-[38em] lg:top-[34em] left-[1em]">
-            <div className="2xl:text-[16px] xl:text-[14px] lg:text-[12px] font-[600]">Rating</div>
+        {/* Rating section */}
+        <div className="flex flex-col mt-[2vh] ml-[1vw]">
+            <div className="2xl:text-[14px] xl:text-[12px] lg:text-[11px] font-[600]">Rating</div>
             <div className="mt-2">
                 <StarRatings
                     rating={2.403}
-                    starDimension="26px"
-                    starSpacing="4px"
+                    starDimension="2vw"
+                    starSpacing="0.2vw"
                 />
             </div>
         </div>

@@ -6,17 +6,14 @@ export const MostSearchedDiseasesButton = ({ disease }) => {
       flex 
       justify-center 
       items-center 
-      xl:px-[15px] 
-      lg:px-[12px]
+      px-[1vw]
       py-[8px] 
       rounded-[20px] 
       bg-[#FFFAF9] 
       border-[0.5px] 
       border-buttonColor 
       text-buttonColor 
-      2xl:text-[14px] 
-      xl:text-[12px] 
-      lg:text-[10px]
+      text-[0.8vw]
       font-[700]">
         {disease}
     </div>
