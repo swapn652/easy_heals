@@ -22,9 +22,9 @@ function App() {
             <NavbarMobile/>
         </div>
 
-        <HomePage/>
+        {/* <HomePage/> */}
         {/* <ThreeColumnLayout/> */}
-        {/* <TreatmentPage/> */}
+        <TreatmentPage/>
 
         <div className="3xs:hidden lg:block">
           <Footer/>

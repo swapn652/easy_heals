@@ -29,7 +29,7 @@ const PriceFilterSlider = () => {
 
   return (
     <div>
-      <div id="price-slider" className="ml-10 w-[20em]"></div>
+      <div id="price-slider" className=""></div>
     </div>
   );
 };
